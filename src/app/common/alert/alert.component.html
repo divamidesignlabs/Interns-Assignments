@@ -1,0 +1,19 @@
+<button (click)="activateAlert($event)">button</button>
+<div class="main" *ngIf="getAccess">
+    <div class="main-alertbox">
+        <div class="alertbox-header">
+            <img src="assets\images\alert\alert.svg" alt=""><span class="header">{{data.header}}</span>
+        </div>
+        <div class="text"><span>{{data.remainder}}</span><span>{{data.header}}</span><span>?</span></div>
+        <div><span>{{data.nameofitem}}</span></div>
+        <div class="text"><span>{{data.confirmationmessagestart}}</span><span>{{data.nameofitem}}</span><span>{{data.confirmationmessageend}}</span></div>
+        <div class="text">
+            <ol>
+                <div *ngFor="let item of data.listofelements">
+                    <li>{{item}}</li>
+                </div>
+            </ol>
+        </div>
+        <div class="main-buttons"><button (click)="cancel()">{{data.firstbutton}}</button><button>{{data.secondbutton}}</button></div>
+    </div>
+</div>

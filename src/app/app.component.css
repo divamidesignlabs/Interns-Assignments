@@ -1,0 +1,9 @@
+.appFooter{
+    height: 30px;
+    /* width: 100%; */
+    position: absolute;
+    top: 95%;
+}
+.alertbox-background{
+    background-color: #747070;;
+}
