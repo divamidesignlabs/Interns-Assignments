@@ -1,0 +1,9 @@
+<p>toast works!</p>
+<!-- variable class name-toastContainer -->
+<div class="toastContainer" *ngFor="let item of toastData let i=index" > 
+    <div > <img [src]="toastData[i].image" alt="success"></div>
+    <div>
+        <div>{{item.status}}</div>
+        <div>{{item.message}}</div>
+    </div>
+</div>

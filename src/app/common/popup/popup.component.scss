@@ -1,0 +1,108 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  // padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  // display: flex !important;
+  // justify-content: center;
+  // align-items: center;
+  padding-top:35vh;
+}
+
+/* popUp Content */
+.popUp-content {
+  background-color: #fefefe;
+  margin: auto;
+  // padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cautionHeader {
+  display: flex;
+  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+border: 1px solid #E6E6E6;
+  img {
+    margin-right: 10px;
+  }
+}
+.popUpBody{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right:16px;
+  padding-bottom: 15px;
+}
+.employeeStatus{
+  margin-top: 20px;
+}
+.warnEmployee{
+  color: #4D4D4D;
+}
+
+.buttonSection{
+  display: flex;
+  margin-top:40px;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.cancelButton{
+  border: 1px solid #3399FF;
+  max-width: 120px;
+  width: 100%;
+  max-height: 30px;
+  height: 100%;
+  color: #3399FF;
+  text-align: center;
+  padding: 6px 0;
+}
+.removeButton{
+  font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+background: #3399FF;
+max-width: 120px;
+  width: 100%;
+  max-height: 30px;
+  height: 100%;
+  border: 1px solid #3399FF;
+  padding: 6px 0;
+}
+.removeButton:hover{
+  cursor: pointer;
+}
+.cancelButton:hover{
+  cursor: pointer;
+}
+

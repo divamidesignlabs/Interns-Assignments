@@ -1,0 +1,11 @@
+
+<div class="switchTabs">
+<div class="tabLabelItem" (click)="selectedLabel(i)" *ngFor="let item of tabLabels let i=index" >
+    <div [ngClass]="{selectedLabel:selectedTab==i}">{{item.label}}</div>
+
+</div>
+</div>
+<div class="joinedTab" *ngFor="let item of labelTabData let i=index ">
+    <div *ngIf="i==selectedTab">{{item}}</div>
+
+</div>
