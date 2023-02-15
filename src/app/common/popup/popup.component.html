@@ -1,0 +1,28 @@
+<button id="myBtn" (click)="popUp()">pop up</button>
+
+<div id="myModal" class="modal">
+  <div class="popUp-content">
+    <!-- <p>this is pop up</p> -->
+    <div class="cautionHeader">
+      <div><img src="assets\pop-up-images\caution .svg" alt="caution" /></div>
+      <div>{{ popupData.alert}}</div>
+    </div>
+    <div class="popUpBody">
+      <div class="warnEmployee">
+        <div>{{ popupData.question }}</div>
+        <strong><div>{{ popupData.label }}</div></strong>
+        <!-- <div>{{popupData.question}}</div> -->
+      </div>
+      <div class="employeeStatus">
+        <div>{{popupData.content}}</div>
+        <div class="statusPoints" *ngFor="let item of popupData.description">{{item}}</div>
+      </div>
+      <div class="buttonSection">
+      <div class="cancelButton" (click)="closePopUp()">Cancel</div>
+      <div class="removeButton">Remove User</div>
+      <!-- variable -->
+      <!-- buttons array -->
+    </div>
+    </div>
+  </div>
+</div>
