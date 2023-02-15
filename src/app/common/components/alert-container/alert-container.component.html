@@ -1,0 +1,25 @@
+<div class="container center">
+    <div class="alert-container">
+        <div class="alert__type">
+            <img src="assets\images\alert\alerticon.svg" alt="alert icon">
+            <span class="sans-font text-overflow">{{alert.alert_type}}</span>
+        </div>
+        <div class="alert__content">
+            <div id="alert__margin-top">
+                <p class="sans-font text-overflow">{{alert.toConfirmMessage}}</p>
+                <p class="alert__content--bold text-overflow">{{alert.label}}</p>
+            </div>
+            <div id="alert__margin">
+                <div class="sans-font text-overflow">{{alert.content}}</div>
+                <div *ngFor="let each of alert.rightsGoingToLoss ;let i=index">
+                    <p class="sans-font text-overflow">{{i+1}}.{{each}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="alert__buttons">
+            <div class="alert__button-secondary center " (click)="handleButtonStatus('Cancel')"><span class="sans-font text-overflow">Cancel</span></div>
+            <div class="alert__button-primary center " (click)="handleButtonStatus('Confirm')"><span class="sans-font text-overflow">{{alert.alert_type}}</span></div>
+        </div>
+    </div>
+</div>
+

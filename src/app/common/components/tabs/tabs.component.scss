@@ -1,0 +1,18 @@
+.tab-container{
+    .tab-container__horizontal{
+        display: flex;
+        justify-content: flex-start;
+        gap: 44px;
+        border-bottom: 1px solid rgb(128, 128, 128,0.5);
+        .tab-container__item{
+            cursor: pointer;
+            .tab-container__content{
+                padding: 10px;
+            }
+        }
+    }
+}
+.selected{
+    border: 3px solid #3399FF;
+    border-radius: 75px;
+}

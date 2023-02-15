@@ -1,0 +1,42 @@
+img{
+    width: 20px;
+    height: 20px;
+}
+.toast{
+    display: block;
+    width: 400px;
+    height: 100px;
+    z-index: 2;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    .toast__cancel{
+        display: flex;
+        justify-content: flex-end;
+        div{
+            padding: 10px 10px 0px 0px;
+            cursor: pointer;  
+        }
+    }
+    .toast__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        div{
+            padding: 0px 10px;
+        }
+    }
+}
+
+.success{
+    background-color: rgba(33, 232, 33, 0.4);
+}
+
+.error{
+    background-color: rgba(230, 15, 15,0.5);
+}
+.info{
+    background-color: rgba(31, 22, 204, 0.5);
+}
