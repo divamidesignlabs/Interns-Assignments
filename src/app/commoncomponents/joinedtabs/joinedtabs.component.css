@@ -1,0 +1,16 @@
+.Fortabs{
+    display: flex;
+    gap:40px;
+    padding: 30px 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(217, 215, 215);
+
+    /* margin:50px 40px; */
+}
+.tabnames{
+    cursor: pointer;
+}
+tab-item:active{
+    background-color: red;
+    color: white;
+}

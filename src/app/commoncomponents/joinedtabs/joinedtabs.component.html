@@ -1,0 +1,14 @@
+<h3>Organization Account</h3>
+<div class="Fortabs">
+<div class="tabnames"  *ngFor="let tabs of tabslist;let index=index" (click)="setTab(index)" >
+    <span [ngClass]=" {active:activatedTab==index} ">{{tabs}}</span>
+<!-- <div *ngFor="let tabs of tabslist;let i=index;">
+    <div *ngIf="i==activatedTab">{{tabs}}
+
+    </div>
+</div> -->
+</div>
+</div>
+
+
+<!-- "activatedTab==index?active:''" -->
