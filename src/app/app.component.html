@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="header"><app-header></app-header>
+        
+        <app-alert [alertData]="popupData" (status)="manageButton($event)"></app-alert>
+
+        <app-tabs [tabNames]="tabNames"></app-tabs>
+        <app-toast-message [dataToToast]="dataToToast"></app-toast-message>
+    </div>
+    
+    <div class="footer"><app-footer></app-footer></div>
+</div>

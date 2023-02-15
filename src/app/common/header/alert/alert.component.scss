@@ -1,0 +1,84 @@
+.popupButton
+    {
+        background-color: var(--blue);
+        border:var(--blue);
+        padding:10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(180, 172, 172, 0.5);
+    z-index: 1;
+    
+    .alert{
+        box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
+        padding: 20px;
+        z-index: 1;
+        background-color: var(--white);
+        width: 400px;
+        .alertType{
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            border-bottom: 1px solid #E6E6E6;
+            padding: 10px;
+            span{
+                margin-top: 2px;
+                
+            }
+        }
+        .alert__content{
+            #alert__margin-top{
+                margin-top: 10px;
+            }
+            div{
+                .alert__content--bold{
+                    font-weight: bold;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            #alert__margin{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            }
+        }
+        .alert__buttons{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            .alert__button-primary,.alert__button-secondary{
+                width: 120px;
+                height: 30px;
+            }
+            .alert__button-primary{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--blue);
+                cursor: pointer;
+                span{
+                    color:var(--white);
+                   
+                }
+            
+            }
+            .alert__button-secondary{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:1px solid var(--blue);
+                cursor: pointer;
+                span{
+                    color: var(--blue);
+                }
+            }
+        }
+
+    }
+}
