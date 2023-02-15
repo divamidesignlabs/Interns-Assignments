@@ -1,0 +1,30 @@
+.toast{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    position:fixed;
+    bottom:0;
+    right:0;
+}
+.toast__head{
+    display:flex;
+    flex-direction: row;
+    width:30%;
+    justify-content: space-around;
+    align-items: center;
+}
+.green{
+    background-color: green;
+    border-radius: 10px;
+}
+.red{
+    background-color: red;
+    border-radius: 10px;
+}
+.orange{
+    background-color: orange;
+    border-radius: 10px;
+}

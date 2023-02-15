@@ -1,0 +1,25 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(215, 214, 214);
+    position:static;
+}
+.header__left{
+    display:flex;
+    justify-content:space-around;
+    width:51%;
+    align-items: center;
+}
+.header__left span{
+    padding-left:12px;
+}
+.header__left span:hover{
+    cursor:pointer;
+    color:blue;
+}
+.header__right{
+    display:flex;
+    justify-content:space-around;
+    width:20%;
+    align-items: center;
+}

@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="container">
+    <div class="container__headings">
+        <h1>Welcome to the project listing</h1>
+        <p>No assigned projects to list.</p>
+    </div>
+    
+    <div class="container__projects">
+        <button>
+            <img src="/assets/images/explore.svg">
+            <p>Explore sample project</p>
+        </button>
+        <button>
+            <img src="/assets/images/create.svg">
+            <p>Create new project</p>
+        </button>
+    </div>
+    <div>
+        <p>Check out <a href="">How to create a new project.</a></p>
+    </div>    
+    <div class="container__img">
+        <img src="/assets/images/doll.svg">
+    </div>    
+</div>
+<button (click)="details()">Profile Details</button>
+<button (click)="remove()">Remove</button>
+<button (click)="toastSuccessFun()">Success</button>
+<button (click)="toastWarningFun()">Warning</button>
+<button (click)="toastErrorFun()">Error</button>
+<app-data-table></app-data-table>
+<app-toast *ngIf="toastStatus" [toastAction]="toast" (toastStatusFun)='receiveStatus($event)'></app-toast>
+<app-pop-ups *ngIf="popup" [alert]="popupRemove" (sendAction)="popupAction($event)"></app-pop-ups>
+
+<app-footer></app-footer>

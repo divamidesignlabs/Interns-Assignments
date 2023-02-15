@@ -1,0 +1,11 @@
+<!-- <p>data-table works!</p> -->
+<table>
+    <th>
+        <tr>
+            <td *ngFor="let key of keys">{{key}}</td>
+        </tr>
+    </th>
+    <tr *ngFor="let i of data; index as idx">
+        <!-- <td *ngFor="let j of keys">{{data[idx].j}}</td> -->
+    </tr>
+</table>
