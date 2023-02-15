@@ -1,0 +1,29 @@
+ <!-- <div class="Tabs">
+    <div  (click)="isselected = 'Joined'" id="tab">Joined
+        <div [class.selected]="isselected === 'Joined'"></div>
+    </div>
+    <div (click)="isselected = 'Requested'"id="tab">Requested
+        <div [class.selected]="isselected === 'Requested'" ></div>
+    </div>
+    <div (click)="isselected = 'Suggested'"id="tab">Suggested
+        <div [class.selected]="isselected === 'Suggested'" ></div>
+    </div>
+</div> -->
+<!-- <div class="Content">
+    <div *ngIf="isselected === 'Joined'">Joined content div</div>
+    <div *ngIf="isselected === 'Requested'">Requested  content div</div>
+    <div *ngIf="isselected === 'Suggested'">Suggested content div</div>
+</div>  -->
+
+<!-- ............................................................................................... -->
+
+ <!-- div to get the tab values dinamically by using for loop -->
+<div class="tab-container">
+    <div *ngFor="let item of tabDataItem" id="tab"(click)="isselected = item.value"> {{ item.label }}
+        <div [class.selected]="isselected === item.value"></div>
+    </div>
+</div>
+<!-- div to get  selected content of the dinamically by usimg loops -->
+<div class="Content">
+    <div *ngFor="let item of tabDataContent" [hidden]="isselected !== item.value">{{ item.content }}</div>
+  </div>
