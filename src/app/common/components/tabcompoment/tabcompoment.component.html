@@ -1,0 +1,20 @@
+<div>
+    <div class="tab-heading">{{heading}}</div>
+    <div class="tab-components">
+        <div *ngFor="let item of tabArray; index as i">
+            <button (click)="sendTabStatus(i)">{{item}}</button>
+        </div>
+    </div>
+    <div class="joined-tab" *ngIf="joinedStatus">
+        <div *ngFor="let item of joined" class="joined-member">
+            <div><img [src]="item.url" alt="Image not found"></div>
+            <div>{{item.name}}</div>
+        </div>
+    </div>
+    <div class="suggested-tab" *ngIf="suggestedStatus">
+        <div *ngFor="let item of suggested" class="suggested-member">
+            <div><img [src]="item.url" alt="Image not found"></div>
+            <div>{{item.name}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div>
+    <h3>Data Table</h3>
+    <table>
+        <tr>
+            <th *ngFor="let item of tableKeys; index as i">{{item}}</th>
+        </tr>
+        <tr *ngFor="let column of dataInTable">
+            <!-- <th>{{column}}</th> -->
+            <th *ngFor="let row of ((column)=>{return column.keys})">{{row}}</th>
+        </tr>
+    </table>
+</div>
