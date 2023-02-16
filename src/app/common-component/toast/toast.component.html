@@ -1,1 +1,16 @@
-<p>toast works!</p>
+<div class="toastMain">
+    <div class="toastHead"  [ngClass]="{toastSuccess: toastContent.toastTitle=='success',toastFailure: toastContent.toastTitle=='failure'}">
+        <div class="toastTitleandBut">
+            <div class="toastT">
+                {{toastContent.toastTitle}}
+            </div>
+            <div (click)="toastCancel()">
+                <img src="assets\images\close.png" alt="closeBut" height="15px" width="15px">
+            </div>
+        </div>    
+        <br>
+        <div class="toastMsg">
+            {{toastContent.toastMessage}}
+        </div>
+    </div>
+</div>

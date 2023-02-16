@@ -8,6 +8,8 @@ import { FooterComponent } from './common-component/footer/footer.component';
 import { PopupComponent } from './common-component/popup/popup.component';
 import { CommonTabsComponent } from './common-component/common-tabs/common-tabs.component';
 import { ToastComponent } from './common-component/toast/toast.component';
+import { DataTablesComponent } from './common-component/data-tables/data-tables.component';
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,11 +17,13 @@ import { ToastComponent } from './common-component/toast/toast.component';
     FooterComponent,
     PopupComponent,
     CommonTabsComponent,
-    ToastComponent
+    ToastComponent,
+    DataTablesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

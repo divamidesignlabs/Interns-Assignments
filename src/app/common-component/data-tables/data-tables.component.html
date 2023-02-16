@@ -1,0 +1,16 @@
+<!-- This is html to display the tableData -->
+<div class="tablesData">
+   <table border="1px">
+    <tr>
+        <!-- This loop will get the keys of the object and displays it-->
+        <th *ngFor="let item of fun()"> 
+            {{item}}
+        </th>
+    </tr>
+    <!-- This loop gets the table contents -->
+    <tr *ngFor="let i of tableData">
+        <td *ngFor="let item of fun()">{{i[item]}}</td>
+    </tr>
+   </table>
+
+</div>

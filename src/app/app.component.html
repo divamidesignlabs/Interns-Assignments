@@ -2,7 +2,11 @@
     <app-header></app-header>
     <div class="container">
         <app-common-tabs [tabLabels]="tabs" [tabLabelsData]="tabLabelsContent"></app-common-tabs>
-        <app-popup [dataToPopup]="popUpData"></app-popup>
+        <button (click)="showPopUp()">popup</button>
+        <app-popup [dataToPopup]="popUpData" *ngIf="popUpActivation" (popUpStatus)="recievedPopUpStatus()"></app-popup>
+        <button (click)="showToastStatus()">Toast</button>
+        <app-toast *ngIf="toastActivation" [toastContent]="toastLabels" (toastStatus)="recievedToastStatus()"></app-toast> 
+        <app-data-tables></app-data-tables>      
     </div>
     <app-footer></app-footer>
 </div>

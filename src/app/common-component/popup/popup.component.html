@@ -1,22 +1,21 @@
-<button (click)="onClick()" style="cursor: pointer;">delete</button>
 <div class="popUpMain">
-<div id="popUpblock"  *ngIf="popUpVisibility">
-    <div class="popUpHead"> 
-        <img src="assets/images/danger.svg">
-        <p>{{dataToPopup.nameType}}</p>
+    <div id="popUpblock">
+        <div class="popUpHead"> 
+            <img src="assets/images/danger.svg">
+            <p>{{dataToPopup.nameType}}</p>
+        </div>
+        <hr>
+        <div> {{dataToPopup.confirmation}}</div>
+        <div><b>{{dataToPopup.nameOf}}</b></div>
+        <div>{{dataToPopup.unableTo}}</div>
+        <div *ngFor = "let items of dataToPopup.unableData">
+            <ul>
+                {{items}}
+            </ul>
+        </div><br>
+        <div class="buttons">
+            <button class="cancel" (click)="cancelPopUp()">{{dataToPopup.button1}}</button>
+            <button class="remove">{{dataToPopup.button2}}</button>
+        </div>
     </div>
-    <hr>
-    <div> {{dataToPopup.confirmation}}</div>
-    <div><b>{{dataToPopup.nameOf}}</b></div>
-    <div>{{dataToPopup.unableTo}}</div>
-    <div *ngFor = "let items of dataToPopup.unableData">
-        <ul>
-            {{items}}
-        </ul>
-    </div><br>
-    <div class="buttons">
-        <button class="cancel" (click)="cancelPopUp()">{{dataToPopup.button1}}</button>
-        <button class="remove">{{dataToPopup.button2}}</button>
-    </div>
-</div>
 </div>

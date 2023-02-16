@@ -1,0 +1,25 @@
+.toastSuccess{
+    border: 1px solid black;
+    background-color: greenyellow;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.toastFailure{
+    border: 1px solid black;
+    background-color: rgb(245, 24, 24);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.toastMain{
+    display: flex;
+    position:fixed;
+    bottom: 50px;
+    right: 30px;
+}
+.toastTitleandBut{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}

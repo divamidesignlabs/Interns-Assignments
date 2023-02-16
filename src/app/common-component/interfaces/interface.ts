@@ -14,5 +14,6 @@ export interface tabsLabel{
 
 export interface toast{
     toastTitle:string,
-    toastMessage:string
+    toastMessage:string,
+    toastTime:number
 }

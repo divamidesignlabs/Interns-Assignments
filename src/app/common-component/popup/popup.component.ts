@@ -7,12 +7,12 @@ import { Component,EventEmitter,Input,Output } from '@angular/core';
 })
 export class PopupComponent {
   @Input() dataToPopup:any;
+  @Output() popUpStatus = new EventEmitter<boolean>()
 
   popUpVisibility:boolean=false;
-  onClick(){
-    this.popUpVisibility = true;
-  }
+
   cancelPopUp(){
     this.popUpVisibility = false;
+    this.popUpStatus.emit(this.popUpVisibility)
   }
 }
