@@ -1,0 +1,74 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    background: rgba(34, 34, 34,0.03);
+    z-index: 1;
+    .alert-container{
+        box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
+        padding: 20px;
+        z-index: 2;
+        background-color: var(--white-color);
+        width: 400px;
+        .alert__type{
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            border-bottom: 1px solid #E6E6E6;
+            padding: 10px;
+            span{
+                margin-top: 2px;
+                font-family: var(--font-family);
+            }
+        }
+        .alert__content{
+            #alert__margin-top{
+                margin-top: 10px;
+            }
+            div{
+                .alert__content--bold{
+                    font-weight: bold;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            #alert__margin{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            }
+        }
+        .alert__buttons{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            .alert__button-primary,.alert__button-secondary{
+                width: 120px;
+                height: 30px;
+            }
+            .alert__button-primary{
+                background-color: var(--blue-color);
+                cursor: pointer;
+                span{
+                    color:var(--white-color);
+                    font-family:var(--font-family);
+                    display:inline-block;
+                    padding: 0px 10px;
+                }
+            }
+            .alert__button-secondary{
+                border:1px solid var(--blue-color);
+                cursor: pointer;
+                span{
+                    color: var(--blue-color);
+                    display:inline-block;
+                    padding: 0px 10px;
+                }
+            }
+        }
+
+    }
+}

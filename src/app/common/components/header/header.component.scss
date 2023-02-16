@@ -1,0 +1,28 @@
+.header{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid red;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__left{
+    gap:30px;
+    .header__item{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        div{
+            font-family: var(--font-family);
+        }
+    }
+    #logo{
+        margin-left: 20px;
+    }
+}
+
+.header__right{
+    gap: 30px;
+    margin-right: 18px;
+}

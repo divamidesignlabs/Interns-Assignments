@@ -1,0 +1,12 @@
+<div class="tab-container">
+    <div class="tab-container__horizontal">
+        <div class="tab-container__item" *ngFor="let eachItem of horizontal_items;let i=index"(click)="handleClick(i)">
+            <div class="tab-container__content">{{eachItem.item}}</div>
+            <div [ngClass]="{selected:eachItem.isSelected}"></div>
+        </div>
+        
+    </div>
+    <div class="tab-container__vertical">
+        <p *ngFor="let content of vertical_items">{{content}}</p>
+    </div>
+</div>
