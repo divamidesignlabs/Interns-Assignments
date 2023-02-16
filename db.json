@@ -1,0 +1,28 @@
+{
+    "user":[
+        {
+            "id":"1",
+            "name":"saipriya",
+            "age":"21",
+            "gender":"f"
+        },
+        {
+            "id":"2",
+            "name":"saipriya",
+            "age":"21",
+            "gender":"f"
+        },
+        {
+            "id":"3",
+            "name":"saipriya",
+            "age":"21",
+            "gender":"f"
+        },
+        {
+            "id":"4",
+            "name":"saipriya",
+            "age":"21",
+            "gender":"f"
+        }
+    ]
+}

@@ -11,7 +11,9 @@ import { PopUpsComponent } from './Common/CommonComponents/pop-ups/pop-ups.compo
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 import { ToastComponent } from './Common/CommonComponents/toast/toast.component';
 import { DataTableComponent } from './Common/CommonComponents/data-table/data-table.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectCreationFormComponent } from './project-creation-form/project-creation-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +24,14 @@ import { DataTableComponent } from './Common/CommonComponents/data-table/data-ta
     PopUpsComponent,
     ProfileDetailsComponent,
     ToastComponent,
-    DataTableComponent
+    DataTableComponent,
+    ProjectCreationFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

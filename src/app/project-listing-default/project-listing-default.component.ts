@@ -1,5 +1,6 @@
 import { Component,EventEmitter,Output, SimpleChange  } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServiceService } from '../service.service';
 export interface popupInterface{
   alertImg?:string,
   heading?:string,
@@ -38,10 +39,17 @@ toast:toastInterface={
   message:"",
   delay:3000
 }
-
+// card1={
+//   path:"/assets/images/explore.svg",
+//   brief:"Explore sample project"
+// };
+// card2={
+//   path:"/assets/images/create.svg",
+//   brief:"Create new project"
+// }
  popup=0;
  toastStatus=false;
- constructor(private router:Router){}
+ constructor(private router:Router, private ser:ServiceService){}
  remove(){
   this.popup=1;
  }
@@ -79,4 +87,7 @@ toast:toastInterface={
  receiveStatus(val:boolean){
   this.toastStatus=val;
  }
+projectCreationForm(){
+  this.router.navigate(['projectCreationForm'])
+}
 }
