@@ -1,1 +1,28 @@
-<button>popUp</button>
+<div class="parent-to-child">
+    <div class="teamnames">
+        <div   *ngFor="let teams of teamslist ;let i=index" (click)="activetheteam(i)" >
+           <div  class="display-teams" [ngClass]="{activeteam: activatedTeam==i}">
+              <img [src]='teams.img'>
+              <div>{{teams.teamname}}</div>
+           </div>
+          </div>
+     </div> 
+    <div class="styling-teams"> 
+        <h3>Members</h3>
+           <div class="for-flex"> 
+            <div  class="Members" *ngFor="let TeamMember of teamMembers ">
+            <div><img [src]="TeamMember.image"></div>
+            <div>
+                <div>{{TeamMember.Name}}</div>
+                <div>{{TeamMember.email}}</div>
+                <div>{{TeamMember.teamName}}</div>
+            </div>
+            <div>
+                  <div (click)="displaytoggle()">{{TeamMember.forextrainformation}}</div>
+                  <!--services-->
+            </div>
+        </div>
+    </div>
+    </div>    
+</div>
+<app-togglemsg [hidden]="displaymsg"></app-togglemsg>

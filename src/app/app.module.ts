@@ -9,6 +9,10 @@ import { JoinedtabsComponent } from './commoncomponents/joinedtabs/joinedtabs.co
 import { TeamsComponent } from './teams/teams.component';
 import { PopupComponent } from './popup/popup.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
+import { ParenttabsComponent } from './parenttabs/parenttabs.component';
+import { FormsModule } from '@angular/forms';
+import { TogglemsgComponent } from './togglemsg/togglemsg.component';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { TeamMembersComponent } from './team-members/team-members.component';
     JoinedtabsComponent,
     TeamsComponent,
     PopupComponent,
-    TeamMembersComponent
+    TeamMembersComponent,
+    ParenttabsComponent,
+    TogglemsgComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,11 @@
 <div class="rootapp">
   <app-headercomponent></app-headercomponent>
-  <app-joinedtabs
-    [tabslist]="tabNames"
-    (ontabchange)="tabchange($event)"
-  ></app-joinedtabs>
-  <div class="team-teammembers">
-    <div>
-      <app-teams *ngIf="activatedtabindex == 0"></app-teams>
-      <p *ngIf="activatedtabindex == 1">suggestions</p>
-    </div>
-
-    <!-- <app-team-members ></app-team-members> -->
+  <div>
+    <app-parenttabs></app-parenttabs>
+  <button (click)="displayalert()">Alert Message</button>
+  <div class="popup"><app-popup [hidden]=" showAlertMsg" [popMsg]="alertMsg" ></app-popup></div>
+  
   </div>
-
+  
   <app-footercomponent></app-footercomponent>
 </div>

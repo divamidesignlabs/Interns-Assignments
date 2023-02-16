@@ -1,1 +1,19 @@
-<p>popup works!</p>
+<div class="alert">
+    <div  class="Alert_user">
+        <div><img src='assets\alertimg.svg'></div>
+        <span> {{popMsg.action}}</span>
+    </div>
+    <div>
+        <div>{{popMsg.question}}</div>
+        <div>{{popMsg.nameofThePerson}}</div>
+    </div>
+    <div>
+        <div>{{popMsg.suggestions}}</div>
+        <div>{{popMsg.suggestion1}}</div>
+        <div>{{popMsg.suggestion2}}</div>
+    </div>
+    <div class="buttons">
+        <button class="btn" (click)="closeAlertMsg()">Cancel</button>
+        <button class=" btn btn_removing">Remove User</button>
+    </div>
+</div>

@@ -7,12 +7,11 @@ import { Component, Output,EventEmitter } from '@angular/core';
   styleUrls: ['./teams.component.css']
 })
 export class TeamsComponent {
-  displayMembers:boolean=true;
-  @Output() showContent=new EventEmitter<any>()
- 
+  
+  teamNames=[{img:`assets/teamimgs/qarma testing.svg`,teamname:'Qarma Testing Group'},
+  {img: `assets/teamimgs/qarma testing.svg`,teamname:'Backend Team'},
+  {img:`assets/teamimgs/qarma testing.svg`,teamname:'New Projects'},
+  ]
 
-  onButtonClick() {
-    this.showContent.emit();
-  }
   }
 
