@@ -1,0 +1,10 @@
+.commonTabs{
+    display: flex;
+}
+.labels{
+    padding:10px;
+    cursor: pointer;
+}
+.touchedLabel{
+    border-bottom: 2px solid skyblue;
+}

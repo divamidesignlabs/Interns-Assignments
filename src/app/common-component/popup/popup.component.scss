@@ -1,0 +1,35 @@
+.popUpMain{
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popUpblock{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+}
+.cancel{
+    background-color: white;
+    color: rgb(61, 205, 234);
+    padding: 10px 20px 10px 20px;
+    border: 1px solid;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.remove{
+    background-color:rgb(61, 205, 234);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popUpHead{
+    display: flex;
+    padding: 10px;
+}
