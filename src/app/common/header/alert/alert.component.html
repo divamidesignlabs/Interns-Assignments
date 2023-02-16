@@ -1,0 +1,38 @@
+<button class="popupButton" (click)="handleAlert()">PopUp-Message</button>
+<div *ngIf="alertStatus" class="container">
+    
+    <P>Sample background</P>
+    <div *ngIf="alertStatus" class="alert">
+        <div class="alertType">
+            <!-- alert-image and message -->
+            <img src="assets\images\alert\danger.svg" alt="alert icon">
+            <span class="sans-font">{{alertData.alertType[0]}}</span>
+        </div>
+
+        <div class="alert__content">
+            <div id="alert__margin-top">
+                <p class="sans-font">{{alertData.toConfirmMessage}}</p>
+                <p class="alert__content--bold">{{alertData.label}}</p>
+            </div>
+
+
+            <div id="alert__margin">
+                <div class="sans-font">{{alertData.content}}</div>
+                
+                <div *ngFor="let item of alertData.looseAccessOver ;let i=index">
+                    <p class="sans-font">{{i+1}}.{{item}}</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="alert__buttons">
+            <div class="alert__button-secondary" (click)="buttonStatus('Cancel')">
+                <span class="sans-font">{{alertData.alertType[1]}}</span>
+            </div>
+            <div class="alert__button-primary" (click)="buttonStatus('Remove')">
+                <span class="sans-font">{{alertData.alertType[0]}}</span>
+            </div>
+        </div>
+    </div>
+</div>

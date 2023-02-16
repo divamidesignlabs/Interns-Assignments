@@ -1,0 +1,38 @@
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 8px 5px -8px var(--blurGray);
+
+    .headerPartOne
+    {
+        display: flex;
+        gap:30px;
+        align-items: center;
+
+        .subTags
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .headerPartTwo
+    {
+        display: flex;
+        gap:20px;
+        align-items: center;
+
+        .subTags
+        {
+            display: flex;
+        }
+    }
+
+    .tags img
+    {
+        margin-right:5px;
+    }
+}
+

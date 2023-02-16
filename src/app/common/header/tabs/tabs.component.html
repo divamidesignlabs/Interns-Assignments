@@ -1,0 +1,37 @@
+
+<!-- <div *ngFor="let item of tabNames; i=index">
+
+    <div>{{item}}</div>
+
+</div> -->
+
+<div class="container">
+    <div class="container__tabs">
+        <div  *ngFor="let item of tabNames ;let i=index" (click)="passTabIndex(i)">
+        
+            <div class="container__tabs" [ngClass]="{container__currentLabel : currentIndex==i }">{{item}}</div>
+        
+
+        </div>
+    
+        <!-- <div (click)="joinData()"> Joined </div>
+    
+        <div (click)="suggestUser()"> Suggestions </div> -->
+    </div>
+    
+    <div class="container__showData">
+        <div *ngIf="currentIndex==0" class="joinData">
+        
+            <div>user 1</div>
+            <div>user 2</div>
+            <div>user 3</div>
+            <div>user 4</div>
+        </div>
+        
+        <div *ngIf="currentIndex==1" class="suggestionData">
+            <div>Suggestions to users</div>
+        </div>
+    </div>
+</div>
+
+
