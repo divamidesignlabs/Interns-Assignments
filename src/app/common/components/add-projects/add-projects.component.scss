@@ -1,0 +1,28 @@
+.container {
+  width: 600px;
+  height: 400px;
+  // border: 1px solid;
+  margin-inline: auto;
+  margin-top: 20px;
+  // margin-bottom: 75px;
+  text-align: center;
+}
+
+.container p {
+  margin-bottom: 40px;
+}
+.action {
+  width: 50%;
+  height: 80%;
+  border: 1px solid #808080;
+  padding: 66px 44px;
+}
+
+.action:hover {
+  cursor: pointer;
+}
+.actions {
+  display: flex;
+  // padding: 10px 20px;
+  gap: 5px;
+}
