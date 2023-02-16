@@ -5,6 +5,8 @@ import { AlertMessageComponent } from './common-components/alert-message/alert-m
 import { Alert } from './model/consts';
 import { Toast } from './model/consts';
 import { ToastMessageComponent } from './common-components/toast-message/toast-message.component';
+import { UserDataServiceService } from './Services/user-data-service.service';
+import { UserDetails } from './model/consts';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,9 +14,12 @@ import { ToastMessageComponent } from './common-components/toast-message/toast-m
 })
 export class AppComponent {
   title = 'projectQarma';
-  
-  toastMsg:Toast={type:'info',msg:'venu',time:2000};
-  showToastMsgStatus:boolean=false;
+  userData:UserDetails[]=[];
+  userDataHeadings:Array<string>=[];
+  // give type:error/info/success  and message to display and time-how many seconds the toast should display
+  toastData:Toast={type:'error',msg:'Successfully Done!!',time:2000};
+  //
+  showtoastDataStatus:boolean=false;
   // alert data:---------------------------
   alert=false;
   showConfirmationData:boolean=false;
@@ -25,6 +30,8 @@ export class AppComponent {
     content:"By Confirming this Anuja Kumari wouldn't be able to:",
     descr:['1. Access any Projects related to this Account','2. Any Personal Data Synced with this Account']
   };
+
+  constructor(private userDetails:UserDataServiceService){}
   showAlert(){
     this.alert=true;
     console.log("show alert function upon button click: ",this.alert);
@@ -46,16 +53,16 @@ export class AppComponent {
   // --------------------------------------- 
   // tabs data
   headerList:Array<string>=['Joined','Required','Suggestions'];
-  joinedContent={'content':'This is Joined Content','isSelected':true};
-  requestedContent={'content':'This is Requested Content','isSelected':false};
-  suggestionsContent={'content':'This is Suggestions Content','isSelected':false};
+  joinedContent={'content':'This is Joined Content'};
+  requestedContent={'content':'This is Requested Content'};
+  suggestionsContent={'content':'This is Suggestions Content'};
   tabContent:any=this.joinedContent.content;
   // tabs data ends
-  showToastMsg(){
-    this.showToastMsgStatus=true;
+  showtoastData(){
+    this.showtoastDataStatus=true;
   }
   handleToastStatus(event:boolean){
-    this.showToastMsgStatus=false;
+    this.showtoastDataStatus=false;
     console.log("app",event);
   }
 
@@ -71,5 +78,12 @@ export class AppComponent {
         this.tabContent=this.suggestionsContent.content;
         break;
     }
+  }
+  ngOnInit(){
+    this.userDetails.getUserDetails().subscribe((details)=>{
+      this.userData=details;
+      this.userDataHeadings=Object.keys(this.userData[0]);
+    })
+    
   }
 }

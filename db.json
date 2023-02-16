@@ -2,7 +2,15 @@
   "users":[
     {
       "id":1,
-      "name":"Adi"
+      "name":"Adi",
+      "mail":"adi@gmail.com",
+      "phoneNo":"9090909090"
+    },
+    {
+      "id":2,
+      "name":"lakshmi",
+      "mail":"lakshmi@gmail.com",
+      "phoneNo":"9080080000"
     }
 
   ]

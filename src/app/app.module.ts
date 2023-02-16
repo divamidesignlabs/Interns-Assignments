@@ -8,7 +8,10 @@ import { FooterComponent } from './common-components/footer/footer.component';
 import { CommonTabsComponent } from './common-components/common-tabs/common-tabs.component';
 import { AlertMessageComponent } from './common-components/alert-message/alert-message.component';
 import {Alert} from 'src/app/model/consts';
-import { ToastMessageComponent } from './common-components/toast-message/toast-message.component'
+import { ToastMessageComponent } from './common-components/toast-message/toast-message.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ProjectCreationComponent } from './project-creation-flow/project-creation/project-creation.component';
+import { CreateProjectComponent } from './project-creation-flow/create-project/create-project.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +19,14 @@ import { ToastMessageComponent } from './common-components/toast-message/toast-m
     FooterComponent,
     CommonTabsComponent,
     AlertMessageComponent,
-    ToastMessageComponent
+    ToastMessageComponent,
+    ProjectCreationComponent,
+    CreateProjectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

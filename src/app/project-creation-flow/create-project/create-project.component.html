@@ -1,0 +1,4 @@
+<div>
+    <button (click)="showToast = !showToast">Add</button>
+    <app-toast-message *ngIf="showToast" [toastData]="toastData"></app-toast-message>
+</div>
