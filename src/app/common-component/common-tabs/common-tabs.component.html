@@ -1,0 +1,9 @@
+<div class="commonTabs">
+    <div class="labels" *ngFor="let item of tabLabels let i=index" (click)="touchedLabel(i)">
+        <div [ngClass]="{touchedLabel : touchedTab==i}"> {{item.label}}</div>
+    </div>
+</div>
+
+<div class="tabsContent" *ngFor="let item of tabLabelsData let i=index">
+    <div *ngIf="i==touchedTab">{{item}}</div>
+</div>
