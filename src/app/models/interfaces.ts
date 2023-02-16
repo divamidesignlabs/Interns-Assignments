@@ -22,10 +22,10 @@ export interface Toast{
     
 }
 
-// model for common data table common
+//model for common data table common
 export interface TableData{
-    columnNames:string[],
-    rowData:object[]
+    columnNames?:string[],
+    rowData:Array<Object> | string;
 }
 
 

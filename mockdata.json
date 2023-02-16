@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "ram",
+      "lastName": "dn",
+      "userName": "sfnjfj",
+      "age": 45,
+      "email": "abc@gmail.com",
+      "mobileNo": "9876543210"
+    },
+    {
+      "id": 2,
+      "firstName": "dhfds",
+      "lastName": "dfbhjd",
+      "userName": "yggg",
+      "age": 89,
+      "email": "yjff@gmail.com",
+      "mobileNo": "5679899608"
+    },
+    {
+      "id": 3,
+      "firstName": "fcgvbhhb",
+      "lastName": "hbjjnj",
+      "userName": "fgn",
+      "age": 29,
+      "email": "siva123@gmail.com",
+      "mobileNo": "9182440493"
+    },
+    {
+      "id": 4,
+      "firstName": "dnjdj",
+      "lastName": "fdsjbfdsb",
+      "userName": "fdsbhjfds",
+      "age": 20,
+      "email": "bheem@gmail.com",
+      "mobileNo": "9182440478"
+    },
+    {
+      "id": 5,
+      "firstName": "sruthi",
+      "lastName": "shetty",
+      "userName": "sruthishetty",
+      "age": 28,
+      "email": "sruthi99@gmail.com",
+      "mobileNo": "287612543"
+    },
+    {
+      "firstName": "Tirupathi Rao",
+      "lastName": "Bolla",
+      "userName": "myuser",
+      "age": 20,
+      "email": "tirupathirao2726@gmail.com",
+      "mobileNo": "4387445745",
+      "id": 6
+    },
+    {
+      "firstName": "dxvnxf",
+      "lastName": "dfkjjfdkjfd",
+      "userName": "dfjjfddm",
+      "age": 3,
+      "email": "abc@gmail.com",
+      "mobileNo": "9182440490",
+      "id": 7
+    },
+    {
+      "firstName": "fdmmfd,",
+      "lastName": "dnn",
+      "userName": "dfmdmf",
+      "age": 5,
+      "email": "hj2@d.com",
+      "mobileNo": "9182440499",
+      "id": 8
+    },
+    {
+      "firstName": "jbjhjn",
+      "lastName": "dskdks",
+      "userName": "dsjdjs",
+      "age": 5,
+      "email": "d@gmail.com",
+      "mobileNo": "9182440438",
+      "id": 9
+    },
+    {
+      "firstName": "jbjhjn",
+      "lastName": "dskdks",
+      "userName": "dsjdjs",
+      "age": 5,
+      "email": "d@gmail.com",
+      "mobileNo": "9182440438",
+      "id": 10
+    }
+  ]
+}
