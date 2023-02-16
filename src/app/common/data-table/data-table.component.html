@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <th *ngFor="let tableHeadings of keysOfUsersArray()">
+            {{tableHeadings}}
+        </th>
+    </tr>
+    <tr *ngFor="let eachObject of usersArray">
+        <td *ngFor="let item of keysOfUsersArray()">{{eachObject[item]}}</td>
+    </tr>
+</table>

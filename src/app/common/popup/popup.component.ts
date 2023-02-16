@@ -9,7 +9,6 @@ import { Alert } from '../Interfaces/interface';
 export class PopupComponent {
   @Input() popupData:any
   modal:any ;
- span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the popUp 
 popUp() {

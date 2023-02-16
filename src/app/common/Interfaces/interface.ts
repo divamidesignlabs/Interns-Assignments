@@ -1,3 +1,8 @@
+export interface header{
+    image:string;
+    alt:string;
+    label:string;
+}
 export interface Alert{
     alert?:string;
     question:string;

@@ -20,7 +20,7 @@ export class ToastComponent {
       this.toastExist=false
       // console.log('toastFunction')
       this.status.emit(this.toastExist)
-    }, 3000);
+    },2500);
   }
   
 }

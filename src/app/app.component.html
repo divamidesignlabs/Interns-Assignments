@@ -2,12 +2,14 @@
 <div class="qarmaScreen"> 
     <app-header></app-header>
 <div class="screenBody">
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
 <app-popup [popupData]="AlertData"></app-popup>
 <app-switch-tabs [tabLabels]="tabLabels" [labelTabData]="labelTabData"></app-switch-tabs>
 
-<app-toast [toastData]="toastData" [toastExist]="toastExist" *ngIf="toastExist" (status)="fun($event)"></app-toast>
+<app-toast [toastData]="toastData" [toastExist]="toastExist" *ngIf="toastExist" (status)="toastStatus($event)"></app-toast>
  <button (click)="showToast()" >Toast</button>
+ <app-data-table [usersArray]="usersArray"></app-data-table>
+ 
 </div>
 <app-footer></app-footer>
 </div>

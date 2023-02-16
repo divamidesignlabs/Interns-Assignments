@@ -9,7 +9,8 @@ import { PopupComponent } from './common/popup/popup.component';
 import { ButtonComponent } from './common/button/button.component';
 import { SwitchTabsComponent } from './common/switch-tabs/switch-tabs.component';
 import { ToastComponent } from './common/toast/toast.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { DataTableComponent } from './common/data-table/data-table.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,10 +20,12 @@ import { ToastComponent } from './common/toast/toast.component';
     ButtonComponent,
     SwitchTabsComponent,
     ToastComponent,
+    DataTableComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
