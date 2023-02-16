@@ -1,0 +1,72 @@
+$popUpColor : #3399FF;
+$popUpBgcolor : #ffffff;
+
+
+.pop-up{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000090;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.pop-up-component{
+    width: 400px;
+    height: fit-content;
+    margin: 4px;
+    padding: 10px;
+    position: absolute;
+    background:$popUpBgcolor;
+    // opacity: 20%;
+    
+}
+.pop-up-header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid $popUpColor;
+    padding: 4px 6px;
+}
+.pop-up-body{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 6px;
+    div{
+        padding: 2px;
+    }
+}
+.pop-up-button{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    button{
+        width: fit-content;
+        min-width: 80px;
+        height: 30px;
+        font-size: 18px;
+        padding: 4px;
+        color: $popUpColor;
+        margin: 10px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: 2px solid $popUpColor;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    .remove{
+        background-color: $popUpColor;
+        color: #ffffff;
+    }
+    #body-message{
+        padding-top: 10px;
+        color: red;
+    }
+}

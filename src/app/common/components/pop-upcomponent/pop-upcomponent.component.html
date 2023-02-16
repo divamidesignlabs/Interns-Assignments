@@ -1,0 +1,23 @@
+<div class="pop-up">
+    <div class="pop-up-component">
+        <div class="pop-up-header">
+            <div><img [src]="popUpInputObject?.logo" alt="{{popUpInputObject?.heading}} is not found."></div> &nbsp;
+            <div class="popup_heading">{{popUpInputObject?.heading}}</div>
+        </div>
+        <div class="pop-up-body">
+            <div>{{popUpInputObject?.question}}?</div>
+            <div>
+                <b>{{popUpInputObject?.name}}</b>
+            </div>
+            <div id="body-message">{{popUpInputObject?.conformationMessage}}</div>
+            <div *ngFor="let item of popUpInputObject?.conformationMessageList; index as i">
+                <div>{{i+1}}&nbsp; {{item}} </div>
+            </div>
+        </div>
+        <div class="pop-up-button">
+            <div  *ngFor="let b of popUpInputObject?.buttons">
+                <button class="button" (click)="sendButtonStatus(b)" >{{b}}</button>
+            </div>
+        </div>
+    </div>
+</div>
