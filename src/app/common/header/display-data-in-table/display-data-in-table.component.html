@@ -1,0 +1,19 @@
+
+<div class="container">
+    <div>
+        <table style="width:100%">
+            <tr>
+            <th *ngFor="let item of keysOfObj()">
+                {{item}}
+            </th>
+        </tr>
+        <tr *ngFor="let item of userDetails">
+            <td *ngFor="let key of keysOfObj()">
+                {{item[key]}}
+            </td>
+        </tr>
+        
+        </table>
+    </div>
+</div>
+<!-- userDetails -->

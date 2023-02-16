@@ -1,0 +1,33 @@
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 74px);
+}
+
+.container
+{
+    // display: flex;
+    // flex-direction: column;
+    border:1px solid;
+    // gap:30px;
+    width:280px;
+    height: 202px;
+
+    .container__img 
+    {
+        display: flex;
+        justify-content: center;
+        margin-top:76px;
+    };
+
+    .container__content
+    {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        text-align: center;
+        margin-bottom: 66px;
+    }
+}

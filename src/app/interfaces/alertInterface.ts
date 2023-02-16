@@ -17,3 +17,9 @@ export interface toastInfo
     messagetoDisplay:string,
     toastDisplayTime:number
 }
+
+export interface containerInfo
+{
+    imgSrc:string,
+    contentoDisplay:string;
+}

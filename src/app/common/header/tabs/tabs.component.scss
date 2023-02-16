@@ -9,6 +9,7 @@
         display: flex;
         gap:10px;
         margin-left: 10px;
+        font-size: 20px;
     }
 
     .container__showData
@@ -17,16 +18,25 @@
         padding:10px;
         border-bottom: 3px solid var(--blurGray);
         border-top: 3px solid var(--blurGray);
+        
     }
 
-    .container__tabs
+    .container__showData
     {
-        padding-bottom:10px;
+        font-size:20px;
+        font-weight: bolder;
     }
 
     .container__currentLabel
     {
         border-bottom: 3px solid var(--blue);
 
+    }
+
+
+    .container__suggestionData
+    {
+        font-size:20px;
+        font-weight: bolder;
     }
 }

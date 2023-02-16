@@ -20,7 +20,7 @@
     </div>
     
     <div class="container__showData">
-        <div *ngIf="currentIndex==0" class="joinData">
+        <div *ngIf="currentIndex==0" class="container__joinData">
         
             <div>user 1</div>
             <div>user 2</div>
@@ -28,8 +28,12 @@
             <div>user 4</div>
         </div>
         
-        <div *ngIf="currentIndex==1" class="suggestionData">
+        <div *ngIf="currentIndex==1" class="container__suggestionData">
             <div>Suggestions to users</div>
+        </div>
+
+        <div *ngIf="currentIndex==2" class="container__suggestionData">
+            <div>Future Additions can be added</div>
         </div>
     </div>
 </div>

@@ -1,0 +1,42 @@
+.container
+{
+
+    display: flex;
+    flex-direction: column;
+    border:1px solid ;
+    border-radius:10px ;
+    position: fixed;
+    right: 5px;
+    bottom:30.67px;
+
+    .container__img
+    {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    .container__message
+    {
+        padding: 30px 70px 50px 70px;
+        max-width:100px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.error
+{
+    background-color: var(--failureRed);
+}
+
+.success
+{
+    background-color: var(--successGreen);
+}
+
+.general
+{
+    background-color: var(--white);
+}

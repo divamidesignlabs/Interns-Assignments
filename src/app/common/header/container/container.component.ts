@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { containerInfo } from 'src/app/interfaces/alertInterface';
 
 @Component({
   selector: 'app-container',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ContainerComponent {
 
+  @Input() welcomePageContainerData: containerInfo=
+  {
+    imgSrc:'',
+    contentoDisplay:''
+  }
+  
 }
