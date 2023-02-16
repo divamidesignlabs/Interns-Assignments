@@ -11,7 +11,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class DataTableComponent implements OnInit{
 
   dataAvailable:boolean=false;
-  @Input() rowData:string | Array<object>='http://localhost:3000/users';
+  @Input() rowData:any='http://localhost:3000/users';
   columnNames:string[]=[];
   constructor(private http:HttpClient){}
   ngOnInit(){
