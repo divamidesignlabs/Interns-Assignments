@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './common-components/header/header.component';
-import{ AlertInterface } from 'src/app/modles/common modles';
+import{ AlertInterface, Toast } from 'src/app/modles/common modles';
+import{ QarmaServiceService } from './qarma.service.service';
+import { TableDataComponent } from './table-data/table-data.component';
 import { AlertMessageComponentComponent } from './common-components/alert-message-component/alert-message-component.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent{
+  
   title = 'QarmaDemoProject';
  
   
@@ -59,18 +62,28 @@ export class AppComponent {
   tabContent = [  { value: 'Joined', content: 'Joined content div' },  { value: 'Requested', content: 'Requested content div' },  { value: 'Suggested', content: 'Suggested content div' },];
 
   // ...........toast component starts...................................
-  message: { type: string; msg: string; } | undefined;
+ 
+  
+  displayToast=false;
   displayMessage() {
+    this.displayToast=true;
     this.message = {
-      type: 'info',
-      msg: 'This is a success message'
-
+      'type': 'error',
+      'msg': 'This is a success message'
+ //here there are 3 types error,info,sucess.
     };
+    // this the set time out to make the component disappear after 20 seconds
+    setTimeout(() => {
+      this.displayToast = false;
+    }, 20000);
+  }
+  message:Toast={
+    type: '',
+    msg: ''
   }
 
-
-
-
-
+  onCloseToast() {
+    this.displayToast = false;
+  }
 
 }

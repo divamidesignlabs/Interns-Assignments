@@ -9,10 +9,10 @@
 
 }
 .ErrorMsg {
-    background-color:rgb(237, 47, 57,0.5);
+    background-color:rgb(208 17 17 / 50%);
     border-radius: 10px;
-    border: 2px solid red;
-    color: white;
+    border: 2px solid #9c1d1d;
+    color: #9c1d1d;
     font-weight: bold;
     height: 100px;
     width: 200px;
@@ -20,11 +20,19 @@
     align-items: center;
     text-align: center;
   }
+  button{
+  position: absolute;
+  top: 3px;
+  right: 0;
+  border: 0px;
+  background-color: none;
+  }
   
   .InformationMsg {
-    background-color: #3399FF;
+    background-color:rgb(51 153 255 / 50%);
     border-radius: 10px;
-    color: white;
+    color: #3137a1;
+    border:1px solid #3137a1;
     font-weight: bold;
     height: 100px;
     width: 200px;
@@ -34,8 +42,10 @@
   }
   
   .SuccessMsg{
-    background-color: #33cc33;
-    color: white;
+    background-color: rgb(51 204 51 / 50%);
+    color: #167f2a;
+    border: 1px solid #167f2a;
+    border-radius: 10px;
     font-weight: bold;
     height: 100px;
     width: 200px;
@@ -43,3 +53,6 @@
     align-items: center;
     text-align: center;
   }
+  // .hidden {
+  //   display: none;
+  // }

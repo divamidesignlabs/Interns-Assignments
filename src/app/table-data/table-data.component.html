@@ -1,0 +1,21 @@
+<div class="tableComponent">
+    <table cellspacing="70px" width="70%">
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>phone No</th>
+            <th>Account Type</th>
+            <th>Catogery</th>
+        </tr>
+        <tr *ngFor="let usersProfile of usersProfiles" >
+            <td>{{usersProfile.id}}</td>
+            <td>{{usersProfile.Name}}</td>
+            <td>{{usersProfile.Email}}</td>
+            <td>{{usersProfile.phoneNo}}</td>
+            <td>{{usersProfile.AccountType}}</td>
+            <td>{{usersProfile.Catogery}}</td>
+        </tr>
+    </table>
+</div>
+

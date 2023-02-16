@@ -7,7 +7,7 @@ import { AlertInterface } from 'src/app/modles/common modles';
   styleUrls: ['./alert-message-component.component.scss']
 })
 export class AlertMessageComponentComponent {
-  // @Output() onButtonClicked: EventEmitter<string> = new EventEmitter();
+
   @Input()alertContent: AlertInterface={
     Optiontype: '',
     question: '',
@@ -16,7 +16,6 @@ export class AlertMessageComponentComponent {
     description_points: [],
     
   };
-  
   
   
   @Input() buttons: string[]=[];

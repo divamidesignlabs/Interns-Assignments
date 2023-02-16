@@ -1,8 +1,8 @@
 
-<app-header></app-header>
+ <app-header></app-header> 
 
 
-
+<!-- tab component child -->
 <app-common-tab-component [tabDataItem]="tabItems" [tabDataContent]="tabContent"></app-common-tab-component> 
 
 <!-- alert component childs  -->
@@ -11,10 +11,12 @@
 <div *ngIf="ButtonContent">Your Request is Accepted!...</div>
 <!-- toast component child -->
 <button (click)="displayMessage()">Display Toast</button>
-<app-toast-common-component [toastMsg]="message"></app-toast-common-component>
+<app-toast-common-component  *ngIf="displayToast" [toastMsg]="message"(closeToast)="onCloseToast()"></app-toast-common-component>
 
 
 
+<app-table-data></app-table-data>
 
 
-<app-footer></app-footer>
+
+<app-footer></app-footer> 

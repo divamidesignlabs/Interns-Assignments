@@ -8,8 +8,19 @@ import { FooterComponent } from './common-components/footer/footer.component';
 import { UserMenuBarComponent } from './common-components/user-menu-bar/user-menu-bar.component';
 import { CommonTabComponentComponent } from './common-components/common-tab-component/common-tab-component.component';
 import { AlertMessageComponentComponent } from './common-components/alert-message-component/alert-message-component.component';
-import{ AlertInterface } from 'src/app/modles/common modles';
 import { ToastCommonComponentComponent } from './common-components/toast-common-component/toast-common-component.component';
+import{ QarmaServiceService } from './qarma.service.service';
+import { TableDataComponent } from './table-data/table-data.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectListingDefaultComponent } from './project-creation-flow/project-listing-default/project-listing-default.component';
+import { ProjectCreationFlowComponent } from './project-creation-flow/project-creation-flow.component';
+
+
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +31,19 @@ import { ToastCommonComponentComponent } from './common-components/toast-common-
     CommonTabComponentComponent,
     AlertMessageComponentComponent,
     ToastCommonComponentComponent,
+    TableDataComponent,
+    ProjectListingDefaultComponent,
+    ProjectCreationFlowComponent,
+    
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule,
+  
   ],
-  providers: [],
+  providers: [QarmaServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
