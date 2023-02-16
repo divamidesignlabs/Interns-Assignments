@@ -1,0 +1,32 @@
+.container{
+    text-align: center;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    min-height:80vh;
+    box-sizing: border-box;
+}
+.container__projects{
+    display:flex;
+    justify-content: space-around;
+    width:35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container__projects button{
+    border:1px solid rgb(209, 206, 206);
+    background-color: white;
+    padding:15px;
+    width:40%;
+}
+.container__projects button:hover{
+    cursor:pointer;
+}
+.container__img img{
+    /* display:flex;
+    justify-content: flex-end; */
+    float:right;
+    position:relative;
+    right:5%;
+}

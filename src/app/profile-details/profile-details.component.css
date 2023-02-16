@@ -1,0 +1,15 @@
+.navBar{
+    display:flex;
+    justify-content: space-between;
+    width:10%;
+}
+.navBar button{
+    border:none;
+    background-color: none;
+}
+.navBar button:hover{
+    border:none;
+    background-color: rgb(211, 209, 209);
+    border-bottom: 2px solid blue;
+    cursor:pointer;
+}

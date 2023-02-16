@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="body">
+    <div class="navBar">
+        <button (click)="joinedFun()">Joined</button>
+        <button (click)="suggFun()">Suggestions</button>
+    </div>
+    <div *ngIf="suggestionClicked else join">
+        <div *ngFor="let i of suggestions; index as idx">
+            <p>{{i}}</p>
+            <button (click)="addToJoined(idx)">Add</button>
+        </div>
+        <div *ngIf="!suggestions.length">
+            No Suggestions
+        </div>
+    </div>
+    <ng-template #join>
+        <div *ngFor="let j of joined">
+            <p>{{j}}</p>
+        </div>
+    </ng-template>
+</div>
+<app-footer></app-footer>

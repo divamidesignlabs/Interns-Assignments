@@ -1,0 +1,11 @@
+<!-- <p>toast works!</p> -->
+<div [ngClass]="{'green':toastAction.heading=='Success','orange':toastAction.heading=='Warning','red':toastAction.heading=='Error'}" class="toast">
+    <div class="toast__head">
+        <div><img src={{toastAction.img}} width="30px" height="30px"></div>
+        <div>{{toastAction.heading}}</div>
+    </div>
+    
+    <div class="toast__msg">
+        {{toastAction.message}}
+    </div>
+</div>

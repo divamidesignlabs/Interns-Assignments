@@ -1,0 +1,40 @@
+<!-- <div *ngIf="pop" class="removePopUp">
+    <header id="removePopUp__header">
+        <img src="/assets/images/warning.svg"><span>Remove User</span>
+    </header>
+    <div>Are you sure want to Remove User?</div>
+    <div><b>{{removeUserName}}</b></div>
+    <div>
+        <p>By confirming this <b>{{removeUserName}}</b> wouldn't be able to:</p>
+        <ol>
+            <li>Access any projects related to this Account.</li>
+            <li>Any Personal Data linked with this Account.</li>
+        </ol>
+    </div>
+    <div class="removePopUp__btn">
+        <button class="cancel" (click)="cancel()">Cancel</button>
+        <button class="remove">Remove User</button>
+    </div>
+</div>
+ -->
+ <div class="whole">
+ <div class="PopUp">
+    <header id="PopUp__header">
+        <img src={{alert.alertImg}}><span>{{alert.heading}}</span>
+    </header>
+    <div>{{alert.question}}</div>
+    <div><b>{{alert.userName}}</b></div>
+    <div>
+        <p>{{alert.confirmation}}</p>
+        <ol>
+            <li *ngFor="let i of alert.list">{{i}}</li>
+        </ol>
+    </div>
+    <div class="PopUp__btn">
+        <!-- <button class="cancel" (click)="cancel()">Cancel</button>
+        <button class="remove" (click)="action()">{{alert.action}}</button> -->
+        <button *ngFor="let btn of alert.buttons" (click)="action(btn)">{{btn}}</button>
+    </div>
+</div>
+</div>
+

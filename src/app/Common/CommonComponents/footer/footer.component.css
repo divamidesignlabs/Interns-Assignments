@@ -1,0 +1,9 @@
+#footer{
+    /* margin-top: auto; */
+    position:fixed;
+    text-align: center;
+    bottom:0%;
+    width:100%;
+    color:gray;
+    /* background-color: aliceblue; */
+}
