@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 import { Component } from '@angular/core';
+=======
+import { Component, EventEmitter, Input, Output, OnChanges, SimpleChanges } from '@angular/core';
+import { dataTable } from 'src/app/routingcomponents/components/project-listing-component/project-listing-component.component';
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-datatable',
@@ -6,6 +11,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./datatable.component.scss']
 })
 export class DatatableComponent {
+<<<<<<< Updated upstream
 
   tableKeys : string [] =["Id","Firstname", "LastName", "Age", "PhoneNumber", "Gender"];
   dataInTable =[
@@ -50,4 +56,39 @@ export class DatatableComponent {
       Gender : "F"
     },
   ]
+=======
+  @Input() dataInTable : any[] = [];
+  @Output() selectedAction = new EventEmitter();
+  tableKeys : any[]=[];
+  resultarray : dataTable[]=[];
+  filteredData : any[]=[];
+  filterStatusWord : boolean = false;
+  selectedProperty : string = "";
+  tempData : any[]=[];
+
+  ngOnInit(){
+  }
+
+  assignKeys(){
+    this.tableKeys=Object.keys(this.dataInTable[0]);
+    return this.tableKeys;
+  }
+  // ngOnchanges(changes : SimpleChanges){
+  //   this.dataInTable =changes['dataInTable'].previousValue;
+  //   console.log("on dataIntable changes", this.dataInTable);
+  // }
+
+  filterStatus(){
+    this.filterStatusWord = true;
+  }
+
+  filtering(val:any){
+    this.filteredData=this.dataInTable.filter(user=>{
+      return user[this.selectedProperty].toLowerCase().includes(val.toLowerCase())
+    }) 
+    this.dataInTable=this.filteredData;
+    console.log("entries after =====", this.filteredData)
+  }
+  
+>>>>>>> Stashed changes
 }

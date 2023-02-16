@@ -12,7 +12,14 @@ import { ProjectCreatingComponentComponent } from './routingcomponents/component
 import { TabcompomentComponent } from './common/components/tabcompoment/tabcompoment.component';
 import { ToastComponent } from './common/components/toast/toast.component';
 import { DatatableComponent } from './common/components/datatable/datatable.component';
+<<<<<<< Updated upstream
 
+=======
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectCreationformComponent } from './routingcomponents/components/project-creationform/project-creationform.component';
+import { ReactiveFormsModule } from "@angular/forms"
+>>>>>>> Stashed changes
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +32,28 @@ import { DatatableComponent } from './common/components/datatable/datatable.comp
     TabcompomentComponent,
     ToastComponent,
     DatatableComponent,
+<<<<<<< Updated upstream
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
+=======
+    ProjectCreationformComponent,
+  ],
+
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+  ],
+
+  providers: [],
+
+>>>>>>> Stashed changes
   bootstrap: [AppComponent]
 })
 export class AppModule { }

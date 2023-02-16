@@ -4,9 +4,16 @@
     <app-component-container *ngIf="false" [componentLogoUrl]="sampleUrl" [componentName]="sampleInput"></app-component-container>
     <app-component-container *ngIf="false" [componentLogoUrl]="createUrl" [componentName]="createInput"></app-component-container>
     </div>
+<<<<<<< Updated upstream
     <div>
       <button (click)="deleteButton()">Delete</button>
       <button (click)="removeButton()">Remove</button>
+=======
+    <div *ngIf="!deleteStatus">
+      <button *ngIf="!deleteStatus" (click)="deleteButton()">Delete</button>
+      <button (click)="removeButton()">Remove</button>
+    </div><div>
+>>>>>>> Stashed changes
       <app-pop-upcomponent *ngIf="deleteStatus" [popUpInputObject]="delete" (buttonStatusEmitter)="getPopUpStatus($event)"></app-pop-upcomponent>
       <app-pop-upcomponent *ngIf="removeStatus" [popUpInputObject]="remove" (buttonStatusEmitter)="getPopUpStatus($event)"></app-pop-upcomponent>
     </div>
@@ -20,7 +27,11 @@
       <app-toast *ngIf="toastStatus" [inputToToast]="inputToToast" (toastStatus)="receiveToastStatus($event)"></app-toast>
     </div>
     <div>
+<<<<<<< Updated upstream
       <app-datatable></app-datatable>
+=======
+      <app-datatable [dataInTable]="dataInTable"></app-datatable>
+>>>>>>> Stashed changes
     </div>
     <app-footercomponent></app-footercomponent>
   </div>

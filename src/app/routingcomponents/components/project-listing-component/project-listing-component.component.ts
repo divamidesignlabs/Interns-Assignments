@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+<<<<<<< Updated upstream
+=======
+import { ServiceService } from 'src/app/service.service';
+>>>>>>> Stashed changes
 
 export interface popUp{
   logo : string;
@@ -16,6 +20,18 @@ export interface popUp{
   time ?: 3000;
  }
 
+<<<<<<< Updated upstream
+=======
+ export interface dataTable{
+  Id: number,
+  FirstName : string,
+  LastName : string,
+  Age : number,
+  PhoneNumber : string,
+  Gender : string,
+ }
+
+>>>>>>> Stashed changes
 @Component({
   selector: 'app-project-listing-component',
   templateUrl: './project-listing-component.component.html',
@@ -40,7 +56,24 @@ export class ProjectListingComponentComponent {
   infoButtonLabel : string ="Information";
   errorButtonLabel : string ="Error";
   toastStatus : boolean = false;
+<<<<<<< Updated upstream
 
+=======
+  dataInTable : any;
+
+  constructor( private serve : ServiceService){
+
+  }
+
+  ngOnInit(){
+    this.serve.getDataFromDB().subscribe((res)=>{
+      this.dataInTable = res;
+      console.log("this is after recevindsjfsa", this.dataInTable, res);
+    });
+
+  }
+   
+>>>>>>> Stashed changes
 
   remove : popUp={
     logo :"/assets/images/alert.svg",
