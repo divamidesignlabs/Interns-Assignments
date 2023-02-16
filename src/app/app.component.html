@@ -1,0 +1,17 @@
+<div class="rootapp">
+  <app-headercomponent></app-headercomponent>
+  <app-joinedtabs
+    [tabslist]="tabNames"
+    (ontabchange)="tabchange($event)"
+  ></app-joinedtabs>
+  <div class="team-teammembers">
+    <div>
+      <app-teams *ngIf="activatedtabindex == 0"></app-teams>
+      <p *ngIf="activatedtabindex == 1">suggestions</p>
+    </div>
+
+    <!-- <app-team-members ></app-team-members> -->
+  </div>
+
+  <app-footercomponent></app-footercomponent>
+</div>

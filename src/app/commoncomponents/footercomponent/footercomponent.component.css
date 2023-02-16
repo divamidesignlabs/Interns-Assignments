@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+   justify-content: center;
+    border-top: 2px solid rgb(225, 222, 222);;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.footerdiv{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
