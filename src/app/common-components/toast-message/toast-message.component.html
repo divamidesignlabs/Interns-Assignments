@@ -1,7 +1,7 @@
 <!-- Toast message -->
-<div id="msg" [ngClass]="{'error':toastMsg['type']==='error','information':toastMsg['type']==='info','success':toastMsg['type']==='success'}">
+<div id="msg" [ngClass]="{'error':toastData['type']==='error','information':toastData['type']==='info','success':toastData['type']==='success'}">
     <!-- you can click wrong to disappear toast msg -->
 <img id="wrong-button" src="assets\images\commonComponents-imgs\wrong.svg" (click)="handleClick()"/>
 <!-- toast msg  -->
-<div id="text">{{toastMsg['msg']}}</div>
+<div id="text">{{toastData['msg']}}</div>
 </div>

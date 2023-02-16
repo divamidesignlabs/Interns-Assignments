@@ -6,21 +6,21 @@ import { Toast } from 'src/app/model/consts';
   styleUrls: ['./toast-message.component.scss']
 })
 export class ToastMessageComponent  implements OnInit{
-  @Input() toastMsg:Toast={
-    type: '',
-    msg: '',
-    time: 0
+  @Input() toastData:Toast={
+    type: 'error', // included types: 'success', 'error', 'info'
+    msg: '', // anyn string
+    time: 0 // number of milliseconds
   };
-  @Input() toastMsgStatus:boolean=false;
+  @Input() toastDataStatus:boolean=false;
   @Output() toastStatus=new EventEmitter<boolean>();
     ngOnInit(){
-      // console.log("t",this.toastMsg);
+      // console.log("t",this.toastData);
       setTimeout(()=>{
-      this.toastMsgStatus=false;
+      this.toastDataStatus=false;
       this.toastStatus.emit(false);
       },
-      this.toastMsg.time);
-      // console.log("t",this.toastMsg);
+      this.toastData.time);
+      // console.log("t",this.toastData);
     }
     handleClick(){
       this.toastStatus.emit(false);

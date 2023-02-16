@@ -8,7 +8,13 @@ export interface Alert{
 }
 
 export interface Toast{
-    type:string;
+    type: 'success' | 'error' | 'info';
     msg:string;
     time:number;
+}
+export interface UserDetails{
+    id:number;
+    name:string;
+    mail:string;
+    phoneNo:string;
 }
