@@ -10,7 +10,7 @@
             <img src="/assets/images/explore.svg">
             <p>Explore sample project</p>
         </button>
-        <button>
+        <button (click)="projectCreationForm()">
             <img src="/assets/images/create.svg">
             <p>Create new project</p>
         </button>
@@ -22,13 +22,13 @@
         <img src="/assets/images/doll.svg">
     </div>    
 </div>
-<button (click)="details()">Profile Details</button>
+<!-- <button (click)="details()">Profile Details</button>
 <button (click)="remove()">Remove</button>
 <button (click)="toastSuccessFun()">Success</button>
 <button (click)="toastWarningFun()">Warning</button>
 <button (click)="toastErrorFun()">Error</button>
 <app-data-table></app-data-table>
 <app-toast *ngIf="toastStatus" [toastAction]="toast" (toastStatusFun)='receiveStatus($event)'></app-toast>
-<app-pop-ups *ngIf="popup" [alert]="popupRemove" (sendAction)="popupAction($event)"></app-pop-ups>
+<app-pop-ups *ngIf="popup" [alert]="popupRemove" (sendAction)="popupAction($event)"></app-pop-ups> -->
 
 <app-footer></app-footer>

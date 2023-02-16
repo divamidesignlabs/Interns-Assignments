@@ -1,0 +1,30 @@
+<!-- <p>project-creation-form works!</p> -->
+<app-header></app-header>
+<div class="container">
+    <div>
+    <form [formGroup]="form">
+        <div class="formStyle">
+            <div>
+                <input id="icon" type="file" accept="image/*" formControlName="projectIcon">
+            </div>
+            <div>
+                <p>What shall we call it</p>
+                <input class="name" type="text" formControlName="projectName" placeholder="Enter your project name">
+            </div>
+            <div>
+                <p>What's this project is about (optional)</p>
+                <textarea class="describe" type="text" formControlName="projectDescription" placeholder="Describe your project here">
+                </textarea>
+            </div>
+        </div>
+    </form>
+    </div>
+    <div>
+        <img src="/assets/images/createImg.svg">
+    </div>
+</div>
+<div class="btn">
+    <button id="btn1">Cancel</button>
+    <button id="btn2">Create</button>
+</div>
+<app-footer></app-footer>
