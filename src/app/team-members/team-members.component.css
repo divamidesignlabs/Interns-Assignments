@@ -1,4 +1,46 @@
-.popup{
-    position: relative;
-    left:50px;
+
+.testingTeam{
+    border: 2px solid rgb(145, 145, 146);
+    padding: 5px;
+    border-radius: 50px;
 }
+.display-teams{
+    display: flex;
+    gap:20px;
+    padding: 20px;
+    padding-right: 10px;
+    cursor:pointer;
+    width:100%;
+    border-right:2px solid  gray;
+    
+}
+.activeteam{
+    background-color: gray;
+}
+.teamnames{
+    width:20%;
+}
+.parentandchild{
+    display: flex;
+   
+}
+
+.styling-teams{
+    margin-left: 20px;
+    padding-left:50px;
+    padding-top:10px
+}
+.for-flex{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.Members{
+    display: flex;
+    gap:20px;
+    border: 1px solid gray;
+   }
+   .parent-to-child{
+    display:flex;
+   }

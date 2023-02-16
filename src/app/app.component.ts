@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{alertIntializations} from './interface/interface'
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'qarma';
-  activatedtabindex:number=-1;
-  tabNames :string[]=['Joined','Suggestion']
-  tabchange(tabindex:number){
-    this.activatedtabindex=tabindex
+  alertMsg:alertIntializations={
+    action :'Remove User',
+    question:'Are you sure you want to Remove User?',
+    nameofThePerson:'Anuja kumari',
+    suggestions:  `By confirming this Anuja Kumari wouldn’t be able to:`,
+    suggestion1: '1. Access any Projects related to this Account',
+    suggestion2:  '2. Any Personal Data Synced with this Account '
   }
-  // showContent = false;
-
-  // onShowContent() {
-  //   this.showContent = true;
-  // }
+  showAlertMsg :boolean=true;
+  displayalert(){
+      this.showAlertMsg=false;
+  }
+  
 }

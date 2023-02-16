@@ -1,0 +1,28 @@
+.alert{
+ 
+      margin:10px auto;
+      width:420px;
+      border: 2px solid gray;
+      padding: 30px;
+}
+.Alert_user{
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap:10px;
+}
+.buttons{
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-left: 166px;
+   
+}
+.btn{
+    padding: 5px;
+    margin-right: 30px;
+    border: 2px solid blue;
+    color: blue;
+}
+.btn_removing{
+    background-color: blue;
+    color: white;
+}

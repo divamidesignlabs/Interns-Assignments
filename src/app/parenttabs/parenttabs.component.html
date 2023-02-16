@@ -1,0 +1,8 @@
+<app-joinedtabs [tabslist]="tabNames" (ontabchange)="tabchange($event)"></app-joinedtabs><!--selector of childcoponent(joinedtabs)-->
+<div class="team-teammembers">
+<div>
+  <app-teams *ngIf="activatedtabindex == 0"></app-teams>
+  <p *ngIf="activatedtabindex == 1">suggestions</p>
+</div>
+</div>
+
