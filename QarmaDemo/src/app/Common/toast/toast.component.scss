@@ -1,0 +1,38 @@
+$errorcolor : #ff0000;
+$infocolor : #0000ff;
+$successcolor : #008000;
+
+.toast{
+    min-width: 350px;
+    height: 80px;
+    background-color:#ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 30px 10px;
+    font-size: 25px;
+    img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    div div{
+        line-height: 35px;
+    }
+}
+.error{
+    border:3px solid $errorcolor;
+    color: $errorcolor;
+}
+.success{
+    border:3px solid $successcolor;
+    color: $successcolor;
+}
+.info{
+    border:3px solid $infocolor;
+    color: $infocolor;
+}

@@ -1,0 +1,3 @@
+<div class="main__container">
+    <div  *ngFor="let item of tabsList" (click)="getClickedItem(item)" [ngClass]="{'selected--item':item.isSelected, 'items--div':!item.isSelected}">{{item.label}}</div>
+</div>

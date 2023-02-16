@@ -1,0 +1,20 @@
+<app-tabs [tabsList]="tabsList" (sendSelectedItem)="getSelectedItem($event)"></app-tabs>
+
+
+<div *ngIf="showSelectedcontent == 'Joined'">
+    <div *ngFor="let item of JoinedData">
+        <div>The Joined User is {{item.name}}</div>
+        <button (click)="deleteClicked(item)">-</button>
+    </div>
+</div>
+
+<div *ngIf="showSelectedcontent == 'Suggestions'">
+    <div *ngFor="let item of SuggestionsData">
+        <div>Yout can also add {{item.name}}</div>
+        <button (click)="addClicked(item)">+</button>
+    </div>
+</div>
+
+<app-popup [popupData]="sendPopupData" (sendButtonAction)="recievedButtonAction($event)" *ngIf="showAlert"></app-popup>
+
+<!-- <app-toast></app-toast> -->
