@@ -1,0 +1,26 @@
+<div id="alert" *ngIf="showAlert">
+    <div class="alert--border">
+        <!-- alert heading (like remove user, delete project,etc) -->
+    <div class="alert-head">
+        <img src="assets\images\commonComponents-imgs\alert.svg"/>
+        <div>{{alertData.alert}}</div>
+    </div>
+    <!-- clarifying the action taken (remove user, delete project,etc) -->
+    <div class="alert__question">
+        <div>{{alertData.question}}</div>
+        <div><b>{{alertData.label}}</b></div>
+    </div>
+    <!-- alert data of what will happen if it's confirmed in popup-->
+    <div class="alert__content">
+        <div class="content">{{alertData.content}}</div>
+        <div *ngFor="let point of alertData.descr">
+            <div>{{point}}</div>
+        </div>
+    </div>
+    <!-- buttons for popup -->
+    <div class="alert__buttons">
+        <button class="button" type="button" [ngClass]="{'alert__buttons--selected':!isConfirmSelected, 'alert__buttons--not-selected':isConfirmSelected}" (click)="handleClick('cancel')">Cancel</button>
+        <button class="button" type="button" [ngClass]="{'alert__buttons--selected':isConfirmSelected ,'alert__buttons--not-selected':!isConfirmSelected}" (click)="handleClick('confirm')">{{alertData.alert}}</button>
+    </div>
+    </div>
+</div>

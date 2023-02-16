@@ -1,0 +1,21 @@
+<!-- <div class="tabs">
+    <div [ngClass]="{'selected': isSelected==='joined'}" (click)="isSelected='joined'">Joined</div>
+    <div [ngClass]="{'selected': isSelected==='requested'}" (click)="isSelected='requested'">Requested</div>
+    <div [ngClass]="{'selected': isSelected==='suggestions'}" (click)="isSelected='suggestions'">Suggestions</div>
+</div>
+<div class="contents">
+    <div *ngIf="isSelected=='joined'">This is Joined content</div>
+    <div *ngIf="isSelected=='requested'">This is Requested content</div>
+    <div *ngIf="isSelected=='suggestions'">This is Suggestions content</div>
+</div> -->
+
+
+<div class="tabs">
+    <!-- displaying tabs available -->
+<div *ngFor="let item of headerList;index as i">
+    <div class="tab" [ngClass]="{'selected':isSelected[i],'not-selected':!isSelected[i] }" (click)="handleClick(i)">{{item}}</div>
+    <div [ngClass]="{'tabs__selected-div':isSelected[i],'tabs__not-selected-div':!isSelected[i] }"></div>
+</div>
+</div>
+<!-- showing corresponding content of selected tab -->
+

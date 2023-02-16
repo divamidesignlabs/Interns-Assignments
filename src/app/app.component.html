@@ -1,0 +1,12 @@
+<app-header></app-header>
+<app-common-tabs [headerList]="headerList" (sendButtonClicked)="showContent($event)"></app-common-tabs>
+<div class="contents">
+    {{tabContent}}
+</div>
+<button *ngIf="!alert" (click)="showAlert()" id="button">Click for Remove alert</button>
+<button type="button" (click)="showToastMsg()">Toast Button</button>
+<app-alert-message [alertData]="sendAlertData" (sendButtonStatus)="handleButtonEvent($event)" [showAlert]="alert"></app-alert-message>
+<div *ngIf="showConfirmationData" id="confirmation-data">Confirmation Done!!</div>
+<app-toast-message [toastMsg]="toastMsg" *ngIf="showToastMsgStatus" (toastStatus)="handleToastStatus($event)"></app-toast-message>
+
+<app-footer></app-footer>
