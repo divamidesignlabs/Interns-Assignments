@@ -1,14 +1,11 @@
-$errorcolor : #ff0000;
-$infocolor : #0000ff;
-$successcolor : #008000;
 
 .toast{
     min-width: 350px;
     height: 80px;
     background-color:#ffffff;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    column-gap: 10px;
     align-items:center;
     position: absolute;
     bottom: 50px;
@@ -20,19 +17,24 @@ $successcolor : #008000;
         width: 40px;
         border-radius: 50%;
     }
-    div div{
+    div{
         line-height: 35px;
     }
+    
 }
 .error{
-    border:3px solid $errorcolor;
-    color: $errorcolor;
+    border:3px solid #ff0000;
+    color: #ff0000;
 }
 .success{
-    border:3px solid $successcolor;
-    color: $successcolor;
+    border:3px solid #008000;
+    color: #008000;
 }
 .info{
-    border:3px solid $infocolor;
-    color: $infocolor;
+    border:3px solid #0000ff;
+    color: #0000ff;
+}
+
+.description{
+    font-size: 20px;
 }

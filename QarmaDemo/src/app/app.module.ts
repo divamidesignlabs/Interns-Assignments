@@ -9,6 +9,8 @@ import { OrganizationalAccountComponent } from './AllComponents/organizational-a
 import { TabsComponent } from './Common/tabs/tabs.component';
 import { PopupComponent } from './Common/popup/popup.component';
 import { ToastComponent } from './Common/toast/toast.component';
+import { ProjectListingDefaultComponent } from './AllComponents/project-creation/project-listing-default/project-listing-default.component';
+import { ProjectCreationFormComponent } from './AllComponents/project-creation/project-creation-form/project-creation-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ToastComponent } from './Common/toast/toast.component';
     OrganizationalAccountComponent,
     TabsComponent,
     PopupComponent,
-    ToastComponent
+    ToastComponent,
+    ProjectListingDefaultComponent,
+    ProjectCreationFormComponent
   ],
   imports: [
     BrowserModule,

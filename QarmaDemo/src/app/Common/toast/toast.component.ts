@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-toast',
@@ -7,11 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ToastComponent {
   @Input() inputToToast :any
+  @Output() isPopup = new EventEmitter();
 
   ngOnInit(){
     this.inputToToast.title == 'Successful';
     
     this.inputToToast.logo = "/assets/images/svg/successTickLogo.png"
+
+    setTimeout(() => {
+      this.isPopup.emit(false); // you can handle this function in parent to collapse the toast after 2seconds
+    },2000);
     
   }
  

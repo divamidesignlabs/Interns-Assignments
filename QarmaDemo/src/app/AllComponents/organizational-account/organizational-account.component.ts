@@ -8,6 +8,8 @@ import { headerListI, popupDataI } from 'src/app/Interfaces/interface';
 })
 export class OrganizationalAccountComponent {
 
+  isShowToast=false;
+
   tabsList:headerListI[]=[
     {
       id : 1,
@@ -62,6 +64,7 @@ addClicked(item:any){
 recievedButtonAction(action:boolean){
   this.showAlert = false;
   if(action == true){
+    this.isShowToast = true;
     this.SuggestionsData.push(this.item);
     this.JoinedData.splice(this.item,1);
   }
@@ -69,8 +72,8 @@ recievedButtonAction(action:boolean){
 
 inputToToast = {
   title : 'Successful',
-  logo : '',
-  message : ''
+  logo : '../../../assets/images/svg/successTickLogo',
+  message : 'Successfully Removed User'
 }
 
 

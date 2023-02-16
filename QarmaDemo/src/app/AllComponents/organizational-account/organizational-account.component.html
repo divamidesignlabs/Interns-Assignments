@@ -17,4 +17,4 @@
 
 <app-popup [popupData]="sendPopupData" (sendButtonAction)="recievedButtonAction($event)" *ngIf="showAlert"></app-popup>
 
-<!-- <app-toast></app-toast> -->
+<app-toast *ngIf="isShowToast" [inputToToast]="inputToToast" (isPopup)="this.isShowToast=false"></app-toast>
