@@ -1,0 +1,45 @@
+.Toast-component{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    height: 100px;
+    width: 200px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+.ErrorMsg {
+    background-color:rgb(237, 47, 57,0.5);
+    border-radius: 10px;
+    border: 2px solid red;
+    color: white;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .InformationMsg {
+    background-color: #3399FF;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .SuccessMsg{
+    background-color: #33cc33;
+    color: white;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
