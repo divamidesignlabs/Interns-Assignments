@@ -7,3 +7,14 @@
 .alertbox-background{
     background-color: #747070;;
 }
+.toast{
+    display: flex;
+    align-items: end;
+    top:0;
+    justify-content: end;
+}
+.mainApp{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
