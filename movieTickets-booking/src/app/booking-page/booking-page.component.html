@@ -1,0 +1,63 @@
+<div class="booking-page">
+    <div class="trailer">
+        <app-movie-trailer></app-movie-trailer>
+    </div>
+    <div class="action-bar">
+        <div class="movie-details">
+            <div class="details-left">
+                <div class="name">{{movie?.name}} U/A</div>
+                <div class="duration">
+                    <div>{{movie?.genre}}</div>
+                    <div>{{movie?.duration}}</div>
+                </div>
+            </div>
+            <div>{{movie?.like_count}}</div>
+        </div>
+        <div class="button">
+            <button>Book Now</button>
+        </div>
+    </div>
+    <div class="booking-page-body">
+        <div class="body-left">
+            <div class="poster">
+                <img src="/assets/poster 3.png" alt="">
+            </div>
+            <div class="offers">
+                <label>Offers</label>
+                <div class="ticketBookOfferAdd">
+                      <img src="/assets/coupon banner 1.png">
+                </div>
+                <div class="popcornDiscountAdd">
+                    <img src="/assets/coupon banner 1.png">              
+                </div>
+                <div class="movieDiscountCoupon">
+                    <img src="/assets/coupon banner 2.png">
+                </div>
+               
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="content">
+                <div class="synopsis">
+                    <h3>Synopsis</h3>
+                    <div>{{movie?.synopsis}}</div>
+                </div>
+                <div class="videos">
+                    <h3>Videos</h3>
+                    <div>
+                        <div><img src="/assets/1 details page.png" alt="Image is not found"></div>
+                        <div><img src="/assets/2 details page.png" alt="Image is not found"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cast_crew">
+            <div class="cast">
+                <img src="/assets/Brie Larson.png">
+            </div>
+            <div class="Crew">
+                <img src="/assets/Brie Larson.png">
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
