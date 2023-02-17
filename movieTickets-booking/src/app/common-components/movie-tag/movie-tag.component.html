@@ -1,0 +1,19 @@
+<div id="movie-details-container">
+    <div id="movie-details">
+        <div id="movie-name-container">
+            <div id="movie-name">{{movieData.name}}</div>
+            
+        </div>
+        <div id="movie-descr">
+            <div>{{movieData.genre | replace}}</div>
+            <div id="movie-time">
+            <img src="assets\images\time.svg"/>
+            <div>{{movieData.duration | minutesToHours}}</div>
+            </div>
+        </div>
+    </div>
+    <div id="movie-rating">
+        <img src="assets\images\liked.svg"/>
+        <div>{{(movieData.like_count / (movieData.dislike_count + movieData.like_count) * 100) | number:'1.0-1'}}%</div>
+    </div>
+</div>

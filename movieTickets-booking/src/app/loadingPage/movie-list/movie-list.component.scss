@@ -1,0 +1,15 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap:15px;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color:#DEDEDE;
+    line-height: 20px;
+}
