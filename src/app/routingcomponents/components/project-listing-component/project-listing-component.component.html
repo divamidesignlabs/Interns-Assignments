@@ -1,37 +1,29 @@
-<div class="app-comp" >
-    <app-headercomponent></app-headercomponent>
-    <div class="com">
-    <app-component-container *ngIf="false" [componentLogoUrl]="sampleUrl" [componentName]="sampleInput"></app-component-container>
-    <app-component-container *ngIf="false" [componentLogoUrl]="createUrl" [componentName]="createInput"></app-component-container>
+    <div class="default-page">
+      <div class="default-page-heading">Welcome to the project listing</div>
+      <div class="default-page-subheading">No assigned projects to list.</div>
+      <div class="component">
+      <app-component-container  [componentLogoUrl]="sampleUrl" [componentName]="sampleInput"></app-component-container>
+      <app-component-container [componentLogoUrl]="createUrl" [componentName]="createInput"></app-component-container>
     </div>
-<<<<<<< Updated upstream
-    <div>
-      <button (click)="deleteButton()">Delete</button>
-      <button (click)="removeButton()">Remove</button>
-=======
-    <div *ngIf="!deleteStatus">
+    </div>
+    <!-- <div *ngIf="!deleteStatus">
       <button *ngIf="!deleteStatus" (click)="deleteButton()">Delete</button>
       <button (click)="removeButton()">Remove</button>
-    </div><div>
->>>>>>> Stashed changes
+    </div>-->
+    <!-- <div> 
       <app-pop-upcomponent *ngIf="deleteStatus" [popUpInputObject]="delete" (buttonStatusEmitter)="getPopUpStatus($event)"></app-pop-upcomponent>
       <app-pop-upcomponent *ngIf="removeStatus" [popUpInputObject]="remove" (buttonStatusEmitter)="getPopUpStatus($event)"></app-pop-upcomponent>
-    </div>
-    <div>
+    </div> -->
+    <!-- <div>
       <app-tabcompoment *ngIf="false" [tabArray]="tabArray" [joined]="joined" [suggested]="suggested" (tabStatusEmitter)="getTabStatus($event)"></app-tabcompoment>
-    </div>
-    <div>
+    </div> -->
+    <!-- <div>
       <button (click)="toastButtton(successButtonLabel)">{{successButtonLabel}}</button>
       <button (click)="toastButtton(infoButtonLabel)">{{infoButtonLabel}}</button>
       <button (click)="toastButtton(errorButtonLabel)">{{errorButtonLabel}}</button>
       <app-toast *ngIf="toastStatus" [inputToToast]="inputToToast" (toastStatus)="receiveToastStatus($event)"></app-toast>
-    </div>
-    <div>
-<<<<<<< Updated upstream
-      <app-datatable></app-datatable>
-=======
+    </div> -->
+    <!-- <div>
       <app-datatable [dataInTable]="dataInTable"></app-datatable>
->>>>>>> Stashed changes
-    </div>
-    <app-footercomponent></app-footercomponent>
-  </div>
+    </div> -->
+  

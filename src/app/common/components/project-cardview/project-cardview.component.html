@@ -1,0 +1,19 @@
+<div class="project-card">
+    <div class="project-card-logo">
+        <img [src]="projectCard.logo" alt="project card logo is not found">
+    </div>
+    <div class="project-card-heading">{{projectCard.name}}</div>
+    <div class="project-card-test">
+        <div>{{projectCard.testSuites}}&nbsp;Test suites&nbsp;|&nbsp;</div>
+        <div>{{projectCard.scenarios}}&nbsp;Scenatios</div>
+    </div>
+    <div class="project-card-owner">Owner - {{projectCard.owner}}</div>
+    <div class="project-card-created-date">Created on - {{projectCard.date}}&nbsp;,&nbsp;{{projectCard.time}}</div>
+    <div class="project-card-execution">
+        <img [src]="projectCardExecutionStatus" alt="Execution status img is not found.">
+    </div>
+    <div>Test Execution Rate</div>
+    <div class="project-card-organisation">
+        <div class="organisation-line"></div>
+        <img [src]="projectCardPrivateLogo" alt="">{{projectCard.visibility}}</div>
+</div>

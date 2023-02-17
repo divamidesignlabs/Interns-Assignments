@@ -5,6 +5,11 @@
     justify-content: center;
     width: 280px;
     height: 202px;
+    margin: 20px;
     background-color: #ffffff;
-    border: 1px solid #808080;
+    border: 2px solid #808080;
+}
+.component-container:hover{
+    cursor: pointer;
+    background-color: #ffffff;
 }

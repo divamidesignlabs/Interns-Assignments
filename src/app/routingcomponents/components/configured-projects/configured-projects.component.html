@@ -1,0 +1,6 @@
+<div>Have a look on your configured projects</div>
+<div class="configured-projects">
+    <div *ngFor="let project of projectsFromDB" class="configured-project-card">
+        <app-project-cardview [projectCard]="project"></app-project-cardview>
+    </div>
+</div>

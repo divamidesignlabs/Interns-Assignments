@@ -1,0 +1,50 @@
+.project-card{
+    padding: 10px;
+    border: 2px solid black;
+    .project-card-logo{
+        width: 100%;
+        height: 50px;
+        img{
+            width: 75%;
+        }
+    }
+    div{
+        line-height: 20px;
+        padding: 5px;
+    }
+    .project-card-heading{
+        font-size: 30px;
+        font-weight: 1000;
+    }
+    .project-card-test{
+        display: flex;
+        div{
+            padding: 0px;
+        }
+    }
+    .project-card-owner{
+        font-weight: 600;
+    }
+    .project-card-created-date{display: flex;
+        font-size: smaller
+    }
+    .project-card-execution{
+        width: 100%;
+        padding: 20px ;
+        img{
+            width: 75%;
+        }
+    }
+    .project-card-organisation{
+        display: flex;
+        justify-content: flex-end;
+        .organisation-line{
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid gray;
+        }
+        img{
+            padding: 0px 10px;
+        }
+    }
+}

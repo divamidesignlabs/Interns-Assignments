@@ -7,10 +7,14 @@ import { Observable } from 'rxjs'
 })
 export class ServiceService {
   usersUrl : string = "http://localhost:3000/users";
+  projectsUrl : string = "http://localhost:3000/projects";
 
   constructor( private http : HttpClient ) {
     }
-    getDataFromDB():Observable<any>{
+    getUsersFromDB():Observable<any>{
       return this.http.get(this.usersUrl)
+    }
+    getProjectsFromDB():Observable<any>{
+      return this.http.get(this.projectsUrl)
     }
 }

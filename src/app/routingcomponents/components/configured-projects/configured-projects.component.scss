@@ -1,0 +1,9 @@
+.configured-projects{
+    display: flex;
+    .configured-project-card{
+        width: 250px;
+        height: 300px;
+        padding: 5px;
+        margin: 10px;
+    }
+}

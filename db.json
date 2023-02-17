@@ -40,5 +40,51 @@
         "PhoneNumber" : "3698520147",
         "Gender" : "F"
       }
+  ],
+  "projects" : [
+    {
+      "Id": 1,
+      "name" : "HDFC bank",
+      "logo" : "../assets/images/Hdfc.svg",
+      "owner": "Manoj Kumar",
+      "date" : "31 Mar 2022",
+      "time" : "04:13 pm",
+      "visibility" : "Public",
+      "testSuites" : 15,
+      "scenarios" : 3
+  },
+  {
+    "Id": 2,
+    "name" : "Talend project",
+    "logo" : "../assets/images/talend.svg",
+    "owner": "Manoj Kumar",
+    "date" : "08 Mar 2022",
+    "time" : "04:22 pm",
+    "visibility" : "Personal",
+    "testSuites" : 15,
+    "scenarios" : 3
+  },
+  {
+    "Id": 3,
+    "name" : "Oracle",
+    "logo" : "../assets/images/oracle.svg",
+    "owner": "Phawhan Saii",
+    "date" : "15 Mar 2022",
+    "time" : "06:22 am",
+    "visibility" : "Public",
+    "testSuites" : 15,
+    "scenarios" : 3
+  },
+  {
+    "Id": 4,
+    "name" : "Divami",
+    "logo" : "../assets/images/divami.png",
+    "owner": "Naveen",
+    "date" : "15 Mar 2022",
+    "time" : "06:22 am",
+    "visibility" : "Public",
+    "testSuites" : 15,
+    "scenarios" : 3
+  }
   ]
 }
