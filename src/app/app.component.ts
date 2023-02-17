@@ -17,11 +17,12 @@ export class AppComponent{
   //.................. common alert component starts......................................
 
   // declorations
-  ButtonContent=false;
+  buttonContent=false;
   alertMessage=false;
+  alertDisplayMessage='Your Request is Accepted!...'
   
   // button is clicked it will show alertmessage component
-  AlertMessage(){
+  alertMessageFun(){
     this.alertMessage=true;
   }
   
@@ -39,12 +40,12 @@ export class AppComponent{
   handleButtonClicked(index: number): void {
     this.selectedButtonIndex = index;
     console.log(this.selectedButtonIndex )
-    if(index==0 || index==1){
+    if(index===0 || index===1){
       this.alertMessage=false;
 
     }
-    if(index==1){
-      this.ButtonContent=true
+    if(index===1){
+      this.buttonContent=true
     } 
     
   }
