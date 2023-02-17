@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 // takes src url as input 
 export class DataTableComponent implements OnInit{
-
+  @Input() caption:string="Table Data";
   dataAvailable:boolean=false;
   @Input() rowData:any='http://localhost:3000/users';
   columnNames:string[]=[];

@@ -9,6 +9,8 @@ import { AlertContainerComponent } from './common/components/alert-container/ale
 import { TabsComponent } from './common/components/tabs/tabs.component';
 import { ToastComponent } from './common/components/toast/toast.component';
 import { DataTableComponent } from './common/components/data-table/data-table.component';
+import { ProjectListingDefaultComponent } from './components/project-creation/project-listing-default/project-listing-default.component';
+import { CardComponent } from './common/components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DataTableComponent } from './common/components/data-table/data-table.co
     AlertContainerComponent,
     TabsComponent,
     ToastComponent,
-    DataTableComponent
+    DataTableComponent,
+    ProjectListingDefaultComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

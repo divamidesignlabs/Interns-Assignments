@@ -1,5 +1,6 @@
 <div class="table" >
     <table *ngIf="dataAvailable; else temp"> 
+        <caption>{{caption}}</caption>
         <tr>
             <th *ngFor="let item of columnNames" class="text-overflow">{{item}}</th>
         </tr>

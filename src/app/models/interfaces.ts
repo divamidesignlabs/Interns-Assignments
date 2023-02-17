@@ -28,4 +28,11 @@ export interface TableData{
     rowData:Array<Object> | string;
 }
 
+// model for common card component
+
+export interface Card{
+    image_path:string,
+    title:string
+}
+
 
