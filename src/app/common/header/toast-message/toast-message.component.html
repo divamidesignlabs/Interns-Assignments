@@ -1,1 +1,9 @@
-<p>toast-message works!</p>
+
+
+<div class="container" [ngClass]="{error:dataToToast.toastType=='error' , success: dataToToast.toastType=='success' , general:dataToToast.toastType=='general' }">
+    <div class="container__img">
+        <img src="../../../../assets/images/crossicon.svg" alt="back-logo" width:20px height="20px" (click)="timeOut()">
+    </div>
+
+    <div class="container__message">{{dataToToast.messagetoDisplay}}</div>
+</div>

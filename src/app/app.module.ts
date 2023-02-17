@@ -9,6 +9,14 @@ import { ContainerComponent } from './common/header/container/container.componen
 import { AlertComponent } from './common/header/alert/alert.component';
 import { TabsComponent } from './common/header/tabs/tabs.component';
 import { ToastMessageComponent } from './common/header/toast-message/toast-message.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DisplayDataInTableComponent } from './common/header/display-data-in-table/display-data-in-table.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { RegistertrationFormComponent } from './registertration-form/registertration-form.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AknowledgementComponent } from './aknowledgement/aknowledgement.component';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +26,20 @@ import { ToastMessageComponent } from './common/header/toast-message/toast-messa
     ContainerComponent,
     AlertComponent,
     TabsComponent,
-    ToastMessageComponent
+    ToastMessageComponent,
+    DisplayDataInTableComponent,
+    HomePageComponent,
+    RegistertrationFormComponent,
+    AknowledgementComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

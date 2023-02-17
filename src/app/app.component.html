@@ -1,11 +1,21 @@
 <div class="container">
-    <div class="header"><app-header></app-header>
-        
-        <app-alert [alertData]="popupData" (status)="manageButton($event)"></app-alert>
-
+    <!-- <div class="header"><app-header></app-header> -->
+        <!-- <app-alert [alertData]="popupData" (status)="manageButton($event)"></app-alert>
         <app-tabs [tabNames]="tabNames"></app-tabs>
-        <app-toast-message [dataToToast]="dataToToast"></app-toast-message>
+
+        <button class="container__button-toast" (click)="updateToastStatus()">Toast</button>
+        <app-toast-message *ngIf=toastStatus [dataToToast]="dataToToast" (sendToastStaus)="getToastStatus()"></app-toast-message>
+
+        <button class="container__button-displayData" (click)="showUserData()">User Data</button>
+        <app-display-data-in-table *ngIf=showUserDataStatus [userDetails]="userDetails"></app-display-data-in-table>
+
     </div>
+    <app-container [welcomePageContainerData]="welcomePageContainerData"></app-container>
+
+    <app-home-page></app-home-page> -->
+
+    <!-- <app-registertration-form></app-registertration-form> -->
+    <router-outlet></router-outlet>
     
-    <div class="footer"><app-footer></app-footer></div>
+    <!-- <div class="footer"><app-footer></app-footer></div> -->
 </div>

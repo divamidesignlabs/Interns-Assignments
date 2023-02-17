@@ -1,0 +1,15 @@
+table
+ {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td 
+  {
+    padding: 15px;
+    text-align: center;
+    text-align: left;
+    border-bottom: 2px solid var(--tableBorderColor);
+  }
+  
+  tr:hover {background-color: var(--tableHoverColor)}

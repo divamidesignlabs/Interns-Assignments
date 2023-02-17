@@ -1,0 +1,29 @@
+// .main
+// {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: calc(100vh - 74px);
+// }
+
+.container
+{
+    
+    border:1px solid;
+    width:280px;
+    height: 202px;
+
+    .container__img 
+    {
+        display: flex;
+        justify-content: center;
+        margin-top:76px;
+    };
+
+    .container__content
+    {
+        text-align: center;
+        margin-bottom: 66px;
+        margin-top: 5px;
+    }
+}

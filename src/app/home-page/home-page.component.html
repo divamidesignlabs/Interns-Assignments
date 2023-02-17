@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="container">
+    <div class="container__title">Welcome to the project listing</div>
+    <div class="container__listing-info">No assigned projects to list</div>
+    <div class="container__containers-align">
+        <div class="container__containers">
+            <app-container class="container__exploreProject" [welcomePageContainerData]="containerOneData" (navigationStatus)="getNavigationStatus($event)"></app-container>
+            <app-container class="container__createProject" [welcomePageContainerData]="containerTwoData" (navigationStatus)="getNavigationStatus($event)"></app-container>
+        </div>
+    </div>
+    <div class="container__endData">Checkout <span class="container__chanegeTextColor">How to create a new project</span><div class="container__imageAllignment"><img src="assets/images/homepage/homepage-pic.svg" alt=""></div></div>
+</div>
+<app-footer></app-footer>

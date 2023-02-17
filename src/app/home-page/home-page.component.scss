@@ -1,0 +1,54 @@
+.container
+{
+
+    .container__title
+    {
+        font-size:32px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .container__listing-info
+    {
+        text-align: center;
+        padding:14px 0px;
+        padding-bottom: 40.9px;
+    }
+    .container__containers-align
+    {
+        display: flex;
+        justify-content: center;
+
+        .container__containers
+        {
+            display: flex;
+            justify-content: space-between;
+            gap:40.6px;
+        }
+    }
+    .container__endData
+    {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: center;
+        padding:40.6px 0px 0px 0px;
+
+        .container__chanegeTextColor
+        {
+            color:var(--blue);
+
+        }
+    }
+
+    .container__imageAllignment
+    {
+    
+        position: relative;
+        padding-left: 856px;
+        top: -96px;
+    }
+
+}
