@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+$dark-blue: #3399ff;
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -24,4 +27,24 @@ a {
   line-height: 20px;
   letter-spacing: 0em;
   // text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 40px;
+  width: 120px;
+  height: 30px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: $dark-blue;
+}
+.btn-secondary {
+  color: $dark-blue;
+  background: white;
+  border: 1px solid $dark-blue;
 }

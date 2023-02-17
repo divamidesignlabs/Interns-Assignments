@@ -9,7 +9,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { AddProjectsComponent } from './common/components/add-projects/add-projects.component';
 import { PopUpComponent } from './common/components/pop-up/pop-up.component';
 import { ToastComponent } from './common/components/toast/toast.component';
-
+import { BreadCrumbComponent } from './common/components/bread-crumb/bread-crumb.component';
+import { NewProjectComponent } from './common/components/new-project/new-project.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,8 @@ import { ToastComponent } from './common/components/toast/toast.component';
     AddProjectsComponent,
     PopUpComponent,
     ToastComponent,
+    BreadCrumbComponent,
+    NewProjectComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
