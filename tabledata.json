@@ -1,0 +1,60 @@
+{
+  
+  "profile": [
+    {
+      "id": 1,
+      "firstname": "iuyejhewnwf",
+      "lastname": "kegkhfkjewh",
+      "age": 234,
+      "username": "kjhwkjhjfhewjfkeyfuef",
+      "email": "efrew.wey@ewr.er",
+      "phonenumber": 1234567890
+    },
+    {
+      "id": 2,
+      "firstname": "iuehrur",
+      "lastname": "ewrueuhfu",
+      "age": 23,
+      "username": "dhfhewf",
+      "email": "kdjhfh@wt.wtjhu",
+      "phonenumber": 1234567890
+    },
+    {
+      "id": 3,
+      "firstname": "qwertyu",
+      "lastname": "srtyui",
+      "age": 12,
+      "username": "waeretyujk",
+      "email": "eiufhj@rstg.djh",
+      "phonenumber": 1234567890
+     
+    },
+    {
+      "id": 4,
+      "firstname": "kdjfehfujifhj",
+      "lastname": "jhfjfrjfr",
+      "age": 132,
+      "username": "udyfiuewyufuwe",
+      "email": "djfteh@ifrf.dfoew",
+      "phonenumber": 2187456157
+    },
+    {
+      "id": 5,
+      "firstname": "wwkjehfkj",
+      "lastname": "jdfw",
+      "age": 12,
+      "username": "njkwen",
+      "email": "ejknj@ewr.iwjf",
+      "phonenumber": 1234567890
+    },
+    {
+      "id": "6",
+      "firstname": "tsdtf",
+      "lastname": "jgfdut",
+      "age": 12,
+      "username": "gkjn",
+      "email": "uyetrfc@rtyiui.hiuyt",
+      "phonenumber": 1234567890
+    }
+  ]
+}

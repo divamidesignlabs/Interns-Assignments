@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { PassData } from './pass-data';
+import { PassData } from './interfaces/pass-data';
+import { ToastMessage } from './interfaces/toast-message';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,6 +22,16 @@ export class AppComponent {
     secondbutton: "Remove User",
     name: ''
   }
-  
-  
+  toastData:ToastMessage = {
+    message:"your request is successfull",
+    status:true
+  }
+  status:boolean=false
+  getToast()
+  {
+    this.status=true;
+     setTimeout(() =>{
+      this.status=false
+    },3000)
+  }
 }
