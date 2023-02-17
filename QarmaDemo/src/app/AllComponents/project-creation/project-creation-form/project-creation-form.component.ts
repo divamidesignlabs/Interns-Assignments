@@ -19,7 +19,8 @@ export class ProjectCreationFormComponent {
       Validators.minLength(3),Validators.maxLength(256),Validators.pattern(this.namepattern)]),
 
     projectDescription: new FormControl(""),
-
+    
+      
 
     });
 

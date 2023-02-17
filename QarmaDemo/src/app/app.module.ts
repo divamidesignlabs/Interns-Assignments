@@ -12,6 +12,7 @@ import { PopupComponent } from './Common/popup/popup.component';
 import { ToastComponent } from './Common/toast/toast.component';
 import { ProjectListingDefaultComponent } from './AllComponents/project-creation/project-listing-default/project-listing-default.component';
 import { ProjectCreationFormComponent } from './AllComponents/project-creation/project-creation-form/project-creation-form.component';
+import { AcknowledgementComponent } from './AllComponents/project-creation/acknowledgement/acknowledgement.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProjectCreationFormComponent } from './AllComponents/project-creation/p
     PopupComponent,
     ToastComponent,
     ProjectListingDefaultComponent,
-    ProjectCreationFormComponent
+    ProjectCreationFormComponent,
+    AcknowledgementComponent
   ],
   imports: [
     BrowserModule,
