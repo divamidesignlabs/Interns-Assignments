@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { MovieCardComponent } from './shared/movie-card/movie-card.component';
 import {TimeConverter} from 'src/app/shared/movie-card/movie-card.component';
+import { CastCardComponent } from './shared/cast-card/cast-card.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {TimeConverter} from 'src/app/shared/movie-card/movie-card.component';
     MovieCardComponent,
     TimeConverter,
     CarouselComponent,
-     HeaderComponent
+     HeaderComponent,
+     CastCardComponent
      ],
   imports: [
     BrowserModule,
