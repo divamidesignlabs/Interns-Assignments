@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "movieTickets-booking": {
+    "projectQarma": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/movie-tickets-booking",
+            "outputPath": "dist/project-qarma",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "movieTickets-booking:build:production"
+              "browserTarget": "projectQarma:build:production"
             },
             "development": {
-              "browserTarget": "movieTickets-booking:build:development"
+              "browserTarget": "projectQarma:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "movieTickets-booking:build"
+            "browserTarget": "projectQarma:build"
           }
         },
         "test": {
@@ -102,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "72417658-8b39-4d8d-b956-5f50667cc2ab"
+    "analytics": "9ba6a2f5-16a7-4434-8cef-a87726b9a593"
   }
 }

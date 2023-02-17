@@ -1,0 +1,40 @@
+#msg{
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    padding: 15px 50px 30px 50px;
+    font-family: "Source Sans Pro";
+    text-align: center;
+
+}
+#text{
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+}
+.error{
+    background-color: rgb(237, 41, 57,0.6);
+    border: 2px solid rgb(210, 18, 46,0.6);
+}
+.success{
+    background-color: rgb(50, 222, 132,0.6);
+    border:2px solid rgb(0, 106, 78,0.6);
+}
+.information{
+    background-color: rgb(49, 140, 231,0.4);
+    border: 2px solid rgb(0, 57, 166,0.4);
+}
+#wrong-button{
+    width: 15px;
+    height: 15px;
+    // margin-right: 0px;
+    // margin-right: 0px;
+    position: absolute;
+    top:2px;
+    right: 2px;
+    // color: black;
+}
