@@ -1,0 +1,83 @@
+.card_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width:307px;
+     height:454.4px;
+     max-height: 100%;
+     margin-right: 100px;
+     margin-bottom: 100px;
+     flex: 1 1 280px;
+}
+.card_content1{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: space-between;
+    width:307px;
+}
+.likeimage{
+    margin-right: 10px;
+    padding-top: 5px;
+
+}
+.heartimage{
+    max-width: 100%;
+    max-height: 100%;
+    width: 15px;
+    height: 15px;
+}
+.card_container__imagecontent{
+    width:307px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 100%;
+   justify-content: space-between;
+}
+.cardaside{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    gap: 10px
+}
+#En{
+    font-family: OpenSans-Regular;
+font-size: 12px;
+color: #868686;
+letter-spacing: 0;
+background-color: #5b5959;
+}
+.gravity{
+font-family: OpenSans-Semibold;
+font-size: 16px;
+color: #DEDEDE;
+line-height: 20px;
+}
+#UA{
+    font-family: OpenSans-Regular;
+font-size: 12px;
+color: #868686;
+margin-top: 5px;
+}
+#thiller_Ac{
+    font-family: OpenSans-Regular;
+font-size: 12px;
+color: #868686;
+letter-spacing: 0;
+}
+#time{
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+    color: #868686;
+    letter-spacing: 0; 
+}
+#percentage{
+font-family: OpenSans-Semibold;
+font-size: 12px;
+color: #FFFFFF;
+letter-spacing: 0;
+padding-top: 5px;
+}
+
