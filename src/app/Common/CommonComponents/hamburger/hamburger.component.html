@@ -1,2 +1,4 @@
 <!-- <p>hamburger works!</p> -->
-<span *ngFor="let i of navList">{{i}}></span>
+<span *ngFor="let i of navList index as idx" (click)="navTo(i)">
+    {{navKeys[idx]}}>
+</span>

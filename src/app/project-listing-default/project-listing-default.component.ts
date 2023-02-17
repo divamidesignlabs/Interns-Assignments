@@ -49,6 +49,7 @@ toast:toastInterface={
 //   brief:"Create new project"
 // }
 navList:Array<string>=[""]
+navKeys:Array<string>=["start"];
  popup=0;
  toastStatus=false;
  constructor(private router:Router, private ser:ServiceService){}
@@ -90,7 +91,8 @@ navList:Array<string>=[""]
   this.toastStatus=val;
  }
 projectCreationForm(){
+  this.navKeys.push("create project")
   this.navList.push("projectCreationForm")
-  this.router.navigate(['projectCreationForm'],{state:{navList:this.navList}})
+  this.router.navigate(['projectCreationForm'],{state:{navList:this.navList,navKeys:this.navKeys}})
 }
 }

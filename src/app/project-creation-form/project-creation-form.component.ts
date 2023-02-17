@@ -19,8 +19,10 @@ form=new FormGroup({
 enablePersonal=true;
 enablePublic=false;
 navList:any;
+navKeys:any;
 constructor(private route:Router){
     this.navList = this.route.getCurrentNavigation()?.extras.state?.['navList'];
+    this.navKeys=this.route.getCurrentNavigation()?.extras.state?.['navKeys'];
 }
 disablePublic(){
   this.enablePublic=false;
@@ -41,7 +43,12 @@ popupAction(event:any){
 }
 navToCreateProject(){
   if(this.form.get('projectName')?.value)
-  this.route.navigate(['projectCreationForm/projectCreationAcknowledgement'],{state:{pName:this.form.get('projectName')?.value}})
+  {
+    this.navKeys.push('Project Acknowledgement')
+    this.navList.push('projectCreationForm/projectCreationAcknowledgement')
+   this.route.navigate(['projectCreationForm/projectCreationAcknowledgement'],{state:{pName:this.form.get('projectName')?.value,navKeys:this.navKeys,navList:this.navList}})
+  
+}
   else
   this.enablePopup=1;
 }

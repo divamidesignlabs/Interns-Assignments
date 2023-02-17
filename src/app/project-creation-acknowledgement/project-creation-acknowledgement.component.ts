@@ -8,9 +8,13 @@ import { Router,ActivatedRoute } from '@angular/router';
 export class ProjectCreationAcknowledgementComponent {
   givenProjectName:string="";
   acknowledgeMsg : String ="";
+  navList:any;
+  navKeys:any;
 constructor(private router:Router){
    this.givenProjectName = this.router.getCurrentNavigation()?.extras.state?.['pName'];
    this.acknowledgeMsg="Successfully created project "+this.givenProjectName;
+   this.navList = this.router.getCurrentNavigation()?.extras.state?.['navList'];
+   this.navKeys = this.router.getCurrentNavigation()?.extras.state?.['navKeys'];
 
 }
 question="How would you like to proceed?";
