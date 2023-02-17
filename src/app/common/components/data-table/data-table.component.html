@@ -1,16 +1,24 @@
-<div class="table">
-    <table>
-        
+<div class="table" >
+    <table *ngIf="dataAvailable; else temp"> 
+        <caption>{{caption}}</caption>
         <tr>
-            <th *ngFor="let col of data.columnNames">{{col}}</th>
+            <th *ngFor="let item of columnNames" class="text-overflow">{{item}}</th>
         </tr>
-        <tr *ngFor="let row of data.rowData">
-            <td>{{row.column1}}</td>
-            <td>{{row.column2}}</td>
-            <td>{{row.column3}}</td>
-            <td>{{row.column4}}</td>
-            <td>{{row.column5}}</td>
+        <tr *ngFor="let row of rowData">
+            <td class="text-overflow">{{row.id ?? "null"}}</td>
+            <td class="text-overflow">{{row.firstName ?? "null"}}</td>
+            <td class="text-overflow">{{row.lastName ?? "null"}}</td>
+            <td class="text-overflow">{{row.userName ?? "null"}}</td>
+            <td class="text-overflow">{{row.age ?? "null"}}</td>
+            <td class="text-overflow">{{row.email ?? "null"}}</td>
+            <td class="text-overflow">{{row.mobileNo ?? "null"}}</td>
         </tr>
     </table>
-    I am
+    <ng-template #temp>No data available
+        <ol>
+            <li>Check url once</li>
+        </ol>
+    </ng-template>
 </div>
+
+

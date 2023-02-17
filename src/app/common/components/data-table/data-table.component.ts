@@ -1,51 +1,46 @@
-import { Component } from '@angular/core';
-import { TableData } from 'src/app/models/interfaces';
+import { HttpClient } from '@angular/common/http';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-data-table',
   templateUrl: './data-table.component.html',
   styleUrls: ['./data-table.component.scss']
 })
-export class DataTableComponent {
-  
-  data:any={
-    columnNames: ["column1","column2","column3","column4","column5",],
-    rowData: [
-        {
-          column1:1,
-          column2:2,
-          column3:3,
-          column4:4,
-          column5:5
-        },
-        {
-          column1:1,
-          column2:2,
-          column3:3,
-          column4:4,
-          column5:5
-        },
-        {
-          column1:1,
-          column2:2,
-          column3:3,
-          column4:4,
-          column5:5
-        },
-        {
-          column1:1,
-          column2:2,
-          column3:3,
-          column4:4,
-          column5:5
-        }
-    ]
-  }
 
+// takes src url as input 
+export class DataTableComponent implements OnInit{
+  @Input() caption:string="Table Data";
+  dataAvailable:boolean=false;
+  @Input() rowData:any='http://localhost:3000/users';
+  columnNames:string[]=[];
+  constructor(private http:HttpClient){}
   ngOnInit(){
-    console.log(this.data);
-    for(let col of this.data.rowData)
-      console.log(col.column1)
+    if (typeof this.rowData === "string"){
+      let temp:any;
+      console.log("I am string");
+      console.log(this.rowData);
+      console.log(this.rowData);
+      this.http.get(this.rowData).subscribe(
+        (value)=>{
+        temp=value;
+        console.log(temp);
+        
+        },
+        (error)=>{
+          console.log("I am error")
+        },
+        ()=>{
+          this.rowData=temp;
+          console.log("I am from data table",this.rowData);
+          this.columnNames=Object.keys(this.rowData[0]);
+          console.log(this.columnNames);
+          this.dataAvailable=true;
+        }
+      )
+    }
+    else{
+      console.log("I am not string");
+    }
   }
 
 }

@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    height: calc(100vh - 14vh);
+    // border: 1px solid red;
+    flex-direction: column;
+    gap: 5vh;
+    .container__main-content{
+        margin-top: -10vh;
+        .container__main-content--heading{
+            font-size: 32px;
+            font-weight: 600px;
+        }
+    }
+    .container__cards{
+        gap: 5vh;
+    }
+    p{
+        a{
+            text-decoration: none;
+            color: var(--blue-color);
+        }
+    }
+}
+.picture{
+    position: absolute;
+    bottom: 10vh;
+    right: 10vh;
+    z-index: 5;
+}

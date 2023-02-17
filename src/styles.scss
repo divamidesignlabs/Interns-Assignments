@@ -18,15 +18,45 @@
     --font-family:'Source Sans Pro';
     --white-color:#ffffff;
     --blue-color:#3399FF;
+    --black-color:#222222;
 }
 
 /* global styles */
 .sans-font{
     font-family: var(--font-family);
 }
-
+// for text overflow
 .text-overflow{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+//header
+app-header{
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    max-height: 7vh;
+}
+
+// footer
+app-footer{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    max-height: 4vh;
+}
+
+// to center items in a container
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// to center a text in paragraph
+.text-center{
+    text-align: center;
 }

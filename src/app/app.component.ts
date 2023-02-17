@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Alert, Toast } from './models/interfaces';
+import { Observable } from 'rxjs';
+import { Alert, TableData, Toast } from './models/interfaces';
+import { TableDataService } from './services/table-data/table-data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,8 @@ import { Alert, Toast } from './models/interfaces';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  fullAvail:any;
+  localTableData:any;
   title = 'QarmaProject';
   showAlert:boolean=false; // flag which handles whether the alert should display or not
   showToast:boolean=false; // flag which handles whether the toast should display or not
@@ -17,6 +21,8 @@ export class AppComponent {
     content: `By confirming this Anuja kumari wouldn't be able to:`,
     rightsGoingToLoss: ['Access any Projects related to this Account','Any Personal Data Synced with this Account']
   };
+
+  constructor( private tableService:TableDataService){}
   // it will set alert flag to true on clicking button
   handleAlert(){
     this.showAlert=true;
@@ -33,15 +39,35 @@ export class AppComponent {
   }
 
   toast:Toast={
-    msg: 'Successfully added',
+    msg: 'rrrtrtr',
     type: 'error',
-    timeout: 5000
+    timeout: 2000
   }
 
   // handles toast response  which is used to destroy the component toast component
   handleToastResponse(event:boolean){
     this.showToast=event;
     console.log("I am in app",event);
+  }
+
+  tableData:TableData={
+    columnNames:["col1","col1","col1","col1","col1","col1","col1"],
+    rowData: 'http://localhost:3000/users'
+  }
+
+  handleTableData(){
+    // let localObservable:Observable<Object>=this.tableService.getTableData()
+    // localObservable.subscribe((value)=>{
+    //   this.localTableData=value;
+    //   console.log(value);
+    // },(error:any)=>{
+    //   console.log("error")
+    // },()=>{
+    //   console.log("complete")
+    //   console.log(this.localTableData)
+    //   this.fullAvail=this.localTableData;
+    // }
+    // )
   }
 
 }
