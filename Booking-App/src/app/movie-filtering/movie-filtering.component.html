@@ -1,1 +1,15 @@
-<p>movie-filtering works!</p>
+
+<div class="filter_container">
+    <div class="filter_heads"><div>Filters</div><div>Clear All</div></div>
+    <div (click)="isDate=!isDate">> Date</div>
+    <div *ngIf="isDate==true">
+        <div *ngFor="let date of dateArray let i = index">
+        <input type="checkbox">{{date}}</div>
+    </div>
+
+    <div (click)="isLanguage=!isLanguage">> Language</div>
+    <div *ngIf="isLanguage==true">
+        <div *ngFor="let language of languagesArray let i = index">
+        <input type="checkbox">{{language}}</div>
+    </div>
+</div>
