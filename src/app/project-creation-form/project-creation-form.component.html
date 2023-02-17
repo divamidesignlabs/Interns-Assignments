@@ -1,5 +1,6 @@
 <!-- <p>project-creation-form works!</p> -->
-<app-header></app-header>
+<!-- <app-header></app-header> -->
+<app-hamburger [navList]="navList"></app-hamburger>
 <div class="container">
     <div>
     <form [formGroup]="form">
@@ -10,6 +11,7 @@
             <div>
                 <p>What shall we call it</p>
                 <input class="name" type="text" formControlName="projectName" placeholder="Enter your project name">
+                <div id="error" *ngIf="form.get('projectName')?.touched && !form.get('projectName')?.value">*required field</div>
             </div>
             <div>
                 <p>What's this project is about (optional)</p>
@@ -19,12 +21,29 @@
         </div>
     </form>
     </div>
-    <div>
+    <div class="rightimage">
         <img src="/assets/images/createImg.svg">
     </div>
 </div>
+<div class="visibility">
+    Visibility<span>(When a project is set to personal, It can only be viewed or joined by Invitation.)</span>
+</div>
+<div class="visibilityType">
+    <div class=public>
+        <div><img src="/assets/images/public.svg"></div>
+        <div>Public</div>
+        <input type="checkbox" [(ngModel)] ="enablePublic" (click)="disablePersonal()">
+    </div>
+    <div class="private">
+        <div><img src="/assets/images/private.svg"></div>
+        <div>Personal</div>
+        <input type="checkbox" [(ngModel)] ="enablePersonal" (click)="disablePublic()">
+    </div>
+</div>
+<app-pop-ups *ngIf="enablePopup" [alert]="popup" (sendAction)="popupAction($event)"></app-pop-ups>
 <div class="btn">
     <button id="btn1">Cancel</button>
-    <button id="btn2">Create</button>
+    <button id="btn2" (click)="navToCreateProject()">Create</button>
 </div>
-<app-footer></app-footer>
+
+<!-- <app-footer></app-footer> -->

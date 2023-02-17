@@ -1,5 +1,5 @@
 import { Component,EventEmitter,Input, Output } from '@angular/core';
-import { popupInterface } from 'src/app/project-listing-default/project-listing-default.component';
+// import { popupInterface } from 'src/app/project-listing-default/project-listing-default.component';
 @Component({
   selector: 'app-pop-ups',
   templateUrl: './pop-ups.component.html',

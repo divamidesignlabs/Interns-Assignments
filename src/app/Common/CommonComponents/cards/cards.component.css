@@ -1,0 +1,15 @@
+.cards__item{
+    background-color: white;
+    padding: 25px;
+    margin:20px;
+    width:35%;
+    border:1px solid rgb(169, 166, 166);
+}
+.cards{
+    display:flex;
+    justify-content: space-around;
+    /* width:117%; */
+}
+.cards__item:hover{
+    cursor:pointer;
+}

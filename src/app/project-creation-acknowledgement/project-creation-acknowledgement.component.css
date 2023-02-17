@@ -1,0 +1,18 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:38vh;
+    margin-top:56px;
+    align-items: center;
+}
+.container__msg1{
+    color:rgb(102, 241, 102);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:600;
+    size:32px;
+}
+.doll{
+    float:right;
+    margin-right:10px;
+}

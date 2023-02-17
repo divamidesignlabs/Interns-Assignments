@@ -1,16 +1,17 @@
 import { Component,EventEmitter,Output, SimpleChange  } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServiceService } from '../service.service';
-export interface popupInterface{
-  alertImg?:string,
-  heading?:string,
-  question?:string,
-  userName?:string,
-  confirmation?:string,
-  list?:Array<string>,
-  buttons?:Array<string>
+import { popupInterface } from 'dataInterface';
+// export interface popupInterface{
+//   alertImg?:string,
+//   heading?:string,
+//   question?:string,
+//   userName?:string,
+//   confirmation?:string,
+//   list?:Array<string>,
+//   buttons?:Array<string>
   
-}
+// }
 interface toastInterface{
   img:string,
   heading:string,
@@ -47,6 +48,7 @@ toast:toastInterface={
 //   path:"/assets/images/create.svg",
 //   brief:"Create new project"
 // }
+navList:Array<string>=[""]
  popup=0;
  toastStatus=false;
  constructor(private router:Router, private ser:ServiceService){}
@@ -88,6 +90,7 @@ toast:toastInterface={
   this.toastStatus=val;
  }
 projectCreationForm(){
-  this.router.navigate(['projectCreationForm'])
+  this.navList.push("projectCreationForm")
+  this.router.navigate(['projectCreationForm'],{state:{navList:this.navList}})
 }
 }

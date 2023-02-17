@@ -9,10 +9,10 @@
 .container{
     display:flex;
     /* width:100%; */
-    justify-content: space-around;
+    justify-content: space-between;
     /* border:1px solid black; */
     align-items: center;
-    height:60vh;
+    height:70vh;
     /* width:60%; */
 }
 .container div{
@@ -35,18 +35,53 @@
 .btn{
     display:flex;
     justify-content:flex-end;
+    position:relative;
+    bottom:0;
+    right:2%;
 }
 #btn1{
-    padding:5px;
+    padding: 5px 50px;
     background-color: white;
     color:blue;
     margin:5px;
     border:1px solid rgb(241, 229, 205);
 }
 #btn2{
-    padding:5px;
+    padding: 5px 50px;
     margin:5px;
     color:white;
     background-color: blue;
     border: none;
+}
+.rightimage img{
+    padding:200px 10px 100px 250px;
+}
+.visibility{
+    margin-left:2.5%;
+}
+.visibility span{
+    margin-left:2%;
+    color:gray;
+}
+.visibilityType{
+    display:flex;
+    margin-left:2%;
+}
+.visibilityType input:hover{
+cursor: pointer;
+}
+.public,.private{
+    display:flex;
+    width:10%;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    border:1px solid black;
+    padding:5px;
+}
+#btn1,#btn2:hover{
+    cursor:pointer;
+}
+#error{
+    color:red;
 }

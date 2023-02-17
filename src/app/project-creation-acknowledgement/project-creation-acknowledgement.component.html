@@ -1,0 +1,14 @@
+<!-- <p>project-creation-acknowledgement works!</p>-->
+<!-- <p>{{givenProjectName}}</p> -->
+<div class="container">
+    <div class="container__msg1">{{acknowledgeMsg}}</div>
+    <div class="container__msg2">{{question}}</div>
+    <div>
+        <app-cards [card]="cards" (sendAction)="action($event)"></app-cards>
+        <!-- <app-cards [card]="card2"></app-cards> -->
+        <!-- <app-cards [card]="card3"></app-cards> -->
+    </div>
+</div>
+<div class="doll">
+    <img src="/assets/images/acknowledgementDoll.svg">
+</div>

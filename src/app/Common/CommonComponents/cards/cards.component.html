@@ -1,5 +1,7 @@
 <!-- <p>cards works!</p> -->
-<button class="container__projects">
-    <img src={{card.path}}>
-    <p>{{card.brief}}</p>
-</button>
+<div class="cards">
+    <button class="cards__item" *ngFor="let i of card" (click)="action(i.brief)">
+        <img src={{i.icon}}>
+        <p>{{i.brief}}</p>
+    </button>
+</div>

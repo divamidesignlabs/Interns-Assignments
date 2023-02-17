@@ -13,7 +13,11 @@ import { ToastComponent } from './Common/CommonComponents/toast/toast.component'
 import { DataTableComponent } from './Common/CommonComponents/data-table/data-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectCreationFormComponent } from './project-creation-form/project-creation-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ProjectCreationAcknowledgementComponent } from './project-creation-acknowledgement/project-creation-acknowledgement.component';
+import { ProjectListingCardviewComponent } from './project-listing-cardview/project-listing-cardview.component';
+import { ProjectCardComponent } from './Common/CommonComponents/project-card/project-card.component';
+import { HamburgerComponent } from './Common/CommonComponents/hamburger/hamburger.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,13 +29,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProfileDetailsComponent,
     ToastComponent,
     DataTableComponent,
-    ProjectCreationFormComponent
+    ProjectCreationFormComponent,
+    ProjectCreationAcknowledgementComponent,
+    ProjectListingCardviewComponent,
+    ProjectCardComponent,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
