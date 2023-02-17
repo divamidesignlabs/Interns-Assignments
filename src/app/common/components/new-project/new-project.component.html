@@ -1,0 +1,39 @@
+<div class="addProject-container">
+  <div class="left">
+    <form>
+      <div class="inputGroup">
+        <input type="file" name="imageUploader" id="imageUploader" />
+      </div>
+      <div class="inputGroup">
+        <label for="projectName">What shall we call it </label>
+        <input type="text" name="projectName" id="projectName" />
+      </div>
+      <div class="inputGroup">
+        <label for="projectDescription"
+          >What's this project about(optional)</label
+        >
+        <input type="text" name="projectDescription" id="projectDescription" />
+      </div>
+      <div class="inputGroup">
+        <label for="visibility"
+          >Visbility
+          <small
+            >(When a project is set to personal, it can only be viewed or joined
+            by invitation.)</small
+          ></label
+        >
+        <select name="visbility" id="visibility">
+          <option value="Public">Public</option>
+          <option value="Personal">Personal</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <div class="right">
+    <img src="../../../../assets/svgs/new-project.svg" alt="" />
+  </div>
+  <div class="bottom">
+    <a class="btn btn-secondary">Cancel</a>
+    <a class="btn btn-primary">Create</a>
+  </div>
+</div>

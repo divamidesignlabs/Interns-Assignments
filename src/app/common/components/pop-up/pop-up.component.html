@@ -1,0 +1,13 @@
+<button id="modal-trigger" (click)="toggleModal()">Modal</button>
+
+<div *ngIf="isModalOpen" id="modal">
+  <div class="modal-content">
+    <span class="close" (click)="toggleModal()">&times;</span>
+    <div class="alert">
+      <img src="../../../../assets/svgs/alert-danger.svg" alt="" /> Remove User
+    </div>
+    <div class="break"></div>
+    <h3 class="question">Are you sure you want to remove user</h3>
+    <h3 class="question user">{{ userName }}</h3>
+  </div>
+</div>
