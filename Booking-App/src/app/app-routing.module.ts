@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookingPageComponent } from './booking-page/booking-page.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+// import {CarouselModule} from 'primeng/carousel';
 
 const routes: Routes = [
   {path : '', component : HomePageComponent},
