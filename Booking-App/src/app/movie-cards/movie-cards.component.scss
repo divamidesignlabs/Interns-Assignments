@@ -1,0 +1,87 @@
+.card_space_container {
+  display: flex;
+  flex-direction: column;
+//   border: 1px solid white;
+}
+.Toggle_card_view {
+  display: flex;
+  align-items: left;
+}
+.cards_space {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.card_container {
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+//   margin-right: 30px;
+  background: #272727;
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.16);
+border-radius: 4px;
+border-radius: 4px;
+
+  
+}
+.img_data_container {
+  display: flex;
+  height: 72.6px;
+justify-content: space-between;
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.16);
+border-radius: 4px;
+}
+.movie_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+  color: #acaaaa;
+//   line-height: 20px;
+}
+
+
+.likepercent_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 16px;
+  align-items: center;
+  font-family: OpenSans-Semibold;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+
+}
+
+.img_container{
+    height: 454.4px;
+    width: 307px;
+    img {
+        height: 454.4px;
+        width: 307px;
+    }
+}
+.language_box{
+    font-family: OpenSans-Regular;
+font-size: 12px;
+color: #868686;
+letter-spacing: 0;
+
+}
+.font_styleB{
+    font-family: OpenSans-Regular;
+font-size: 12px;
+color: #868686;
+letter-spacing: 0;
+
+}
+.font_styleA{
+    font-family: OpenSans-Semibold;
+font-size: 16px;
+color: #DEDEDE;
+line-height: 20px;
+
+}
