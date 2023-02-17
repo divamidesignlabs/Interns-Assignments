@@ -1,3 +1,8 @@
+export interface header{
+    image:string;
+    alt:string;
+    label:string;
+}
 export interface Alert{
     alert?:string;
     question:string;
@@ -14,4 +19,8 @@ export interface toast{
     status:string;
     message:string;
 
+}
+export interface projectRoot{
+    image:string
+    blockType:string
 }

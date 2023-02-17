@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "firstName": "asjdf",
+      "lastName": "asdfs",
+      "age": "56",
+      "email": "gstyrd@gmail.com",
+      "mobileNumber": "4433",
+      "userName": "op",
+      "additionalInfo": "Intern",
+      "id": 2
+    },{
+      "firstName": "op",
+      "lastName": "divami",
+      "age": "56",
+      "email": "gstyrd@gmail.com",
+      "mobileNumber": "4433",
+      "userName": "op",
+      "additionalInfo": "Intern",
+      "id": 2
+    },{
+      "firstName": "hey",
+      "lastName": "asdfs",
+      "age": "56",
+      "email": "gstyrd@gmail.com",
+      "mobileNumber": "4433",
+      "userName": "op",
+      "additionalInfo": "Intern",
+      "id": 2
+    }
+  ]
+}
