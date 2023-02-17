@@ -23,3 +23,10 @@ export interface containerInfo
     imgSrc:string,
     contentoDisplay:string;
 }
+
+export interface projectData
+{
+    projectTitle:string,
+    projectDescription: string,
+    projectPrivacy:string;
+}

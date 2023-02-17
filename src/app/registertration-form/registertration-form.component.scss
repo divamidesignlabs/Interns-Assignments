@@ -1,0 +1,142 @@
+.container
+{
+
+    .align 
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .container__alignContent
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container__form-allingment
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .leftPart
+    {
+        margin-left: 40px;
+    }
+
+    .project-profilePic
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top:80px;
+
+        .add-img-icon
+        {
+            padding-bottom: 10px;
+        }
+
+        .project-imageIcon
+        {
+            // border:1px solid;
+            // border-radius: 50%;
+        }
+    
+    }
+
+    .project-title
+    {
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        padding-bottom: 20px;
+        
+
+        #projectTitle
+        {
+            width:400px;
+            height: 30px;
+            
+        };
+    }
+    .project-descriptipon
+    {
+        display: flex;
+        flex-direction: column;
+        gap:4px;
+        padding-bottom: 20px;
+
+        
+    }
+    #project-description
+        {
+            width:400px;
+            height: 100px;
+        }
+
+    .container__project-visibility
+    {
+        color:rgb(195, 195, 187)
+    }
+
+    .container__project-privacy
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .privacy__selection
+    {
+        display: flex;
+        gap:30px;
+        padding-top:4px;
+    }
+
+    .project-privacy-pic
+    {
+        padding-right:10px;
+    }
+    #privacy-personal, #privacy-public
+    {
+        margin-left:10px;
+    }
+
+    .project__privacy
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid;
+        width:150px;
+        height: 40px;
+        
+    }
+    .container__decorativePic
+    {
+        
+        padding:167px 134.5px 146px 0px;
+       
+    }
+    .project-buttons
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        padding-bottom: 20px;
+       
+
+        .buttons 
+        {
+            
+            border:2px solid var(--buttonColor);
+            width:120px;
+            height: 30px;
+            cursor: pointer;
+
+        }
+        .buttons:hover{
+
+            background-color: var(--buttonColor);
+        }
+    }
+}

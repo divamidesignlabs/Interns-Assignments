@@ -1,0 +1,69 @@
+<app-header></app-header>
+
+<div class="container">
+        <div class="conatiner__project-form">
+            <!-- form group  -->
+            <form class="container__form-allingment" [formGroup]="registerForm" (ngSubmit)="onFormSubmit()">
+                <div class="align">
+                    <div class="leftPart">
+                    <!-- adding profile pic -->
+                        <div class="project-profilePic">
+                           <div class="add-img-icon">
+                               <div class="project-imageIcon">
+                                   <div><img src="assets\images\register-form\login.svg" alt="Choose your profilr oicture"></div>
+                                   <p>Add Icon</p>
+                               </div>
+                           </div>
+                            <!-- <label for="profilrPic">Profile Pic</label> -->
+                            <input type="file" formControlName="profilePic"  placeholder="add your profile picture" id="profilrPic">
+                        </div>
+                        
+                        <!-- project title -->
+                        <div class="project-title">
+                            <label for="projectTitle">What shall we call it</label>
+                            <input formControlName="projectTitle" id="projectTitle"  placeholder="Enter project title">
+                        </div>
+                        <!-- project description -->
+                        <div class="project-descriptipon">
+                            <label for="project-description">What's this project is about</label>
+                            <textarea  formControlName="prjectDescription" rows="4" cols="30" id="project-description">A sample project for testing APIs</textarea>
+                        </div>
+                        <!-- project visibility(privacy) -->
+                        <div class="container__project-privacy">
+                            <p>Visibility <span class="container__project-visibility"> (when a project is set to personal, it can only be viewed or joined by invitation)</span></p>
+                            <div class="privacy__selection">
+                                <div class="project__privacy">
+                                    <div>
+                                        <label for="privacy-public"><img class="project-privacy-pic" src="assets/images/register-form/public.svg" alt="project-privacy-public"> Public </label>
+                                        <input type="radio" formControlName="projectPrivacy" id="privacy-public" name="projectPrivacy" value="public">
+                                    </div>
+                                </div>
+                    
+                                <div class="project__privacy">
+                                    <div>
+                                        <label for="privacy-personal"><img class="project-privacy-pic" src="assets\images\register-form\personal.svg" alt="project-privacy-personal">Personal</label>
+                                        <input type="radio" formControlName="projectPrivacy" id="privacy-personal" name="projectPrivacy" value="personal">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="rightPart">
+                        <!-- adding just decorative picture to the page -->
+                        <div class="container__decorativePic">
+                            <img src="assets/images/register-form/decorative-pic.svg" alt="decorative-pic">
+                        </div>
+                        <!-- submit and reset buttons tot the form -->
+                        <div class="project-buttons">
+                            <button class="buttons" type="submit">Submit</button>
+                            <button class="buttons" type="reset">Cancel</button>
+                        </div>
+                    </div>
+                </div> 
+            </form> 
+     </div>
+</div>
+<app-footer></app-footer>
+
+
