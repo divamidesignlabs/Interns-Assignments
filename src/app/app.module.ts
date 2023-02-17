@@ -10,6 +10,8 @@ import { AlertComponent } from './common/alert/alert.component';
 import { ToastComponent } from './common/toast/toast.component';
 import { TableDisplayComponent } from './table/table-display/table-display.component';
 import { TabsComponent } from './common/tabs/tabs.component';
+import { ProjectListingDefaultComponent } from './all components/project-listing-default/project-listing-default.component';
+import { ProjectCreationFormComponent } from './all components/project-creation-form/project-creation-form.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { TabsComponent } from './common/tabs/tabs.component';
     ToastComponent,
     TableDisplayComponent,
     TabsComponent,
+    ProjectListingDefaultComponent,
+    ProjectCreationFormComponent,
   ],
   imports: [
     BrowserModule,
