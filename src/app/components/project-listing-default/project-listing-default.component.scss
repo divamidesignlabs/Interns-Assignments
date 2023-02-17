@@ -1,0 +1,49 @@
+.homeHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.homeContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .welcomeWish {
+    p {
+      padding-bottom: 5px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 20px;
+    padding-bottom: 14px;
+  }
+}
+span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #3399ff;
+  :hover{
+    cursor: pointer;
+  }
+
+}
+.homeImg {
+  position: absolute;
+  bottom: 70px;
+  right: 0px;
+  z-index: -1;
+}
+.homeImg img {
+  height: 35vh;
+  width: 35vw;
+}
+.checkout{
+    font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+}

@@ -10,7 +10,11 @@ import { ButtonComponent } from './common/button/button.component';
 import { SwitchTabsComponent } from './common/switch-tabs/switch-tabs.component';
 import { ToastComponent } from './common/toast/toast.component';
 import {HttpClientModule} from '@angular/common/http';
-import { DataTableComponent } from './common/data-table/data-table.component'
+import { DataTableComponent } from './common/data-table/data-table.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProjectListingDefaultComponent } from './components/project-listing-default/project-listing-default.component';
+import { ProjectRootComponent } from './common/project-root/project-root.component';
+import { ProjectCreationComponent } from './components/project-creation/project-creation.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +25,10 @@ import { DataTableComponent } from './common/data-table/data-table.component'
     SwitchTabsComponent,
     ToastComponent,
     DataTableComponent,
+    DashboardComponent,
+    ProjectListingDefaultComponent,
+    ProjectRootComponent,
+    ProjectCreationComponent,
   ],
   imports: [
     BrowserModule,

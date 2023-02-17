@@ -1,32 +1,31 @@
-.toastContainer{
-    display: flex;
-    width: 400px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: green;
-    border-radius: 5px;
-}
+
 .toastContainerSuccess{
     display: flex;
     width: 400px;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    background-color: rgb(193, 250, 143);
+    border: 1px solid green;
     border-radius: 5px;
+    padding: 5px;
 }
 .toastContainerFailed{
     display: flex;
     width: 400px;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: rgb(239, 92, 89);
+    border: 1px solid red;
     border-radius: 5px;
+    padding: 5px;
 }
 .toastContainerLoading{
     display: flex;
     width: 400px;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
     border-radius: 5px;
+    background-color: rgb(118, 124, 239);
+    border: 1px solid blue;
+    padding: 5px;
 }

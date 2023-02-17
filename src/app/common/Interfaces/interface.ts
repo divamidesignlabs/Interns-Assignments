@@ -20,3 +20,7 @@ export interface toast{
     message:string;
 
 }
+export interface projectRoot{
+    image:string
+    blockType:string
+}

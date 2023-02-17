@@ -13,7 +13,7 @@ export class PopupComponent {
 // When the user clicks the button, open the popUp 
 popUp() {
   this.modal=document.getElementById("myModal");
-  this.modal.style.display = "block";
+  this.modal.style.display = "flex";
 }
 
 closePopUp() {

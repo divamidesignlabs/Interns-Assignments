@@ -9,7 +9,7 @@ import { header } from '../Interfaces/interface';
 export class HeaderComponent {
   @Input() headerList:header[]=[]
   ngOnInit(){
-    console.log(this.headerList)
+    console.log(this.headerList) 
   }
 
 }
