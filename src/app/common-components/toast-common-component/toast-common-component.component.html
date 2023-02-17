@@ -1,7 +1,0 @@
-<div class="Toast-component">
-    <div  *ngIf="toastMsgStatus" [ngSwitch]="toastMsg.type">
-        <div *ngSwitchCase="'error'" class="ErrorMsg">{{toastMsg.msg}}</div>
-        <div *ngSwitchCase="'info'" class="InformationMsg">{{toastMsg.msg}}</div>
-        <div *ngSwitchCase="'success'" class="SuccessMsg">{{toastMsg.msg}}</div>       
-    </div>
-</div>
