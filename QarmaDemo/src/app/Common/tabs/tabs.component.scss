@@ -1,0 +1,33 @@
+.main__container{
+    display: flex;
+    align-items: center;
+    padding-left: 4vw;
+    column-gap: 4vw;
+    border-bottom: 1px solid #80808050;
+    
+}
+.items--div{
+    display: flex;
+    align-items: center;
+    color: #222222;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 6px 6px;
+    border-bottom: 3px solid #3399ff00;
+    
+}
+
+.selected--item{
+    display: flex;
+    align-items: center;
+    color: #222222;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 6px 6px;
+    border-bottom: 3px solid #3399ff99;
+    border-radius: 1px;
+}

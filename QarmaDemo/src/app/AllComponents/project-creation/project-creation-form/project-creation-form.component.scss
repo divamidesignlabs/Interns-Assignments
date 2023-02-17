@@ -1,0 +1,106 @@
+#file{
+    display:none;
+  }
+  .main--container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 3vw 0px;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #label{
+    text-align: center;
+    border: 1px solid #66666650;
+    border-radius: 50%;
+    padding: 10%;
+    white-space: nowrap;
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+
+  .addProfile--container{
+    display: flex;
+    align-items: center;
+    
+  }
+
+  textarea{
+    resize: none;
+  }
+
+  .div__project-name{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    input{
+        width: 400px;
+        height: 30px;
+    }
+    label{
+        font-weight:400;
+        font-size:12px;
+        height: 20px;
+    }
+    div{
+        padding: 20px;
+    }
+
+  }
+
+  .div__project-type{
+    display: flex;
+    column-gap: 20px;
+    div{
+        border: 1px solid #666666;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+    img{
+        padding-right: 6px;
+    }
+    
+  }
+
+  .man-logo--container{
+    align-self: flex-end;
+    padding-right: 8vw;
+  }
+
+  span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #222222;
+    opacity: 0.5;
+  }
+
+  .project-type-title{
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
+
+  .button--div{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5vw;
+    padding-top: 10px;
+    column-gap: 20px;
+    button{
+        border: 1px solid #3399ff;
+        background-color: #ffffff;
+        color: #3399ff;
+        line-height: 30px;
+        padding:0px 3vw;
+    }
+    button:hover{
+        background-color: #3399ff;
+        color: #ffffff;
+    }
+  }
+
+  

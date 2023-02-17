@@ -1,0 +1,40 @@
+
+.toast{
+    min-width: 350px;
+    height: 80px;
+    background-color:#ffffff;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 10px;
+    align-items:center;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 30px 10px;
+    font-size: 25px;
+    img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    div{
+        line-height: 35px;
+    }
+    
+}
+.error{
+    border:3px solid #ff0000;
+    color: #ff0000;
+}
+.success{
+    border:3px solid #008000;
+    color: #008000;
+}
+.info{
+    border:3px solid #0000ff;
+    color: #0000ff;
+}
+
+.description{
+    font-size: 20px;
+}

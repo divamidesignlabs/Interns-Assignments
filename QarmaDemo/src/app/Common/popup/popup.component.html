@@ -1,0 +1,23 @@
+<div class="modal">
+<div class="modal-content">
+    <header>
+        <img src="../../../assets/images/svg/warningLogo.svg" alt="Warning">
+        <div>{{popupData.title}}</div>
+    </header>
+    <div class="Question--div">
+        Are you sure you want to {{popupData.title}}?
+        <div><strong>{{popupData.name}}</strong></div>
+    </div>
+    <div class="conformationData">
+        By confirming this {{popupData.name}} wouldn't be able to:
+        <div *ngFor="let list of popupData.conformationData" >
+           {{list.id}}. {{list.content}}
+        </div>
+    </div>
+    <div class="button--div">
+        <button (click)="cancelClicked()">Cancel</button>
+        <button (click)="submitClicked()">{{popupData.submitButton}}</button>
+    </div>
+</div>
+</div>
+

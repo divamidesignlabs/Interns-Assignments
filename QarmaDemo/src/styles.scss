@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+  :root{
+    --font-size-12 : 12PX;
+    --font-size-14 : 14px;
+    --font-weight-400 : 400;
+    --font-lineheight-20 : 20px;
+  }
+
+
+  body{
+    font-family: source sans pro;
+    overflow: hidden;
+    margin: 0px;
+  }
+
+  button{
+    cursor: pointer;
+  }
+
+

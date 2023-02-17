@@ -1,0 +1,50 @@
+<div class="main--container">
+    
+<form [formGroup]="formData" (ngSubmit)="onFormSubmit(formData.value)">
+    <div class="addProfile--container" >
+        <label id="label" for="file">
+            <input type="file" id="file" formControlName="profilePhoto">
+          
+            <img src="assets/images/svg/addProfilePicture.svg" alt="Add your profile picture" >
+            <div>Add icon</div>
+
+          </label>
+    </div>
+
+    <div class="div__project-name">
+        <label for="projectName">What shall we call it</label>
+            <input type="text" name="projectName" id="projectName" formControlName="projectName">
+    </div>
+
+    <div class="div__project-name">
+        <label for="projectDescription">What's this project is about (optional)</label>
+        <textarea name="projectDescription" id="projectDescription" cols="30" rows="10"></textarea>
+    </div>
+    <div class="project-type-title">Visibility<span> (When a project is set to personal, It can only be viewed or join by Invitation.)</span></div>
+    <div class="div__project-type">
+        
+        <div>
+            <img src="assets/images/svg/publicLogo.svg" alt="public logo">
+            <label for="public">Public</label>
+        <input type="radio" name="projectType" id="public">
+        </div>
+
+        <div>
+            <img src="assets/images/svg/personalLogo.svg" alt="personal logo">
+            <label for="personal">Personal</label>
+        <input type="radio" name="projectType" id="personal">
+        </div>
+
+    </div>
+</form>
+
+<div class="man-logo--container">
+    <img src="assets/images/svg/manWritingLogo.svg" alt="">
+</div>
+
+</div>
+
+<div class="button--div">
+    <button type="button" routerLink="">Cancel</button>
+    <button type="submit" routerLink="../acknowledgement">Create</button>
+</div>

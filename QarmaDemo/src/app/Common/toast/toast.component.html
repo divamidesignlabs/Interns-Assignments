@@ -1,0 +1,9 @@
+<div class="toast" [ngClass]="{'error':inputToToast?.title=='Error', 'success':inputToToast?.title=='Successful', 'info':inputToToast?.title=='Information'}" >
+    <div>
+        <img [src]="inputToToast?.logo" alt="Logo is not found">
+    </div>
+    <div>
+        <div>{{inputToToast?.title}}</div>
+        <div class="description">{{inputToToast?.message}}</div>
+    </div>
+</div>
