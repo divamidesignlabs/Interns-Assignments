@@ -1,0 +1,17 @@
+<div class="Toast-component">
+    
+    <div [ngSwitch]="toastMsg.type" >
+        <div *ngSwitchCase="'error'" class="ErrorMsg">
+          {{toastMsg.msg}}
+          <button type="button" (click)="onClose()">x</button>
+        </div>
+        <div *ngSwitchCase="'info'" class="InformationMsg">
+          {{toastMsg.msg}}
+          <button type="button" (click)="onClose()">x</button>
+        </div>
+        <div *ngSwitchCase="'success'" class="SuccessMsg">
+          {{toastMsg.msg}}
+          <button type="button" (click)="onClose()">x</button>
+        </div>  
+      </div>
+</div>

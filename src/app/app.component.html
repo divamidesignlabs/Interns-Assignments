@@ -1,0 +1,22 @@
+
+ <app-header></app-header> 
+
+
+<!-- tab component child -->
+<app-common-tab-component [tabDataItem]="tabItems" [tabDataContent]="tabContent"></app-common-tab-component> 
+
+<!-- alert component childs  -->
+<button (click)="alertMessageFun()">Display alert</button>
+<app-alert-message-component *ngIf="alertMessage" [alertContent]="alertContentData" [buttons]="buttons" (buttonClicked)="handleButtonClicked($event)"></app-alert-message-component>
+<div *ngIf="buttonContent">{{alertDisplayMessage}}</div>
+<!-- toast component child -->
+<button (click)="displayMessage()">Display Toast</button>
+<app-toast-common-component  *ngIf="displayToast" [toastMsg]="message"(closeToast)="onCloseToast()"></app-toast-common-component>
+
+
+
+<app-table-data></app-table-data>
+
+
+
+<app-footer></app-footer> 

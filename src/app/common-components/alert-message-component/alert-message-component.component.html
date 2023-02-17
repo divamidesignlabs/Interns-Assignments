@@ -1,0 +1,28 @@
+<div class="backround-blur">
+    <div id="AlertComponent">
+        <!-- header part of the alert -->
+        <div class="alert__Header">
+            <img src="assets\images\alert-component\alert.svg">
+            <div>{{alertContent.Optiontype}}</div>
+        </div>
+        <!-- this div contains the questioning part about user details -->
+        <div class="alert__questioning">
+            <div>{{alertContent.question}}</div>
+            <div><b>{{alertContent.label}}</b></div>
+        </div>
+        <!-- this decription div is about dicriptions points confirm user details -->
+        <div class="alert__decription">
+            <div class="content">{{alertContent.decription}}</div>
+            <div *ngFor="let point of alertContent.description_points">
+                <div>{{point}}</div>
+            </div>
+        </div>
+        <div class="alert__buttons">
+            <button class="button" type="button" 
+        *ngFor="let button of buttons; let i = index;"
+        [ngClass]="{'alert__buttons--selected': selectedIndex === i, 'alert__buttons--not-selected': selectedIndex !== i}"
+        (click)="handleButton(i)">{{button}}
+            </button>
+        </div>            
+    </div>
+</div>

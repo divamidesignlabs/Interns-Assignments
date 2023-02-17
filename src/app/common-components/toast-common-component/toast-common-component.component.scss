@@ -1,0 +1,58 @@
+.Toast-component{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    height: 100px;
+    width: 200px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+.ErrorMsg {
+    background-color:rgb(208 17 17 / 50%);
+    border-radius: 10px;
+    border: 2px solid #9c1d1d;
+    color: #9c1d1d;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  button{
+  position: absolute;
+  top: 3px;
+  right: 0;
+  border: 0px;
+  background-color: none;
+  }
+  
+  .InformationMsg {
+    background-color:rgb(51 153 255 / 50%);
+    border-radius: 10px;
+    color: #3137a1;
+    border:1px solid #3137a1;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .SuccessMsg{
+    background-color: rgb(51 204 51 / 50%);
+    color: #167f2a;
+    border: 1px solid #167f2a;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  // .hidden {
+  //   display: none;
+  // }

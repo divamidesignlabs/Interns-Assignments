@@ -1,0 +1,31 @@
+{
+  "usersProfiles": [
+    {
+      "id": 1,
+      "Name":"rushika",
+      "Email":"rushika@gmail.com",
+      "phoneNo":9059378356,
+      "AccountType":"public",
+      "Catogery":"devop team"
+      
+    },
+    {
+      "id": 2,
+      "Name":"shreya",
+      "Email":"shreya@gmail.com",
+      "phoneNo":7675996926,
+      "AccountType":"private",
+      "Catogery":"testing team"
+    },
+    {
+      "id": 3,
+      "Name":" rushika shreya",
+      "Email":"rushikashreya@gmail.com",
+      "phoneNo":7675996926,
+      "AccountType":"private",
+      "Catogery":"design team"
+    }
+    
+    
+  ]
+}

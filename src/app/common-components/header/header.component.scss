@@ -1,0 +1,41 @@
+.Header{
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 36px;
+
+}
+.Header-Left{
+    display: flex;
+    padding-left: 20px;
+
+}
+.Header-Left--Items{
+    display: flex;
+    padding-left: 31px;
+    align-items: center;
+    
+
+}
+.header-left-element{
+    display: flex;
+    padding-right: 8px;
+}
+#img{
+    width: 18px;
+    height: 18px;
+}
+#logo{
+    padding-right: 24px;
+}
+.Header-Right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 18px;
+}
