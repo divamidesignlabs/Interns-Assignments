@@ -1,0 +1,22 @@
+<div class="cardsMain" *ngFor="let card of moviesData">
+    <div class="cardImage"><img src="assets\Assets\poster 1.png" alt="poster" width="250px" height="300px"></div>
+    <div class="cardDetails">
+        <div class="cardTitleCensorRating">
+            <div class="cardTitle">
+                {{card.name}}
+            </div>
+            <div class="CardCensor">
+                U/A
+            </div>
+            <div class="liked">
+                <img src="assets\Assets\liked.svg" alt="">
+            </div>
+        </div>
+        <div class="genre-time-rating">
+            <div class="genre">{{card.genre}}</div>
+            <div class="time">{{card.duration}} mins</div>
+            <div class="rating">80%</div>
+        </div>
+    </div>
+
+</div>

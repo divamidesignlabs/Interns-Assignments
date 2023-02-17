@@ -1,0 +1,24 @@
+.cardsMain{
+    width: 22vw;
+    background-color: black;
+    margin-left: 20px;
+    .cardDetails{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(114, 113, 113);
+        color: white;
+        border-radius: 0px 5px 5px 0px;
+        width: 20vw;
+        .cardTitleCensorRating{
+            display: flex;
+            justify-content: space-between;  
+        }
+        .genre-time-rating{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.cardTitle{
+    display: flex;
+}
