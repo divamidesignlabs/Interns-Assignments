@@ -1,0 +1,32 @@
+#confirmation-data{
+    padding: 100px;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: large;
+}
+#button{
+    margin:50px;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid lightgrey;
+    color:black;
+    width:200px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}
+.contents{
+    font-family:  "Source Sans Pro";
+    font-size: xx-large;
+    text-align: center;
+    padding: 100px 0px;
+    border: 1px solid black;   
+    // comment border
+}
+*{
+    font-family: "Source Sans Pro";
+}
+table{
+   margin-left: 90px;
+}
