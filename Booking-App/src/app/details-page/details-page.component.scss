@@ -1,0 +1,27 @@
+.movie_details{
+    height: 55px;
+    margin-top: 8px;
+    padding: 8px 0px;
+
+}
+img{
+        width: 100vw;
+    }
+.details_image{
+    position:relative ;
+    top: 0px;
+    left: 0px;
+    opacity: 50%;
+}
+.play_icon{
+    position: absolute;
+    top: 128px;
+    left: 1px;
+    height: 46px;
+}
+#watch_text{
+    height: 20px;
+    position: absolute;
+    top: 173px;
+    left: 598px;
+}
