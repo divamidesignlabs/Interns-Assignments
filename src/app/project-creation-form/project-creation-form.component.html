@@ -1,0 +1,37 @@
+<form>
+    <div class="topForm">
+        <div class="leftForm">
+            <img src="assets\images\addImage.svg" alt="icon" height="60px" width="60px">
+            <label for="addicon">Add Icon</label>
+            <input type="file" name="addicon" id="addicon"><br>
+
+            <label for="projectsName">What shall we call it</label>
+            <input type="text" name="projectsName" placeholder="Project Name"><br>
+
+            <label for="projectAbout">What's this project is about(optional)</label>
+            <textarea name="projectAbout" rows="5" placeholder="About the project"></textarea><br>
+
+            <p>Visibility <span>(When a project is set to personal, it can be only be viewed or joined by invitation.)</span></p>
+            <div class="visibility">
+                <div class="public">
+                    <img src="assets\images\public.svg" alt="public">
+                    <p>Public</p>
+                    <input type="radio" name="public" value="public" checked>
+                </div>
+                <div class="personal">
+                    <img src="assets\images\personal.svg" alt="personal">
+                    <p>Personal</p>
+                    <input type="radio" name="personal" value="personal"> 
+                </div>
+            </div>
+        </div>
+
+        <div class="rightForm">
+            <img src="assets\images\projectFormImage.svg" alt="img">
+        </div>
+    </div>
+    <div class="bottomForm">
+        <button class="cancelBtn">Cancel</button>
+        <button class="createBtn">Create</button>
+    </div>
+</form>

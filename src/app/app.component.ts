@@ -16,14 +16,23 @@ export class AppComponent {
     this.popUpActivation = false;
   }
   //popup data that should be visible in common popup component. 'notify' is an interface
+  // popUpData:notify = {
+  //   nameType:'Remove User',
+  //   confirmation:'Are you sure you want to remove user',
+  //   nameOf:'Anuja Kumari',
+  //   unableTo:'By confirming this anujakumari wont be able to:',
+  //   unableData:['1. Access any projects related to this Account','2. Any personal data synced to this Account'],
+  //   button1:'Cancel',
+  //   button2:'Remove User'
+  // }
   popUpData:notify = {
-    nameType:'Remove User',
-    confirmation:'Are you sure you want to remove user',
-    nameOf:'Anuja Kumari',
-    unableTo:'By confirming this anujakumari wont be able to:',
-    unableData:['1. Access any projects related to this Account','2. Any personal data synced to this Account'],
+    nameType:'Delete Organizational Account',
+    confirmation:'Are you sure you want to Delete your Account',
+    nameOf:'Qarma Backend Team',
+    unableTo:'By confirming this you wont be able to:',
+    unableData:['1. Access any projects related to this Account','2. Any data synced to this Account','3.You will lose access to subscription you bought with this account','4.All acount memebers would be removed from the account'],
     button1:'Cancel',
-    button2:'Remove User'
+    button2:'Delete Account'
   }
   //the common tabs which are required.
   tabs : tabsLabel[]= [

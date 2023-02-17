@@ -1,0 +1,30 @@
+.homeHead{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+
+}
+.homeContents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 110px;
+    div{
+        padding-bottom: 5px;
+    }
+}
+span{
+    color: skyblue
+}
+.homeImg{
+position: absolute;
+bottom: 70px;
+right: 0px;
+z-index: -1;
+}
+.homeImg img{
+    height: 35vh;
+    width: 35vw;
+}

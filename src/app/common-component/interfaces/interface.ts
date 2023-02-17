@@ -17,3 +17,9 @@ export interface toast{
     toastMessage:string,
     toastTime:number
 }
+
+export interface projectStat{
+
+    imgSrc:string,
+    projectContext:string
+}
