@@ -1,0 +1,26 @@
+<!-- <details>
+    <summary>Languages</summary>
+    <div>
+        <input type="checkbox" name="" id="">
+        <span>Telugu</span>
+    </div>
+    <div>
+        <input type="checkbox" name="" id="">
+        <span>Telugu</span>
+    </div>
+    <div>
+        <input type="checkbox" name="" id="">
+        <span>Telugu</span>
+    </div>
+    <div>
+        <input type="checkbox" name="" id="">
+        <span>Telugu</span>
+    </div>
+</details> -->
+<details>
+    <summary>{{filterChoices.summary}}</summary>
+    <div *ngFor="let choice of filterChoices.listOfChoices">
+        <input type="checkbox" name="" id="">
+        <span>{{choice}}</span>
+    </div>
+</details>

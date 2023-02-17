@@ -1,0 +1,39 @@
+header{
+    background-color: #161616;
+    padding:8px 0px;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__search{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        border: 1px solid #8C8C8C;
+        height: 32px;
+        width: 600px;
+        .header__searchicon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5%;
+            img{
+                height: 14.2px;
+                width:14.2px
+            }
+        }
+        .header__searchbar{
+            width: 95%;
+            input{
+                height: 100%;
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: #161616;
+            }
+        }
+
+
+    }
+    }
+}
