@@ -1,5 +1,47 @@
-.landing__content{
+.landing{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 10px;
+    .landing__fliters{
+        background-color: #000000;
+        width: 20%;
+        .filter__reset{
+            display: flex;
+            justify-content: space-between;
+            p{
+                color: #AFAFAF ;
+            }
+            .reset{
+                color: #EF233C ;
+            }
+        }
+        .filter__options{
+            padding: 10px;
+            background-color: #272727;
+            margin-top: 22px;
+        }
+
+    }
+    .landing__cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .landing__tabs{
+            display: flex;
+            gap: 10px;
+            margin-left: 30px;
+            div#active{
+                color: #DCDCDC;
+                border-bottom:2px solid #EF233C;;
+            }
+            div{
+                color: #AFAFAF;
+            }
+        }
+        .landing__list-of-cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+    }
 }

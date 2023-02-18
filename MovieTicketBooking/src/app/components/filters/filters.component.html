@@ -1,90 +1,70 @@
-<!-- <app-filter [filterChoices]="filterChoices1"></app-filter>
-<app-filter [filterChoices]="filterChoices2"></app-filter> -->
-<!-- <button (click)="hfilter('Telegu')">Get</button> -->
 <details>
     <summary>Language</summary>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="English" (change)="filter($event)">
         <span>English</span>
     </div>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="Tamil" (change)="filter($event)">
         <span>Tamil</span>
     </div>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="Telegu" (change)="filter($event)">
         <span>Telugu</span>
     </div>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="Marathi" (change)="filter($event)">
         <span>Marathi</span>
     </div>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="Malayalam" (change)="filter($event)">
         <span>Malayalam</span>
     </div>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="Punjabi" (change)="filter($event)">
         <span>Punjabi</span>
     </div>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="Gujarati" (change)="filter($event)">
         <span>Gujarati</span>
     </div>
-    <div>
+    <div class="options">
         <input type="checkbox" name="language" id="" value="Bengali" (change)="filter($event)">
         <span>Bengali</span>
     </div>
 </details>
-<div *ngFor="let item of runningMovies">
-    <div>{{item._id}}</div>
-    <div>{{item.name}}</div>
-    <div>{{item.duration}}</div>
-    <div>{{item.genre}}</div>
-    <div>{{item.language}}</div>
-    <div>{{item.duration}}</div>
-    <div><img src="assets\poster 2.png" alt="poster"></div>
-</div>
-
-<!-- dislike_count
-: 
-5000
-duration
-: 
-143
-genre
-: 
-"Action, Sci-Fi"
-language
-: 
-"English, Hindi, Tamil, Telegu"
-like_count
-: 
-100000000
-name
-: 
-"The Avengers"
-pg_rating
-: 
-"PG_13"
-poster_url
-: 
-"https://www.imdb.com/title/tt0848228/mediaviewer/rm3955117056/?ref_=tt_ov_i"
-release_date
-: 
-"2012-05-11T18:30:00.000Z"
-released
-: 
-"1"
-show_times
-: 
-"09:30, 12:30, 15:30, 20:30, 22:00"
-synopsis
-: 
-"Earths mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity."
-trailer_url
-: 
-"https://www.youtube.com/watch?v=eOrNdBpGMv8"
-_id
-: 
-9 -->
+<details>
+    <summary>Genre</summary>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Comedy" (change)="filter($event)">
+        <span>Comedy</span>
+    </div>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Crime" (change)="filter($event)">
+        <span>Crime</span>
+    </div>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Drama" (change)="filter($event)">
+        <span>Drama</span>
+    </div>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Fantasy" (change)="filter($event)">
+        <span>Fantasy</span>
+    </div>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Horror" (change)="filter($event)">
+        <span>Horror</span>
+    </div>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Romantic" (change)="filter($event)">
+        <span>Romantic</span>
+    </div>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Sci-fi" (change)="filter($event)">
+        <span>Sci-fi</span>
+    </div>
+    <div class="options">
+        <input type="checkbox" name="Genre" id="" value="Thriller" (change)="filter($event)">
+        <span>Thriller</span>
+    </div>
+</details>

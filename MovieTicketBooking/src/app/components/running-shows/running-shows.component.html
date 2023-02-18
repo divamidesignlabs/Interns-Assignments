@@ -1,8 +1,21 @@
 <div class="landing">
-    <div class="landing__content" *ngFor="let card of cards">
-        <app-card [card]="card" *ngFor="let card of cards"></app-card>
-    </div>
     <div class="landing__fliters">
+        <div class="filter__reset">
+            <p>Filters</p>
+            <p class="reset">Reset all</p>
+        </div>
+        <div class="filter__options">
+            <app-filters (sendData)="getData($event)"></app-filters>
+        </div>
+    </div>
+    <div class="landing__cards" >
+        <div class="landing__tabs">
+            <div id="active">Now showing</div>
+            <div>Upcoming Movies</div>
+        </div>
+        <div class="landing__list-of-cards">
+            <app-card [card]="card" *ngFor="let card of cards"></app-card>
+        </div>
 
     </div>
 

@@ -24,4 +24,8 @@ export class CardComponent {
 //   trailer_url: "https://www.youtube.com/watch?v=eOrNdBpGMv8",
 // }
 
+sendidToDetailsPage(_id:number){
+  console.log("I am here",_id);
+}
+
 }
