@@ -1,4 +1,5 @@
-<div class="cardsMain" *ngFor="let card of moviesData">
+<!-- This is a common card component which is used to display the movie details which are recived from backend-->
+<div class="cardsMain" *ngFor="let card of moviesData" (click)="onClickMovie()">
     <div class="cardImage"><img src="assets\Assets\poster 1.png" alt="poster" width="250px" height="300px"></div>
     <div class="cardDetails">
         <div class="cardTitleCensorRating">
@@ -9,7 +10,7 @@
                 U/A
             </div>
             <div class="liked">
-                <img src="assets\Assets\liked.svg" alt="">
+                <img src="assets\Assets\liked.svg" alt="liked">
             </div>
         </div>
         <div class="genre-time-rating">

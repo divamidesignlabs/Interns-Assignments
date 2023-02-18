@@ -1,0 +1,28 @@
+.summary{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+     div{
+        padding: 10px;
+     }
+}
+.buttons{
+    display: flex;
+    .sel{
+        color: white;
+        background-color: rgb(41, 40, 40);
+        border-color: white;
+        padding: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .proceed{
+        color: white;
+        background-color: red;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+

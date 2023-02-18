@@ -1,1 +1,17 @@
-<p>filter works!</p>
+<div class="filterMain">
+    <!-- details tag is use when the user wanted to show the summary and hide the content, content shown only on click -->
+   <details>
+        <summary>Languages</summary>
+        <div *ngFor="let i of Lang" class="languages">
+            <input type="checkbox">
+            <label for="language">{{i}}</label>
+        </div>
+   </details>
+   <details>
+        <summary>Genre</summary>
+        <div *ngFor="let i of Genre" class="genres">
+            <input type="checkbox">
+            <label for="Genre">{{i}}</label>
+        </div>
+</details>
+</div>

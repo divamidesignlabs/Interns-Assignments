@@ -1,1 +1,40 @@
-<p>booking-details works!</p>
+<div class="bookingFormMain">
+    <!-- formgroup binds the instances of registerBooking  -->
+    <form [formGroup]="registerBooking" (ngsubmit)="onSubmit()"> 
+        <div class="formMain">
+            <div class="date">
+                <label for="date">Date</label>
+                <!-- Input for date type -->
+                <input type="date" name="date" formControlName="date">
+                <!-- Invalid message if there is an error in the input -->
+                <div *ngIf="date && date?.touched && date.errors?.['required']">
+                    <span>Invalid date</span>
+                </div>
+            </div>
+            <div class="tickets">
+                <label for="tickets">No. of tickets</label>
+                <!-- Input for number of tickets -->
+                <input type="text" formControlName="tickets" name="tickets">
+                <div *ngIf="tickets && tickets?.touched && tickets.errors?.['required']">
+                    <span>minimum 1 and maximum 8 tickets</span>
+                </div>
+            </div>
+            <div class="dropdown">
+                <label> Select seat type</label>
+                <!-- Inputs for dropdown -->
+                <select name="seatType" id="seatT" formControlName="dropDown">
+                    <option value="elite">ELite(A-E)  500</option>
+                    <option value="gold">Gold(F-P)  200</option>
+                    <option value="economy">Economy(Q-R)  100</option>
+                </select>
+                <div *ngIf="dropDown && dropDown?.touched && dropDown.errors?.['required']">
+                    <span>Invalid</span>
+                </div>
+            </div>
+
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+    </div>
+    </form>
+</div>
