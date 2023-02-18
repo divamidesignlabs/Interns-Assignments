@@ -1,0 +1,33 @@
+span{
+    color: red;
+}
+.formMain{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    label{
+        padding: 10px;
+    }
+    .date,.tickets,.dropdown{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+
+}
+.bookingFormMain{
+    width: 50vw;
+}
+button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
