@@ -2,12 +2,18 @@
 .filter_container{
     display: flex;
     flex-direction: column;
-    padding: 5vh 30px;
-    max-width: 30vw;
+    margin: 0px 10px 5vh 30px ;
+    margin-top: 5vh;
+    width: 23vw;
+    float: left;
+    height: 66vh;
+    
+    
     .filter_heads{
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+        padding: 10px;
     }
     input{
         padding: 3px;

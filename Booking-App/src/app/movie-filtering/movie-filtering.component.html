@@ -12,4 +12,10 @@
         <div *ngFor="let language of languagesArray let i = index">
         <input type="checkbox">{{language}}</div>
     </div>
+
+    <div (click)="isGenere=!isGenere">> Genere</div>
+    <div *ngIf="isGenere==true">
+        <div *ngFor="let genere of genereArray let i = index">
+        <input type="checkbox">{{genere}}</div>
+    </div>
 </div>

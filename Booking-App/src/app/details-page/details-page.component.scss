@@ -2,10 +2,13 @@
     height: 55px;
     margin-top: 8px;
     padding: 8px 0px;
+    display: flex;
+    flex-direction: column;
 
 }
 img{
         width: 100vw;
+        height: 30vh;
     }
 .details_image{
     position:relative ;
@@ -22,6 +25,78 @@ img{
 #watch_text{
     height: 20px;
     position: absolute;
-    top: 173px;
-    left: 598px;
+    text-align: center;
+}
+
+.movie_booking_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272727;
+}
+
+.title-div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.movie-title{
+    white-space: nowrap;
+    padding-right:10px;
+    padding-bottom: 3px;
+    font-size: large;
+}
+
+.movie-small-desc{
+    font-size: small;
+}
+
+#likesLogo{
+    width: 20px;
+    height: 20px;
+}
+
+.column-arrengement-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    span{
+        border: 1px solid white;
+    }
+}
+
+button{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    line-height: 25px;
+}
+
+.main_description{
+    // overflow-y: auto;
+    height: 40vh;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 400;
+    .selected_movie_logo{
+        img{
+            width: 20vw;
+            height: 50vh;
+        }
+    }
+    .description_container{
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        img{
+            width: 40vw;
+        }
+        .videos{
+            display: flex;
+            column-gap: 10px;
+        }
+    }
 }

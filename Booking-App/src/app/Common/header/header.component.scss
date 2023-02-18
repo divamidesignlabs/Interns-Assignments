@@ -1,12 +1,11 @@
 .container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     padding: 5px;
     top: 0px;
-    
+    background-color: black;
 }
 .input{
     border: 0;

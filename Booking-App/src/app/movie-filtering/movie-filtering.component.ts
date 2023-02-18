@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class MovieFilteringComponent {
     isDate = false;
     isLanguage = false;
+    isGenere = false;
+    isVisible = true;
+
   currentDate = new Date();
     dateArray = [
       (this.currentDate.getDate() ) + "/" + this.currentDate.getMonth() + "/" + this.currentDate.getFullYear(),
@@ -37,8 +40,15 @@ export class MovieFilteringComponent {
     'Comedy',
     'Crime',
     'Drama',
-    
+    'Fantasy',
+    'Horror',
+    'Romantic',
+    'Sci-fi',
+    'Thriller'
+
   ]
+
+  
 
   
 }

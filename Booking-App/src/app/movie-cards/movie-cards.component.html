@@ -1,1 +1,123 @@
-<p>movie-cards works!</p>
+<div class="card_space_container">
+<div class="Toggle_card_view">
+<span>Now Showing</span>
+<span>Upcoming movies</span>
+</div>
+<div class="cards_space">
+
+<div class="card_container"  *ngFor="let data of allData" (click)="movieSelected(data._id)">
+<div class="img_container">
+<img src="assets/images/moviePoster.png" alt="Movie" />
+</div>
+<div class="img_data_container">
+<div class="movie_details">
+<div class="movie_title">
+<span class="font_styleA">{{data.name}}</span>
+<span class="font_styleB"> U/A</span>
+</div>
+<div class="language_genre_duration">
+<span class="language_box">EN</span>
+<span class="font_styleB">{{data.genre}}</span>
+<span class="font_styleB"> {{convertDurationToHours(data.duration)}} </span>
+</div>
+</div>
+<div class="likepercent_container">
+<span><img src="assets/svg/liked.svg" alt="Likes" /></span>
+<span>{{likesIntoPercentage(data.like_count,data.dislike_count,data.released)}}</span>
+</div>
+</div>
+</div>
+
+<!-- ----------------------dummy code for testing till the api hits-------------------------- -->
+<!-- <div class="card_container">
+<div class="img_container">
+<img src="assets\poster details page 1.png" alt="" />
+</div>
+<div class="img_data_container">
+<div class="movie_details">
+<div class="movie_title">
+<span class="font_styleA">Gravity </span>
+<span class="font_styleB"> U/A</span>
+</div>
+<div class="language_genre_duration">
+<span class="language_box">EN</span>
+
+<span class="font_styleB"> genre</span>
+<span class="font_styleB"> XXhr XXmins </span>
+</div>
+</div>
+<div class="likepercent_container">
+<span><img src="assets\liked.svg" alt="" /></span>
+<span> 92%</span>
+</div>
+</div>
+</div><div class="card_container">
+<div class="img_container">
+<img src="assets\poster details page 1.png" alt="" />
+</div>
+<div class="img_data_container">
+<div class="movie_details">
+<div class="movie_title">
+<span class="font_styleA">Gravity </span>
+<span class="font_styleB"> U/A</span>
+</div>
+<div class="language_genre_duration">
+<span class="language_box">EN</span>
+<span class="font_styleB"> genre</span>
+<span class="font_styleB"> XXhr XXmins </span>
+</div>
+</div>
+<div class="likepercent_container">
+<span><img src="assets\liked.svg" alt="" /></span>
+<span> 92%</span>
+</div>
+</div>
+</div><div class="card_container">
+<div class="img_container">
+<img src="assets\poster details page 1.png" alt="" />
+</div>
+<div class="img_data_container">
+<div class="movie_details">
+<div class="movie_title">
+<span class="font_styleA">Gravity </span>
+<span class="font_styleB"> U/A</span>
+</div>
+
+<div class="language_genre_duration">
+<span class="language_box">EN</span>
+<span class="font_styleB"> genre</span>
+<span class="font_styleB"> XXhr XXmins </span>
+</div>
+</div>
+<div class="likepercent_container">
+<span><img src="assets\liked.svg" alt="" /></span>
+<span> 92%</span>
+</div>
+</div>
+</div><div class="card_container">
+<div class="img_container">
+<img src="assets\poster details page 1.png" alt="" />
+</div>
+<div class="img_data_container">
+<div class="movie_details">
+<div class="movie_title">
+<span class="font_styleA">Gravity </span>
+<span class="font_styleB"> U/A</span>
+</div>
+<div class="language_genre_duration">
+<span class="language_box">EN</span>
+<span class="font_styleB"> genre</span>
+<span class="font_styleB"> XXhr XXmins </span>
+</div>
+</div>
+<div class="likepercent_container">
+<span><img src="assets\liked.svg" alt="" /></span>
+<span> 92%</span>
+</div>
+</div>
+</div> -->
+<!-- ----------------------dummy code ends here--------------------- -->
+
+
+</div>
+</div>
