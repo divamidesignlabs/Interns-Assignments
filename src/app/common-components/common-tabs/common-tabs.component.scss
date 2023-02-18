@@ -1,0 +1,23 @@
+.tabs{
+    // border:3px dashed black;
+    display: flex;
+    justify-content: flex-start;
+    gap:50px;
+    font-family: "Source Sans Pro";
+    padding: 15px 0px 0px 50px;
+    font-size: 22px;
+    border-bottom:2px solid #808080;
+    
+    .tab{
+        padding: 0px 15px 14px 15px;
+        cursor: pointer;
+    }
+    
+    .tabs__selected-div{
+        border: 3px solid #3399FF;
+        border-radius: 12px;
+    }
+    .tabs__not-selected-div{
+        border:none;
+    }
+}
