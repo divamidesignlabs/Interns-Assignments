@@ -19,7 +19,7 @@ export class WelcomeComponent implements OnInit {
     this.movieService.getAllMovies().subscribe(
       (res: any) => {
         this.movies = res;
-        console.log(this.movies[0].poster_url);
+        console.log(this.movies[0].name);
       },
       (err) => {
         console.log(err);

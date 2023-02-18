@@ -1,9 +1,10 @@
+<!-- <app-header></app-header> -->
 <app-carousel></app-carousel>
-
-<div class="movies-grid">
-  <app-movie-card
-    *ngFor="let movie of movies"
-    [movieData]="movie"
-    (click)="showDetails(movie._id)"
-  ></app-movie-card>
-</div>
+<app-tabs [movies]="movies"></app-tabs>
+<!-- <div class="movies-grid"> -->
+<!-- <app-movie-card
+  *ngFor="let movie of movies"
+  [movieData]="movie"
+  (click)="showDetails(movie._id)"
+></app-movie-card> -->
+<!-- </div> -->

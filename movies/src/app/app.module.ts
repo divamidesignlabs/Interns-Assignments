@@ -15,6 +15,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { CommonModule } from '@angular/common';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TabsComponent } from './shared/tabs/tabs.component';
+import { HeaderComponent } from './shared/header/header.component';
 // import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TabsComponent } from './shared/tabs/tabs.component';
     TabsComponent,
     WelcomeComponent,
     DetailsComponent,
+    HeaderComponent,
   ],
 
   imports: [
