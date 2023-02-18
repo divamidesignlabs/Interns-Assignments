@@ -1,0 +1,44 @@
+.movie_booking_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272727;
+}
+
+.title-div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.movie-title{
+    white-space: nowrap;
+    padding-right:10px;
+    padding-bottom: 3px;
+    font-size: large;
+}
+
+.movie-small-desc{
+    font-size: small;
+}
+
+#likesLogo{
+    width: 20px;
+    height: 20px;
+}
+
+.column-arrengement-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    span{
+        border: 1px solid white;
+    }
+}
+
+.timings{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid;
+}

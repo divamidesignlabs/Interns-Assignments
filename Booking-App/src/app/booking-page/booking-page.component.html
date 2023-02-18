@@ -1,0 +1,37 @@
+<div class="movie_booking_container">
+    <div class="title-div">
+    <span class="movie-title">Captain Marvel</span>
+    <span class="movie-small-desc"> U/A Thriller/Action 2 hr 30 mins</span>
+    </div>
+
+    <div class="column-arrengement-div">
+    <img src="assets/svg/liked.svg" id="likesLogo">
+    <span>likes</span>
+    </div>
+    <div class="column-arrengement-div">
+        <label for="date">Date</label>
+            <input type="date" id="date">
+    </div>
+    <div class="column-arrengement-div">
+        <label for="language">Language</label>
+            <select name="language" id="language">
+                <option value="English">{{'language'}}</option>
+            </select>
+    </div>
+    <div class="column-arrengement-div">
+        <label for="dimention">Dimention</label>
+        <div><span>2D</span><span>3D</span></div>
+    </div>
+
+    <div class="button">
+    <button >Book Now</button>
+  </div>
+</div>
+
+<div class="timings" *ngFor="let time of times">
+    <span>{{time}}</span>
+</div>
+
+<form action="#">
+
+</form>

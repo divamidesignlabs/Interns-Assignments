@@ -5,13 +5,13 @@
 
     <div class="movie_booking_container">
         <div class="title-div">
-        <span class="movie-title">Captain Marvel</span>
+        <span class="movie-title">{{selected_movie_data?.name}}</span>
         <span class="movie-small-desc"> U/A Thriller/Action 2 hr 30 mins</span>
         </div>
 
         <div class="column-arrengement-div">
         <img src="assets/svg/liked.svg" id="likesLogo">
-        <span>likes</span>
+        <span>{{selected_movie_data.like_count}}</span>
         </div>
         <div class="column-arrengement-div">
             <label for="date">Date</label>
@@ -20,7 +20,7 @@
         <div class="column-arrengement-div">
             <label for="language">Language</label>
                 <select name="language" id="language">
-                    <option value="English">{{'language'}}</option>
+                    <option  id="language" [value]="lang" *ngFor="let lang of langs">{{lang}}</option>
                 </select>
         </div>
         <div class="column-arrengement-div">
