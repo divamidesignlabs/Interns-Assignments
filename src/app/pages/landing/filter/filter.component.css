@@ -1,0 +1,29 @@
+
+.white{
+    color: white;
+}
+#p-accordiontab-0{
+    padding: 0;
+}
+::ng-deep .hey{
+    padding: 0;
+    background-color: red;
+
+    
+}
+
+::ng-deep .p-accordion-header-link{
+    background-color: red;
+}
+::ng-deep .p-accordion-content{
+    background-color: blue;
+}
+
+::ng-deep p-accordion-tab{
+    background-color: aqua;
+}
+
+::ng-deep .hey2{
+    background-color: blue !important;
+    color: red !important;
+}

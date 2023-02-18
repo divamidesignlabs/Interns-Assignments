@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Accordion} from 'primeng/accordion'
 
 @Component({
   selector: 'app-filter',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./filter.component.css']
 })
 export class FilterComponent {
-
+  
 }
