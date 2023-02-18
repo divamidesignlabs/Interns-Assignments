@@ -23,6 +23,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { DetailsComponent } from './pages/details/details/details.component';
 
 import { LandingmainComponent } from './landingmain/landingmain.component';
+import { DetailsmainComponent } from './detailsmain/detailsmain.component';
+import { BookingmainComponent } from './bookingmain/bookingmain.component';
+import {AppRoutingModule}  from './app-routing.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,13 +44,17 @@ import { LandingmainComponent } from './landingmain/landingmain.component';
     SliderComponent,
     CardlistComponent,
     DetailsComponent,
-    LandingmainComponent
+    LandingmainComponent,
+    DetailsmainComponent,
+    BookingmainComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AccordionModule
+    AccordionModule,
+    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
