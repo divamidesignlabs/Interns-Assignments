@@ -1,0 +1,11 @@
+.main-content{
+    display: flex;
+}
+.left-sidebar{
+    width:20%;
+    /* border: 1px solid red; */
+}
+.right-sidebar{
+    width: 80%;
+    /* border: 1px solid blue; */
+}

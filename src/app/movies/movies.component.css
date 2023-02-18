@@ -1,0 +1,22 @@
+.posters{
+    display: flex;
+     gap:30px; 
+    flex-wrap: wrap;
+    padding-left:40px;
+}
+.movie-Details{
+    background-color: grey;
+}
+.movieTitle{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.genre{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+.details-card{
+    cursor: pointer;
+}

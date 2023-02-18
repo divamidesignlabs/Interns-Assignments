@@ -1,0 +1,9 @@
+.active{
+    border-bottom: 2px solid orangered;
+}
+.Fortabs{
+    display: flex;
+    gap: 40px;
+    padding: 17px;
+
+}

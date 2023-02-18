@@ -1,0 +1,27 @@
+    <div class="filterComponent">
+        <div class="Actions">
+            <div  >Filters</div>
+            <div  class="red">Clear All</div>
+        </div>
+        <div   class="details">
+            <details>
+               <summary>Languages</summary>
+                   <div *ngFor="let lang of languages ">
+                    <input type="checkbox">
+                    <label>{{lang}}</label>
+                   </div>
+            </details>
+            <details>
+                <summary>Genere</summary>
+                   <div *ngFor="let genere of generes ">
+                    <input type="checkbox">
+                    <label>{{genere}}</label>
+                   </div>
+            </details>
+        
+        </div>
+    </div>
+
+
+
+

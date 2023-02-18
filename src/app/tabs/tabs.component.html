@@ -1,0 +1,5 @@
+<div class="Fortabs">
+    <div class="tabnames"  *ngFor="let tabs of tabslist;let index=index" (click)="setTab(index)" >
+        <span [ngClass]=" {active:activatedTab==index} ">{{tabs}}</span> <!--looping the tabslist and styling the activated tab-->
+     </div>
+</div>
