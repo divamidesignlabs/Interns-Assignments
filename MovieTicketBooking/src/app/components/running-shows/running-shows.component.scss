@@ -12,6 +12,7 @@
             }
             .reset{
                 color: #EF233C ;
+                cursor: pointer;
             }
         }
         .filter__options{
@@ -42,6 +43,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             padding: 20px;
+            gap: 20px;
         }
     }
 }
