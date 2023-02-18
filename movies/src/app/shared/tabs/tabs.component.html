@@ -1,0 +1,10 @@
+<!-- <div>
+    <button (click)="enableNowShowing()">Now Showing</button>
+    <button (click)="enableUpcoming()">Upcoming movies</button>
+</div>
+<app-movie-card *ngIf="isEnableNow"></app-movie-card>
+<div *ngIf="isEnableUpcoming"></div> -->
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab label="First" class="first"><app-movie-card></app-movie-card></mat-tab>
+    <mat-tab label="Second"><app-movie-card></app-movie-card></mat-tab>
+</mat-tab-group>
