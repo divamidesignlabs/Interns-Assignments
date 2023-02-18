@@ -1,10 +1,7 @@
 export interface MovieData {
   _id: number;
-
   name: string;
-
   synopsis: string;
-
   release_date: Date;
 
   released: string;

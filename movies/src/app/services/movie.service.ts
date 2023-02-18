@@ -13,7 +13,7 @@ with the backend API's.
 export class MovieService {
   serviceURL: string;
   constructor(private http: HttpClient) {
-    this.serviceURL = 'https://localhost:8200/api';
+    this.serviceURL = 'http://localhost:8200/api';
   }
 
   // Method to fetch all the movies data

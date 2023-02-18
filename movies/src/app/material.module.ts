@@ -86,7 +86,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatTooltipModule,
     MatTreeModule,
     PortalModule,
-    ScrollingModule
+    ScrollingModule,
   ],
   imports: [
     A11yModule,
@@ -131,7 +131,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatTooltipModule,
     MatTreeModule,
     PortalModule,
-    ScrollingModule
-  ]
+    ScrollingModule,
+  ],
 })
-export class MaterialModule { }
+export class MaterialModule {}

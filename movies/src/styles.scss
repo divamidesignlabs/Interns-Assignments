@@ -1,8 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// Declaring global colors here
+$blackColor: #272727;
+$whiteBorder: #868686;
+$whiteColor: #dedede;
 *{
     margin: 0;
     padding: 0;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+  height: 100%;
+}
+body {
+
+font-family: 'Open Sans', sans-serif;
+  background: $blackColor;
+}
+
+
