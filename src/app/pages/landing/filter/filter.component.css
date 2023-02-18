@@ -1,29 +1,45 @@
 
-.white{
-    color: white;
-}
-#p-accordiontab-0{
-    padding: 0;
-}
-::ng-deep .hey{
-    padding: 0;
-    background-color: red;
 
-    
+.checkBox{
+    display: flex;
+    font-size: 13px;
+    color: #AFAFAF;
+    margin-top: 16px;
 }
+.checkBox input{
+    margin-right: 5px;
+}
+::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link{
+    background-color: black !important;
+}
+::ng-deep .p-component{
+    width: 288px;
+}
+::ng-deep.p-accordion .p-accordion-header .p-accordion-header-link{
+    border: 0;
+}
+::ng-deep .p-accordion .p-accordion-content{
+    background-color: black;
+    border: 0;
+}
+::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link{
+    border: 0 !important;
+    outline: 0;
+}
+::ng-deep .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus{
+    border: 0;
+    outline: 0;
+}
+::ng-deep .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus{
+    box-shadow: black;
+}
+::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link{
+    border: 0;
+}
+::ng-deep .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link{
 
-::ng-deep .p-accordion-header-link{
-    background-color: red;
+    border-color: black;
 }
-::ng-deep .p-accordion-content{
-    background-color: blue;
-}
-
-::ng-deep p-accordion-tab{
-    background-color: aqua;
-}
-
-::ng-deep .hey2{
-    background-color: blue !important;
-    color: red !important;
+::ng-deep .p-accordion:focus{
+    border: 0;
 }

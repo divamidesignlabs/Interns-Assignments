@@ -9,8 +9,9 @@ export class MoviebookingService {
   constructor(private http:HttpClient) { }
   listMovies="http://localhost:8200/api/list-movies"
   getListMovies():Observable<any>{
-    // console.log('hey')
     return this.http.get(this.listMovies)
   }
-
+  getSelectedMovieID(id:any):Observable<any>{
+    return this.http.get(`http://localhost:8200/api/read-movie/${id}`)
+  }
 }

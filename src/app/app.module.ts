@@ -22,6 +22,7 @@ import { CardlistComponent } from './pages/landing/cardlist/cardlist.component'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { DetailsComponent } from './pages/details/details/details.component';
 
+import { LandingmainComponent } from './landingmain/landingmain.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { DetailsComponent } from './pages/details/details/details.component';
     FilterComponent,
     SliderComponent,
     CardlistComponent,
-    DetailsComponent
+    DetailsComponent,
+    LandingmainComponent
   ],
   imports: [
     BrowserModule,

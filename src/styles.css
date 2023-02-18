@@ -8,13 +8,10 @@
 body {
     background-color: black;
     color: white;
+
+    font-family: 'Open Sans', sans-serif;
   }
-  @media screen and (prefers-color-scheme: light) {
-    body {
-      background-color: white;
-      color: black;
-    }
-  }
+  
   html {
     --text-color-normal: #0a244d;
     --text-color-light: #8cabd9;

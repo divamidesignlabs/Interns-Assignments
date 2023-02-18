@@ -9,4 +9,10 @@ import {Accordion} from 'primeng/accordion'
 export class FilterComponent {
   
 
+  LanguagesArray:any[]=[
+    'English','Hindi','Tamil','Telugu','Marathi','Malayalam','Kannada','Punjabi','Gujarati','Bengali'
+  ]
+  GenereArray:any[]=[
+    'Action','Animation','Biography','Comedy','Crime','Drama','Fantasy','Horror','Romantic','Sci-fi','Thriller'
+  ]
 }
