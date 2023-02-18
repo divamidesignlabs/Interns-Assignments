@@ -1,0 +1,30 @@
+.bookingDetails{
+    display: flex;
+    height: 77px;
+    width: 100%;
+    background: #272727;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    top: 311px;
+}
+.bookingDropdown{
+    display:flex;
+    flex-direction: column;
+}
+.movieTitle{
+    font-family: OpenSans-Bold;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 27px;
+}
+span{
+    font-family: OpenSans-Regular;
+font-size: 12px;
+color: #868686;
+letter-spacing: 0;
+}

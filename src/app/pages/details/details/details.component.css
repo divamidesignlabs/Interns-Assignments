@@ -1,0 +1,38 @@
+.movieSummary{
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+
+}
+.movieDetails{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 139px;
+    top: 45px;
+    position: relative;
+    line-height: 1.5;
+}
+.movieSynopisis{
+    
+    top: 50px;
+    position: relative;
+}
+.moreDetails{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 39px;
+
+}
+.moviePoster{
+    /* top: 410px;
+    left: 64px;
+    position: absolute; */
+}
+.offers{
+    
+}
+.casts{
+    position: relative;
+    top: -136px;
+}

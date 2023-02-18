@@ -1,1 +1,18 @@
-
+<p-accordion>
+  <p-accordionTab
+    header="Date"
+  >
+  </p-accordionTab>
+  <p-accordionTab header="Language">
+    <div *ngFor="let item of LanguagesArray" class="checkBox">
+        <input type="checkbox">
+        <div>{{item}}</div>
+    </div>
+  </p-accordionTab>
+  <p-accordionTab header="Genere">
+    <div *ngFor="let item of GenereArray" class="checkBox">
+        <input type="checkbox">
+        <div>{{item}}</div>
+    </div> 
+</p-accordionTab>
+</p-accordion>
