@@ -1,5 +1,6 @@
+// interface for movie data getting from http://localhost:8200/api/list-movies
 export interface MovieData{
-    id: 9,
+    id: number,
     name: string,
     synopsis: string,
     release_date: string,

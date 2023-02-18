@@ -3,14 +3,16 @@ import { MovieListService } from 'src/app/services/movie-list.service';
 import { MovieData } from 'src/app/models/interfaces';
 import { MinutesToHoursPipe } from 'src/app/pipes/hrsToMins';
 import { ReplacePipe } from 'src/app/pipes/stringSeparationChange';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-movie-card',
   templateUrl: './movie-card.component.html',
   styleUrls: ['./movie-card.component.scss']
 })
 export class MovieCardComponent {
+  // movie data taking from movie-list component
   @Input() movieData:MovieData={
-    id: 9,
+    id: 0,
     name: '',
     synopsis: '',
     release_date: '',
@@ -25,6 +27,12 @@ export class MovieCardComponent {
     dislike_count: 0,
     show_times: ''
   };
+  constructor(private service:MovieListService, private route: Router){}
+  navigateToDetail(){
+    console.log(this.movieData.id);
+    this.route.navigate(['movie-detail'],{ state: { myId: this.movieData.id } });
+  }
+  
 }
 
 

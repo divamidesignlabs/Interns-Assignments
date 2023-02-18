@@ -1,5 +1,8 @@
+<!-- all the movie list in loading page  -->
 <div class="main-container">
     <div *ngFor="let movie of moviesData">
-        <app-movie-card [movieData]="movie" (click)="navigateToDetail()"></app-movie-card>
+        <!-- movie card component  -->
+        
+        <app-movie-card [movieData]="movie" ></app-movie-card>
     </div>
 </div>

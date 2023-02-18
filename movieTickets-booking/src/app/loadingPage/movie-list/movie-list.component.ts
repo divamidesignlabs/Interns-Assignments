@@ -10,13 +10,16 @@ import { Router } from '@angular/router';
 export class MovieListComponent {
   moviesData:MovieData[]=[];
   constructor(private service:MovieListService, private route: Router){}
-
+  // getting the data from the http://localhost:8200/api/list-movies
   ngOnInit(){
     this.service.getMovieData().subscribe((data:any)=>{
       this.moviesData=data;
+      console.log(this.moviesData, "hugfsaa")
     })
   }
-  navigateToDetail(){
-    this.route.navigate(['movie-detail'])
+  // navigating to movie details upon click
+  navigateToDetail(id:number){
+    console.log();
+    this.route.navigate(['movie-detail'],{ state: { myId: id } });
   }
 }

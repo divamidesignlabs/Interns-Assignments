@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MinutesToHoursPipe } from './pipes/hrsToMins';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BookingPageComponent } from './booking-page/booking-page.component';
+import { BookingPageComponent } from './movieDetails/booking-page/booking-page.component';
 import { MovieTrailerComponent } from './common-components/movie-trailer/movie-trailer.component';
 import {VgCoreModule} from '@videogular/ngx-videogular/core';
 import {VgControlsModule} from '@videogular/ngx-videogular/controls';
@@ -15,6 +15,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {ReplacePipe} from './pipes/stringSeparationChange';
 import { LoadingPageComponent } from './loadingPage/loading-page/loading-page.component';
 import { MovieListComponent } from './loadingPage/movie-list/movie-list.component';
+import { BookingFormComponent } from './bookingTickets/booking-form/booking-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { MovieListComponent } from './loadingPage/movie-list/movie-list.componen
     LoadingPageComponent,
     MovieListComponent,
     BookingPageComponent,
-    MovieTrailerComponent
+    MovieTrailerComponent,
+    BookingFormComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { MovieListComponent } from './loadingPage/movie-list/movie-list.componen
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

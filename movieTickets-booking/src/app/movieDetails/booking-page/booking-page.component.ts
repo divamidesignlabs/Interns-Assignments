@@ -1,8 +1,10 @@
 import { Component, OnChanges, SimpleChanges, Input } from '@angular/core';
-import { DataFromDBServiceService } from '../data-from-db-service.service';
+// import { DataFromDBServiceService } from '../data-from-db-service.service';
+import { MovieListService } from '../../services/movie-list.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 export interface movieData{
-  id: 9,
+  id:number,
   name: string,
   synopsis: string,
   release_date: string,
@@ -24,15 +26,17 @@ export interface movieData{
   styleUrls: ['./booking-page.component.scss']
 })
 export class BookingPageComponent {
-  @Input() id : any=10;
-  allMovies :any=[];
-  movie?:movieData;
-  constructor(private serve : DataFromDBServiceService){
 
+  id :number=10;
+  allMovies :any=[];
+  movie:any=[];
+  castItems : string[]=["Juned","OOPS","Adi","Madhu","Vaishnavi"];
+  constructor(private serve : MovieListService,private router:Router,private active: ActivatedRoute){
+    
   }
-  
+ 
   getdata(){
-      this.serve.getMovie().subscribe((data:any) => {
+      this.serve.getMovieData().subscribe((data:any) => {
         this.allMovies = data;
         console.log(this.allMovies);
         for(let item of this.allMovies){
@@ -44,9 +48,18 @@ export class BookingPageComponent {
       });
   }
   ngOnInit(){
+    // this.active.data.subscribe(data => {
+
+    //   this.id = data['myId']});
     this.getdata();
-  }
-  ngOnChanges(changes : SimpleChanges){
-      this.id=changes['id'].currentValue;
+    console.log(this.id);
+  
+}
+  // ngOnChanges(changes : SimpleChanges){
+  //     this.id=changes['id'].currentValue;
+  // }
+  navigateToBookTicket(){
+    this.router.navigate(['booking-form']);
+    
   }
 }
