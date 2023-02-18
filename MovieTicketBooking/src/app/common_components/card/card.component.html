@@ -1,6 +1,6 @@
 <div class="card_container" [routerLink]="['/movie-details',card._id] ">
     <div class="Card_image">
-     <img src="assets\poster 3.png" alt="cardposter" width="307" height="454.4px">
+     <img [src]="card.poster_url" alt="cardposter" width="307" height="454.4px">
     </div>
     <div class="card_container__Content">
       <div class="card_content1">
