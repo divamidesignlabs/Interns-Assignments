@@ -13,6 +13,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { CommonModule } from '@angular/common';
 import {MatTabsModule} from '@angular/material/tabs';
 import { TabsComponent } from './shared/tabs/tabs.component';
+import {SynopsisComponent} from './shared/synopsis/synopsis.component';
 // import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TabsComponent } from './shared/tabs/tabs.component';
     MovieCardComponent,
     TimeConverter,
     CarouselComponent,
-    TabsComponent
+    TabsComponent,
+    SynopsisComponent
   ],
   imports: [
     BrowserModule,
