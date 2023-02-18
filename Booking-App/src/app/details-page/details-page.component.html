@@ -1,0 +1,53 @@
+<div class="movie_details">
+    <a href=""><img src="assets\svg\details page bg.png"class="details_image"></a>
+    <img src="assets\svg\play icon.svg" class="play_icon">
+    <p id="watch_text">Watch Trailer</p>
+
+    <div class="movie_booking_container">
+        <div class="title-div">
+        <span class="movie-title">{{selected_movie_data?.name}}</span>
+        <span class="movie-small-desc"> U/A Thriller/Action 2 hr 30 mins</span>
+        </div>
+
+        <div class="column-arrengement-div">
+        <img src="assets/svg/liked.svg" id="likesLogo">
+        <span>{{selected_movie_data.like_count}}</span>
+        </div>
+        <div class="column-arrengement-div">
+            <label for="date">Date</label>
+                <input type="date" id="date">
+        </div>
+        <div class="column-arrengement-div">
+            <label for="language">Language</label>
+                <select name="language" id="language">
+                    <option  id="language" [value]="lang" *ngFor="let lang of langs">{{lang}}</option>
+                </select>
+        </div>
+        <div class="column-arrengement-div">
+            <label for="dimention">Dimention</label>
+            <div><span>2D</span><span>3D</span></div>
+        </div>
+
+        <div class="button">
+        <button  (click)="bookShow()">Book Now</button>
+      </div>
+</div>
+
+<div class="main_description">
+    <div class="selected_movie_logo">
+        <img src="assets/images/moviePoster.png" alt=[selected_movie_data.title]>
+    </div>
+    <div class="description_container">
+        <article>
+            <h4>Synopsis</h4>
+            <p>{{selected_movie_data.synopsis}}</p>
+        </article>
+
+        <div class="videos">
+            <img src="assets/images/video-desc.png" alt="Video scenes">
+            <img src="assets/images/movie-pic.png" alt="Snapshots from movie">
+        </div>
+    </div>
+</div>
+
+

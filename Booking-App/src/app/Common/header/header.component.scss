@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 5px;
+    top: 0px;
+    background-color: black;
+}
+
+.movie_ticket{
+    cursor: pointer;
+}
+
+.input{
+    border: 0;
+    display: flex;
+    background-color: black;
+    padding: 4px;
+}
+
+.search_bar{
+    display: flex;
+    border: 1px solid white;
+    // margin-right: 110px;
+    width: 500px;
+    border-radius: 4px;
+}
+.search_image{
+    padding: 5px;
+}
