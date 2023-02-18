@@ -1,0 +1,28 @@
+.searchbar{
+display: flex;
+    height: 32px;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(236, 234, 234) ;
+    border-radius: 4px;
+    background-color:rgba(52, 50, 50, 0.644);
+
+   }
+input{
+    background-color:rgba(46, 44, 44, 0.644);
+
+    margin-left: 10px;
+    font-size: 12px;
+    width: 200px;
+    border:0;
+    border:none;
+
+    }
+
+.search{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+}
