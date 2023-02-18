@@ -1,0 +1,42 @@
+<app-header> </app-header>
+<div class="detailsContainer">
+    <div >
+        <iframe  src="https://www.youtube.com/embed/hIR8Ar-Z4hw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="detailsContainer__Image" allowfullscreen></iframe>
+        <!-- <iframe src={{trailer}} title="YouTube video player" frameborder="0" ></iframe> -->
+        <!-- <iframe [src]="trailer" class="detailsContainer__Image"></iframe> -->
+        <!-- <video src={{trailer}} class="detailsContainer__Image" autoplay></video> -->
+        <!-- <img src="assets\trailer\details page bg.png" alt="img" class="detailsContainer__Image"> -->
+    </div>
+    <div class="detailsContainer__body">
+        <div class="detailsContainer__body-left">
+            <div>
+                <img src={{poster}} alt="" class="detailsContainer__body-poster">
+            </div>
+            <div class="detailsContainer__body-offers">
+                <span>Offers</span>
+                <div class="detailsContainer__body-coupons" *ngFor="let offer of coupons">
+                    <img src={{offer.source}} alt="" class="detailsContainer__body-left-coupons">
+                </div>
+            </div>
+        </div>
+        <div class="detailsContainer__body-right">
+            <div >
+                <span >Synopsis</span>
+                <div class="detailsContainer__body-synopsis">{{synopsisDetails}}</div>
+            </div>
+            <div class="detailsContainer__body-videos">
+                <div class="videos"><span>Videos</span><span class="">see more</span></div>
+                <div class="detailsContainer__body-videosimg">
+                    <div class="detailsContainer-video" *ngFor="let item of  videos">
+                        <div>
+                            <div class="detailsContainer-video--align">
+                                <img src={{item.source}} alt=" logo" height="196" width="396" class="detailsContainer-vedios">
+                                <div><p>{{item.description}}</p><p>{{item.dateforvideo}}</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

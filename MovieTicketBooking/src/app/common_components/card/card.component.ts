@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-
+import { MovieDataService } from 'src/app/services/movie-data.service';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-@Input() card:any;
+@Input() card:any; //to get movie detais
 // card={
 //   _id: 9,
 //   dislike_count: 5000,
@@ -23,9 +23,16 @@ export class CardComponent {
 //   synopsis: "Earths mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
 //   trailer_url: "https://www.youtube.com/watch?v=eOrNdBpGMv8",
 // }
+constructor(private getId :MovieDataService){
 
-sendidToDetailsPage(_id:number){
-  console.log("I am here",_id);
 }
+ngOnInit()
+{
+  this.getId.id=this.card._id; //storing the id in servises
+}
+// sendidToDetailsPage(_id:number){
+//   console.log("I am here",_id);
+//   this.getId.id=this.card._id;
+// }
 
 }

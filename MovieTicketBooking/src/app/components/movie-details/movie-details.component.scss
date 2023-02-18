@@ -1,0 +1,97 @@
+.detailsContainer{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #000000;
+    // overflow-y: hidden;
+    .detailsContainer__Image{
+        height: 256px;
+        width: 100%;
+    }
+    .detailsContainer__body{
+        display: flex;
+        // justify-content: space-between;
+        margin-left: 9.4%;
+        margin-right: 9.4%;
+        margin-top: 20px;
+        .detailsContainer__body-left{
+            display: flex;
+            flex-direction: column;
+            margin-right: 70px;
+            .detailsContainer__body-poster{
+                width: 323px;
+                height: 479px;
+            }
+            .detailsContainer__body-offers{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                font-family: OpenSans-Semibold;
+                font-size: 20px;
+                line-height: 24px;
+                color:#AFAFAF;
+                .detailsContainer__body-coupons{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+                    .detailsContainer__body-left-coupons{
+                        height: 100px;
+                        width: 326px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+        }
+        .detailsContainer__body-right{
+            display: flex;
+            flex-direction: column;
+            color: #AFAFAF;
+            .detailsContainer__body-synopsis{
+                font-family: OpenSans-Regular;
+                font-size: 13px;
+                color: #AFAFAF;
+                letter-spacing: 0;
+                line-height: 22px;
+            }
+            // .detailsContainer-vedio{
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: space-between;
+            //     // align-items: ;
+        
+            //     .detailsContainer-vedios{
+            //         max-width: 100%;
+            //         max-height: 196;
+            //         // margin-right: 31px;
+            //     }
+            
+            
+            // }
+        }
+    }
+    
+}
+.videos
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.detailsContainer__body-videosimg{
+    display: flex;
+}
+.detailsContainer-vedio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: ;
+
+    .detailsContainer-vedios{
+        width: 323px;
+        height: 196;
+        // margin-right: 31px;
+    }
+}
