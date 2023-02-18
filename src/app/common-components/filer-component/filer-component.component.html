@@ -1,0 +1,33 @@
+<div class="filterComponent">
+    <div class="items">
+        <div>Filters</div>
+        <button type="reset" >Clear All</button>
+    </div>
+    <div   class="details">
+        <details>
+            <summary>date</summary>
+               <div *ngFor="let date of dates ">
+                <input type="checkbox">
+                <label>{{date}}</label>
+               </div>
+        </details>
+        <details>
+           <summary>Languages</summary>
+               <div *ngFor="let lang of languages ">
+                <input type="checkbox">
+                <label>{{lang}}</label>
+               </div>
+        </details>
+        <details>
+            <summary>Genere</summary>
+               <div *ngFor="let genere of generes ">
+                <input type="checkbox">
+                <label>{{genere}}</label>
+               </div>
+        </details>
+    
+    </div>
+        
+
+    
+</div>

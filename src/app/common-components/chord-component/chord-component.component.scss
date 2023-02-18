@@ -1,0 +1,22 @@
+#poster{
+    height:400px;
+    width: 300px;
+}
+.chordComponent{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    cursor: pointer;
+    
+}
+.chordData{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #272727;
+}

@@ -1,0 +1,20 @@
+<div class="chordComponent" >
+    <div class="chord" *ngFor="let chord of chords">
+        
+       <div><img src="assets\images\chord\poster 3.png"  id="poster" (onclick)="routeNextPage()"/></div> 
+       <div class="chordData">
+            <div>{{chord.name}}</div>
+            <div>U//A</div>
+            <div><img src="assets\images\chord\liked.svg" ></div>
+       </div>
+       <div class="chordData">
+            <div>{{chord.genre}}</div>
+            <div>{{convertToHoursMinutes(chord.duration)}}</div>
+            <div>{{percentage(chord.like_count,(chord.dislike_count+chord.like_count))}}</div>
+        </div>
+
+
+
+    </div>
+
+</div>

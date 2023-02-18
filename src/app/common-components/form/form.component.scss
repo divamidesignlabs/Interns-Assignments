@@ -1,0 +1,24 @@
+#form{
+    background-color: rgb(64, 210, 210);
+    display: flex;
+    gap:40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 500px;
+    margin-right: 600px;
+
+}
+.commonclass{
+    padding-top: 10px;
+}
+#input{
+    width: 200px;
+    height: 20px;
+}
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}

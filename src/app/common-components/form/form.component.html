@@ -1,0 +1,25 @@
+<form [formGroup]="BookingForm" id="form">
+    <h2>Booking form</h2>
+    <div id="commonclass">
+        <div><label for="date">Date</label></div>
+        <input type="date" formControlName="date" id="input">
+    </div>
+    <div id="commonclass">
+        <div><label for="number of tickets">Number Of Tickets</label></div>
+        <input type="number" formControlName="numberOfTickets" id="input">
+    </div>
+    <div id="commonclass">
+        <div><label for="number of tickets">Select A Seat</label></div>
+        <select formControlName="DropDown" id="input" >
+            <option value="seat1" selected >Elite(A-E) 500</option>
+            <option value="seat2">Gold (F-P) 200</option>
+            <option value="seat3">Economy(Q-R) 100</option>
+              
+          </select>
+    </div>
+    <div id="buttons">
+        <button type="reset">Reset</button>
+        <button type="submit" [disabled]="BookingForm.invalid">Submit</button>
+    </div>
+    
+</form>
