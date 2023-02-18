@@ -1,20 +1,20 @@
 .main-container{
-    display: flex;
-    margin-top: 5%;
+    display:flex;
+    width: 100%;
 }
-.left-container{
-    width: 30%;
-}
-.right-container{
-    width: 60%;
-    margin-left: 2%;
-    flex-direction: column;
+
+.container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width:60%;
+    margin-left: 34%;
+    height: 40%;
+    margin-top: 5px;
+    align-items: space-around;
 }
 img{
     width: 100px;
-    height:100px;
+    height: 100px;
 }
 h1{
     font-size: 15px;
@@ -31,11 +31,10 @@ p{
 .castDesc h1, .castDesc p {
     margin: 0; /* Set margin to 0 to remove the extra space */
 }
-.cast-container{
+
+
+.offers{
     display: flex;
-    gap: 20px;
-}
-.cast-heading{
-    justify-content: space-around;
-    display: inline-block;
+    flex-direction: column;
+    width: 50%;
 }
