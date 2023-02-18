@@ -1,0 +1,20 @@
+<!-- ticket booking details form -->
+<div class="main-container">
+<div class="heading">Booking Details</div>
+<form [formGroup]="form">
+    <!-- date to book movie -->
+    <div class="elements">Select date</div>
+    <input type="date" formControlName="date"/>
+    <!-- no of seats to book -->
+    <div class="elements">Enter number of tickets</div>
+    <input type="number" formControlName="noOfSeats"/>
+    <div class="elements">Select seat type</div>
+    <!-- selecting seats type -->
+    <select formControlName="dropDown">
+        <option [value]="'elite(A-E)'">Elite(A-E) 500</option>
+        <option [value]="'gold(F-P)'">Gold(F-P)   200</option>
+        <option [value]="'economy(Q-R)'">Economy(Q-R) 100</option>
+    </select>
+</form>
+</div>
+    

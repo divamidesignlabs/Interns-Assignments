@@ -3,20 +3,13 @@
         <app-movie-trailer></app-movie-trailer>
     </div>
     <div class="action-bar">
-        <div class="movie-details">
-            <div class="details-left">
-                <div class="name">{{movie?.name}} U/A</div>
-                <div class="duration">
-                    <div>{{movie?.genre}}</div>
-                    <div>{{movie?.duration}}</div>
-                </div>
-            </div>
-            <div>{{movie?.like_count}}</div>
+        <div class="movie-tag">
+        <app-movie-tag [movieData]="movie" ></app-movie-tag>
         </div>
         <div class="button">
-            <button>Book Now</button>
+            <button (click)="navigateToBookTicket()">Book Now</button>
         </div>
-    </div>
+    </div> 
     <div class="booking-page-body">
         <div class="body-left">
             <div class="poster">
@@ -50,12 +43,22 @@
                     </div>
                 </div>
             </div>
-            <div class="cast_crew">
+            <h4>Cast</h4>
             <div class="cast">
-                <img src="/assets/Brie Larson.png">
+            <div *ngFor="let item of castItems">
+                <div>
+                    <img src="/assets/Brie Larson.png">
+                    <div>{{item}}</div>
+                </div>
             </div>
-            <div class="Crew">
-                <img src="/assets/Brie Larson.png">
+            </div>
+            <h4>Crew</h4>
+            <div class="cast">
+            <div *ngFor="let item of castItems">
+                <div>
+                    <img src="/assets/Brie Larson.png">
+                    <div>{{item}}</div>
+                </div>
             </div>
         </div>
     </div>

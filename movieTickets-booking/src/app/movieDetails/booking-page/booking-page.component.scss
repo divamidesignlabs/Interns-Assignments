@@ -1,5 +1,7 @@
 .booking-page{
-    
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: black;
     color:white;
     // .trailer{
@@ -9,25 +11,7 @@
         height: 100px;
         display: flex;
         justify-content: space-between;
-        background-color: #272727 ;
-        .movie-details{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 550px;
-            .name{
-                padding-left: 20px;
-                padding-bottom: 4px;
-                div{
-                    line-height: 20px;
-                }
-            }
-            .duration{
-                padding-left: 20px;
-                padding-bottom: 4px;
-
-                color: gray;
-            }
+        background-color: #272727 ;     
         }
         .button{
             display: flex;
@@ -74,6 +58,7 @@
         }
         .body-right{
             width: 60%;
+            height: 700px;
             .content{
                 padding:20px;
                 width: 100%;
@@ -96,15 +81,21 @@
                 }
 
             }
-            .cast_crew{
-                .cast{
-                    img{
-                        height: 100px;
-                        width: 100px;
-                        padding: 10px;
-                    }
+            .cast{
+                padding-top:px ;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                img{
+                    height: 100px;
+                    width: 100px;
+                    padding: 10px;
                 }
             }
+            
         }
     }
+
+.movie-tag{
+    width: 50%;
 }

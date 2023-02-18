@@ -1,0 +1,26 @@
+.main-container{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color:#DEDEDE;
+    line-height: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .elements{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 120px;
+        height: 18px;
+    }
+    select{
+        width: 124px;
+        height: 23px;
+    }
+}

@@ -1,5 +1,7 @@
-
-<div class="movie-card">
+<!-- movie card component-->
+<div class="movie-card" (click)="navigateToDetail()">
+    <!-- movie poster -->
     <img src="assets\images\poster 3.png"/>
+    <!-- movie details  -->
     <app-movie-tag [movieData]="movieData"></app-movie-tag>
 </div>

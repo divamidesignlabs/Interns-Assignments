@@ -8,6 +8,7 @@ import { MinutesToHoursPipe } from 'src/app/pipes/hrsToMins';
   styleUrls: ['./movie-tag.component.scss']
 })
 export class MovieTagComponent {
+  // taking moviedata from the http://localhost:8200/api/list-movies
   @Input() movieData:MovieData={
     id: 9,
     name: '',
@@ -24,13 +25,13 @@ export class MovieTagComponent {
     dislike_count: 0,
     show_times: ''
   };
-  isNaN: (x: any) => boolean;
+  
 
   constructor(){
-    this.isNaN=isNaN;
+    
     minutesToHours:MinutesToHoursPipe;
   }
-  
+  // function to convert likes counts to percentage
   likePercentage(likes:number,dislikes:number):number{
     let resultPercentage=likes / (likes+dislikes) * 100 ;
     return parseFloat(resultPercentage.toString()); ;
