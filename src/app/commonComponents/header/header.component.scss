@@ -1,0 +1,23 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1B1B;
+    padding: 8px;
+    .text{
+        display: flex;
+        align-items: center;
+        border: 1px solid #8C8C8C;
+        padding: 5px;
+        
+        input{
+            background-color: #1B1B1B;
+            border: none;
+            width: 40vw;
+            margin-left: 5px;
+            outline: none;
+            color: white;
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.landing-page-main{
+    display: flex;
+    flex-direction: column;
+    .landing-slider{
+        height: 26vh;
+    }
+    .landing-main{
+        display: flex;
+        .landing-left-filter{
+            width: 25vw;
+            background-color: black;
+        }
+        .landing-right-card{
+            width: 75vw;
+            
+        }
+    }
+
+
+}
+app-cards{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
