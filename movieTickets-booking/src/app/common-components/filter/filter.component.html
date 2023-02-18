@@ -1,0 +1,28 @@
+<div class="filter">
+    <div class="heading">
+        <div>Filters</div>
+        <div (click)="clearAll()">Clear All</div>
+    </div>
+    <div class="body">
+        <div class="language">
+            <div>Language</div>
+            <div *ngFor="let item of languages">
+                <label>
+                  <input type="checkbox" [(ngModel)]="item.isChecked">
+                  {{ item.name }}
+                </label>
+              </div>
+        </div>
+        <div class="genre">
+            <div>Genre</div>
+            <div *ngFor="let item of genre">
+                <label>
+                  <input type="checkbox" [(ngModel)]="item.isChecked">
+                  {{ item.name }}
+                </label>
+              </div>
+        </div>
+        <button (click)="filter()">Filter</button>
+    </div>
+    
+</div>
