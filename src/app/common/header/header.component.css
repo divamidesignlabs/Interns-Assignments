@@ -27,7 +27,6 @@ padding-left: 10px;
     display: flex;
     border: 1px solid rgb(101, 100, 100);
     border-radius: 16px;
-    height: 60px;
     align-items: center;
     gap: 10px;
 }
@@ -40,4 +39,8 @@ input[type=text] {
     background: black;
     border: none;
     color:rgb(101, 100, 100);
+    padding: 10px;
+  }
+  input:focus{
+    outline: none;
   }

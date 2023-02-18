@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {AccordionModule} from 'primeng/accordion';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
@@ -15,8 +16,13 @@ import { CastComponent } from './pages/details/cast/cast.component';
 import { VideoComponent } from './pages/details/video/video.component';
 import { FilterComponent } from './pages/landing/filter/filter.component';
 import { SliderComponent } from './pages/landing/slider/slider.component';
+import {HttpClientModule} from '@angular/common/http';
+import { CardlistComponent } from './pages/landing/cardlist/cardlist.component'
+// import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { DetailsComponent } from './pages/details/details/details.component';
 
+import { LandingmainComponent } from './landingmain/landingmain.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,10 +39,15 @@ import { DetailsComponent } from './pages/details/details/details.component';
     VideoComponent,
     FilterComponent,
     SliderComponent,
-    DetailsComponent
+    CardlistComponent,
+    DetailsComponent,
+    LandingmainComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

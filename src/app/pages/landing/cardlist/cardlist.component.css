@@ -1,0 +1,8 @@
+.white{
+    color: white;
+}
+.cardParent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 84px;
+}
