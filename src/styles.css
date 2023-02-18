@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');body{
+    margin: 0;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  html {
+    --text-color-normal: #0a244d;
+    --text-color-light: #8cabd9;
+  }
+  
+  html[data-theme='dark'] {
+    --text-color-normal: hsl(210, 10%, 62%);
+    --text-color-light: hsl(210, 15%, 35%);
+    --text-color-richer: hsl(210, 50%, 72%);
+    --text-color-highlight: hsl(25, 70%, 45%);
+  }

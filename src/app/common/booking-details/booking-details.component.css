@@ -1,0 +1,88 @@
+.bookingDetails{
+    display: flex;
+    height: 77px;
+    width: 100%;
+    background: #272727;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    top: 311px;
+}
+.bookingDropdown{
+    display:flex;
+    flex-direction: column;
+}
+.movieTitle{
+    font-family: OpenSans-Bold;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 27px;
+}
+span{
+    font-family: OpenSans-Regular;
+font-size: 12px;
+color: #868686;
+letter-spacing: 0;
+}
+input[type=date] {
+    width: 190px;
+    height: 32px;
+    margin: 8px 0;
+    color: #FFFFFF;
+    background: #272727;
+    border: 1px solid #868686;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=date]:focus {
+    border: 1px solid #555;
+  }
+  select{
+    width: 190px;
+    height: 32px;
+    margin: 8px 0;
+    color: #FFFFFF;
+    background: #272727;
+    border: 1px solid #868686;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  select:focus {
+    border: 1px solid #555;
+  }
+  .submitButton{
+    width: 190px;
+    height: 32px;
+    margin: 8px 0;
+    color:#FFFFFF ;
+    background:#ED2633 ;
+    border: 1px solid #ED2633;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+.button1{
+    width: 49px;
+    height: 32px;
+    background: #272727;
+    border: 1px solid #868686;
+    color: #FFFFFF;
+    border-radius: 2px 0px 0px 2px;
+}
+.button2{
+    width: 49px;
+    height: 32px;
+    background-color: #30CC92;
+    border: 1px solid #30CC92;
+    color:#FFFFFF ;
+    border-radius: 0px 2px 2px 0px ;
+}

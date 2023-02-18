@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    background: black;
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+    padding: 7px;
+}
+.search{
+    display: flex;
+    color: white;
+    border: 1px solid #524e4e;
+    border-radius: 4px;
+    width: 24%;
+    height: 23px;
+    align-items: center;
+}
+.logo{
+padding-left: 10px;
+}
+.searchbox{
+    padding: 10px;
+    display: flex;
+    border: 1px solid rgb(101, 100, 100);
+    border-radius: 16px;
+    align-items: center;
+    gap: 10px;
+}
+.menu{
+padding :5px;
+}
+input[type=text] {
+    width: 566px;
+    box-sizing: border-box;
+    background: black;
+    border: none;
+    color:rgb(101, 100, 100);
+    padding: 10px;
+  }
+  input:focus{
+    outline: none;
+  }

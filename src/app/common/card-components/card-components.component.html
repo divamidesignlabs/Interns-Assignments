@@ -1,0 +1,30 @@
+
+<div class="movieCard" routerLink="details">
+  <div class="moviePoster">
+    <img
+      class="moviePosterImage"
+      src="assets/images/moviePoster.png"
+      alt="Poster"
+    />
+  </div>
+  <div class="movieDetails">
+    <div class="movieTitleAndLikes">
+      <div class="movieTitle">
+        {{item.name}}
+        <span>U/A</span>
+      </div>
+      <div class="likes">
+        <img src="assets\images\liked.svg" alt="Likes" />
+      </div>
+    </div>
+    <div class="filmFeatures">
+      <div class="EN">En</div>
+      <span>Thriller / Action</span>
+      <div class="filmDuration">
+        <img src="assets\images\time.svg" alt="time" />
+        <div>{{transformMinute(item.duration)}}</div>
+      </div>
+      <div class="likesPercentage">{{likePercentage(item.like_count,(item.dislike_count+item.like_count))}}</div>
+    </div>
+  </div>
+</div>
