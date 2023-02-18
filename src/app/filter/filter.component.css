@@ -1,0 +1,21 @@
+.filterComponent{
+    width: 100%;
+}
+.details{
+    background-color: #1B1B1B 
+}
+.Actions{
+    display: flex;
+    justify-content: space-between;
+}
+.red{
+    color: red;
+    cursor: pointer;
+}
+summary{
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:grey;
+    
+}

@@ -1,0 +1,27 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #323131;
+}
+input{
+    width:370px;
+    height:30px;
+    cursor: pointer;
+}
+.menubar_icon{
+    width:30px;
+    cursor: pointer;
+}
+.forBooking{
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+.searchicon{
+    position: relative;
+    left: 550px;
+   
+}

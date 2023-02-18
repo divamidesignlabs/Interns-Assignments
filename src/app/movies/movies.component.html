@@ -1,0 +1,26 @@
+<div class="posters">
+  <div *ngFor="let posters of movieDetails; let i = index">
+    <img class="details-card"  [src]="moviePosters[i]" alt="Poster" width="290px" height="400px" />
+    <div class="movie-Details">
+      <div class="movieTitle">
+        <div class="detail-card">{{ posters.name }}</div>
+        <div>
+          <img src="assets\movie-imgs\liked.svg" />
+        </div>
+      </div>
+      <div class="genre">
+        <div>
+          {{ posters.genre }}
+        </div>
+        <div>
+          {{ convertToHoursMinutes(posters.duration) }}
+        </div>
+        <div>
+          {{
+            percentage(posters.like_count,posters.dislike_count + posters.like_count)
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
