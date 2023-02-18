@@ -20,6 +20,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { CardlistComponent } from './pages/landing/cardlist/cardlist.component'
 // import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { DetailsComponent } from './pages/details/details/details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     VideoComponent,
     FilterComponent,
     SliderComponent,
-    CardlistComponent
+    CardlistComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
