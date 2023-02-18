@@ -5,6 +5,9 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .header__logo{
+            cursor: pointer;
+        }
         .header__search{
         display: flex;
         flex-flow: row nowrap;

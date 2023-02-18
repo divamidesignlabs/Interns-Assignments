@@ -26,6 +26,15 @@ export class RunningShowsComponent {
       console.log(response);
       this.cards=response;
     })
+    let checkedList1 = document.getElementsByName("language");
+    let checkedList2 = document.getElementsByName("Genre");
+    let removeDuplicates:any[]=[]
+    let a:any[]=[];
+    for(let i=0;i<checkedList1.length;i++){
+      (checkedList1[i] as HTMLInputElement).checked=false;
+    }
+      for(let i=0;i<checkedList2.length;i++){
+        (checkedList2[i] as HTMLInputElement).checked=false;
+      }
   }
-
 }
