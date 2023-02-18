@@ -1,0 +1,40 @@
+.main-container{
+    display:flex;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+    margin-left: 34%;
+    height: 40%;
+    margin-top: 5px;
+    align-items: space-around;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+h1{
+    font-size: 15px;
+}
+p{
+    font-size: 10px;
+}
+.castDesc p {
+    margin-top: 0; 
+}
+.castDesc h1 {
+    padding-bottom: 0; /* Set bottom padding to 0 to remove the extra space */
+}
+.castDesc h1, .castDesc p {
+    margin: 0; /* Set margin to 0 to remove the extra space */
+}
+
+
+.offers{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
