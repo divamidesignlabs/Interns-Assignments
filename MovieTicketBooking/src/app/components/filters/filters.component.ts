@@ -8,7 +8,7 @@ import { MovieDataService } from 'src/app/services/movie-data.service';
   styleUrls: ['./filters.component.scss']
 })
 export class FiltersComponent {
-  @Output() sendData = new EventEmitter<any>()
+  @Output() sendData = new EventEmitter<any>() //emitting the data to 
 
   constructor(private movieData:MovieDataService){}
   filters:object={}

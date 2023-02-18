@@ -8,9 +8,9 @@ import { FilterChoices } from 'src/app/models/interfaces';
 })
 export class FilterComponent {
 
-  @ Input() filterChoices:FilterChoices={
-    summary: "Languages",
-    listOfChoices: ["English","Hindi","Tamil","Telugu","Marathi","Malayalam","Kanada","Punjabi","Gujarati","Bengali"]
+  @ Input() filterChoices:FilterChoices={ //filter for movies
+    summary: "Languages", 
+    listOfChoices: ["English","Hindi","Tamil","Telugu","Marathi","Malayalam","Kanada","Punjabi","Gujarati","Bengali"] //list of languages
   }
   // summary:string="Languages"
   // listofchoices:string[]=["English","Hindi","Tamil","Telugu","Marathi","Malayalam","Kanada","Punjabi","Gujarati","Bengali"]

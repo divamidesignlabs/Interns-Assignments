@@ -9,6 +9,7 @@ import { FilterComponent } from './common_components/filter/filter.component';
 import { CardComponent } from './common_components/card/card.component';
 import { RunningShowsComponent } from './components/running-shows/running-shows.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
     CardComponent,
     RunningShowsComponent,
     LandingPageComponent,
+    MovieDetailsComponent,
   ],
   imports: [
     BrowserModule,
