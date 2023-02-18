@@ -15,6 +15,7 @@ import { CastComponent } from './pages/details/cast/cast.component';
 import { VideoComponent } from './pages/details/video/video.component';
 import { FilterComponent } from './pages/landing/filter/filter.component';
 import { SliderComponent } from './pages/landing/slider/slider.component';
+import { DetailsComponent } from './pages/details/details/details.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SliderComponent } from './pages/landing/slider/slider.component';
     CastComponent,
     VideoComponent,
     FilterComponent,
-    SliderComponent
+    SliderComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule
