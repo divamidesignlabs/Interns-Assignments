@@ -2,7 +2,7 @@
     <div class="landing__fliters">
         <div class="filter__reset">
             <p>Filters</p>
-            <p class="reset">Reset all</p>
+            <p class="reset" (click)="resetFilter($event);">Reset all</p>
         </div>
         <div class="filter__options">
             <app-filters (sendData)="getData($event)"></app-filters>
