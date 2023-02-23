@@ -31,7 +31,7 @@ export class DetailsPageComponent {
   
   bookShow(){
     this.router.navigate(['/booking-tickets'],{
-      state: { 'submittedData' : this.data },
+      state: { 'id' : this.data },
       relativeTo: this.route
     });
   }

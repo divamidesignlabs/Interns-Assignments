@@ -28,10 +28,17 @@
   </div>
 </div>
 
-<div class="timings" *ngFor="let time of times">
-    <span>{{time}}</span>
+<div class="timings" *ngFor="let t of selected_movie_data.show_times">
+    <span>{{t}}</span>
 </div>
 
 <form action="#">
-
+Date<input type="date">
+Number of tickets <input type="number" >
+<select name="seatType" id="">
+    <option value="Elite">Elite</option>
+    <option value="Gole">Gold</option>
+    <option value="Economy">Economy</option>
+</select>
+<button type="submit">Submit</button>
 </form>
