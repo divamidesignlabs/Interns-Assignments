@@ -1,0 +1,35 @@
+<!-- <app-movie-card [movieDetails]="movieDetails"></app-movie-card> -->
+<div class="container-moviesDetails">
+    <div class="movies-filter">
+<!-- filter here -->
+    </div>
+    <div>
+        <div class="movie-details">
+            <div class="movie-shows">
+                <div  *ngFor="let item of shows ;let i=index" (click)="passTabIndex(i)">
+                
+                    <div class="movie-shows" [ngClass]="{presentShow : currentIndex==i }">{{item}}</div>
+
+                </div>
+            </div>
+            
+            <div class="show-movies">
+                <div *ngIf="currentIndex==0" class="present-showing">
+                    <div *ngFor="let movie of movieDetails;let index=index">
+                        <!-- <div *ngIf="movie.released==1"> -->
+                            <app-movie-card [movieDetails]="movieDetails" [currentIndex]="index"></app-movie-card>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                
+                <div *ngIf="currentIndex==1" class="future-shows">
+                    <div *ngFor="let movie of movieDetails;let index=index">
+                        <!-- <div *ngIf="movie.released==1"> -->
+                            <app-movie-card [movieDetails]="movieDetails" [currentIndex]="index"></app-movie-card>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

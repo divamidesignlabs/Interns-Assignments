@@ -1,0 +1,98 @@
+
+<div>
+    <div class="selected-movieDetails">
+        <img class="back-arrow" (click)="showHomePage()" src='../../../../assets/images/arrow left.svg' alt="arrow left image">
+        <div class="movie-details">
+            <div class="movie-titleAndLanguage">
+                <div class="movie-name">{{movieBookingDetails[movieBookingCurrentIndex].name}}</div>
+                <div class="movie-rated">| U/A</div>
+                <div class="movie-language">| {{movieBookingDetails[movieBookingCurrentIndex].language}}</div>
+            </div>
+            <div class="movieGenreAndLang">
+                <div class="movie-genre">{{movieBookingDetails[movieBookingCurrentIndex].genre | movieGenreSeperatedWithSlash}}</div>
+                <div class="movie-duration">| {{movieBookingDetails[movieBookingCurrentIndex].duration | mintesToHoursAndMinutes}}</div>
+            </div>
+        </div>
+        <div class="movie-dimention">
+            <div class="dimention-title">Dimention</div>
+            <div class="chooseMovie-dimention">
+                <div (click)="selectMovieDimentionAs2D()" class="dimention-2d" [ngClass]="{selectedMovieDimention : isMovieDimention2D }">2D</div>
+                <div (click)="selectMovieDimentionAs3D()" class="dimention-3d" [ngClass]="{selectedMovieDimention : isMovieDimention3D }">3D</div>
+            </div>
+        </div>
+        <div class="movie-tickets">
+            <div class="ticket-title">Dimention</div>
+            <div class="choose-ticketCount">
+                <div (click)="incrementTicketCount()" class="increment-ticketCount" [ngClass]="{selectedMovieDimention : isIncrement }">+</div>
+                <div class="ticket-count">{{numberOfTickets}}</div>
+                <div (click)="decrementTicketCount()" class="decrement-ticketCount" [ngClass]="{selectedMovieDimention : isDecrement }">-</div>
+            </div>
+        </div>
+    </div>
+    <div class="bookingdetails">
+        <div class="form-showTimings">
+            <div class="movie-shows"><p>pls click here:</p>
+                <div  *ngFor="let item of shows ;let index=index" (click)="passShowIndex(index)">
+                    <div class="movie-shows" [ngClass]="{selectedShow : selectedShowIndex==index }">{{item}}</div>
+                </div>
+            </div>
+            <div class="movie-dateAndTicketCount">
+                <form [formGroup]="ticketBookingInfo" (ngSubmit)="handleFormSubmit()" >
+                    <h2>Fill the details</h2>
+                    <div class="movieBooked-data">
+                        <label for="movie-date">Date</label>
+                        <input type="date" id="movie-date" name="date">
+                    </div>
+                    <div class="ticket-count">
+                        <label for="count">Number Of Tickets</label>
+                        <input type="number" placeholder="enter no:tickets required" formControlName="noOfTickets" id="count">
+                    </div>
+                    <div class="select-seats">
+                        <label for="seats">Select seat type</label>
+                        <select formControlName="ticketType" id="seats" >
+                            <option value="seat1" selected >Elite(A-E) 500</option>
+                            <option value="seat2">Gold(F-P) 200</option>
+                            <option value="seat3">Economy(Q-R) 100</option>
+                        </select>
+                    </div>
+                    <div class="submit-form">
+                        <button id="reset-button" type="reset">Reset</button>
+                        <button id="submit-button" type="submit" [disabled]="ticketBookingInfo.invalid">Submit</button>
+                    </div> 
+                </form>
+            </div>
+        </div>
+        <div class="booking-summary">
+            <div class="summary-title">Summary</div>
+            <div class="movie-SummaryDetails">
+                <div class="movie-titleAndLanguage">
+                    <div class="movie-name">{{movieBookingDetails[movieBookingCurrentIndex].name}}</div>
+                    <div class="movie-language">| {{movieBookingDetails[movieBookingCurrentIndex].language}}</div>
+                </div>
+                <div class="movie-date">Jan 10 Sunday {{movieTimming}}</div>
+            </div>
+            <div class="noOf-tickets">
+                <div class="set-fontStyle">Seats Selected</div>
+                <div class="set-fontStyle">{{ticketsCount}} Tickets</div>
+            </div>
+            <div class="booked-seatNumbers">
+                <div class="seat-number">A13</div>
+                <div class="seat-number">A14</div>
+                <div class="seat-number">A15</div>
+                <div class="seat-number">A16</div>
+            </div>
+            <div class="tickets-cost">
+                <div class="tickets-cost">Elite Seats 250 * {{ticketsCount}}</div>
+                <div class="tickets-cost">₹ {{ticketsCount | ticketsCost}}</div>
+            </div>
+            <div class="tax-container">
+                <div class="set-fontStyle">Tax</div>
+                <div class="set-fontStyle">₹ 200</div>
+            </div>
+            <div class="grand-total">
+                <div>Grand Total</div>
+                <div>{{ticketsCount | grandTotal}}</div>
+            </div>
+        </div>
+    </div>
+</div>

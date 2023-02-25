@@ -1,0 +1,25 @@
+
+<div class="movie-card">
+    <div>
+        <img class="movie-image" (click)="showTicketBookingOptions()" src='../../../../assets/images/poster 3.png' alt="movie image">
+    </div>
+    <div class="movie-description">
+         <div>
+            <div class="movieDescription-upperPart">
+                <div class="movieDescription-name">
+                    <div class="movie-name">M Name{{movieDetails[currentIndex].name}}</div>
+                    <div class="movie-rated">u/a</div>
+                </div>
+                <img class="movie-likedImage" src='../../../../assets/images/liked.svg' alt="liked image">
+            </div>
+            <div class="movieDescription-lowerPart">
+                <div class="movie-lang-genre">
+                    <div class="movie-language">En</div>
+                    <div class="movie-genre">{{movieDetails[currentIndex].genre | movieGenreSeperatedWithSlash}}</div>
+                </div>
+                <div class="movie-time"><img src='../../../../assets/images/time.svg' alt="timer">{{movieDetails[currentIndex].duration | mintesToHoursAndMinutes}}</div>
+                <div class="movie-likedPercentage">{{movieDetails[currentIndex].like_count | likedPercentage:movieDetails[currentIndex].dislike_count }}%</div>
+            </div>
+        </div>
+    </div>
+</div>
