@@ -1,0 +1,59 @@
+.container-moviesDetails
+{
+    display: flex;
+    margin-top: 40px;
+    .movies-filter
+    {
+        min-width:240px;
+    }
+}
+
+.movie-details
+{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+    .movie-shows
+    {
+        display: flex;
+        gap:10px;
+        margin-left: 10px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .show-movies
+    {
+        border-bottom: 3px solid var(--blurGray);
+        border-top: 3px solid var(--blurGray);
+         font-size:20px;
+        font-weight: bolder;
+
+        .present-showing, .future-showa
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+    .future-shows
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .presentShow
+    {
+        border-bottom: 2px solid var(--red);
+
+    }
+
+
+    .container__suggestionData
+    {
+        font-size:20px;
+        font-weight: bolder;
+    }
+}

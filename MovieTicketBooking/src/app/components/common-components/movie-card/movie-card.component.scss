@@ -1,0 +1,110 @@
+.movie-card
+{
+    width:307px;
+    background-color: var(--movieDescBackGround);
+    .movie-image
+    {
+        width:307px;
+        background-color: var(--movieDescBackGround);
+        height: 454px;
+        cursor: pointer;
+    }
+
+    .movieDescription-upperPart
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--movieDescBackGround);
+        padding-top:10px;
+        .movieDescription-name
+        {
+            display: flex;
+            gap:10px;
+            background-color: var(--movieDescBackGround);
+            .movie-name
+            {
+                margin-left:20px;
+                font-size: 16px;
+                background-color: var(--movieDescBackGround);
+                font-family: OpenSans-Semibold;
+                line-height: 20px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 157px;
+            }
+            .movie-rated
+            {
+                font-size: 12px;
+                color: var(--gray);
+                display: flex;
+                justify-content: center;
+                background-color: var(--movieDescBackGround);
+                align-items: center;
+            }
+        }
+        .movie-likedImage
+        {
+            margin-right: 23px;
+            background-color: var(--movieDescBackGround);
+        }
+        
+    }
+    .movieDescription-lowerPart
+    {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--movieDescBackGround);
+        padding-top:5px;
+
+        .movie-language
+        {
+            color: var(--gray);
+            background-color: #5b5858;;
+            border-radius: 3px;
+            font-size: 12px;
+            line-height: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:18px;
+        }
+        .movie-lang-genre
+        {
+            display: flex;
+            gap:10px;
+            background-color: var(--movieDescBackGround);
+        }
+        .movie-genre
+        {
+            font-size: 12px;
+            color:var(--gray);
+            background-color: var(--movieDescBackGround);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .movie-time
+        {
+            font-size: 12px;
+            color: var(--gray);
+            letter-spacing: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--movieDescBackGround);
+        }
+        .movie-likedPercentage
+        {
+            color:var(--white);
+            background-color: var(--movieDescBackGround);
+            font-family: OpenSans-Semibold;
+            font-size: 12px;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 5px;
+        }
+    }
+}

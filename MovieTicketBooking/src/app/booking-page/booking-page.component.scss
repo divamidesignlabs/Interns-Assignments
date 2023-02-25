@@ -1,0 +1,322 @@
+.selected-movieDetails
+{
+    display: flex;
+    padding:10px 0px;
+    gap: 24px;
+    .back-arrow
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding-left: 16px;
+        }
+    .movie-details
+    {
+        
+        .movie-titleAndLanguage
+        {
+            display: flex;
+            gap:10px;
+            padding-bottom:5px;
+
+            .movie-name
+            {
+                font-family: OpenSans-Bold;
+                font-size: 18px;
+                color: var(--white);
+                letter-spacing: 0;
+                line-height: 27px;
+                                
+            }
+            .movie-rated
+            {
+                font-family: OpenSans-Regular;
+                font-size: 13px;
+                color: var(--gray);
+                letter-spacing: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .movie-language
+            {
+                font-size: 12px;
+                color:var(--gray);
+                // background-color: var(--movieDescBackGround);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .movieGenreAndLang
+        {
+            display: flex;
+            gap:10px;
+
+            .movie-genre
+        {
+            font-size: 12px;
+            color:var(--gray);
+            // background-color: var(--movieDescBackGround);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .movie-duration
+        {
+            font-size: 12px;
+            color:var(--gray);
+            // background-color: var(--movieDescBackGround);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        }
+    }
+}
+.movie-dimention
+{
+    margin-left:200px;
+
+    .dimention-title
+    {
+        font-size: 12px;
+        color: var(--gray);
+        letter-spacing: 0;
+        line-height: 18px;
+        
+    }
+    .chooseMovie-dimention
+    {
+        display: flex;
+        border:1px solid var(--gray);
+        border-radius: 3px;
+    }
+    .dimention-2d, .dimention-3d
+    {
+        border:1px solid var(--gray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0px 9px;
+        cursor: pointer;
+    }
+    .selectedMovieDimention
+    {
+        background-color: var(--green);
+    }
+   
+}
+.movie-tickets
+{
+    .choose-ticketCount
+    {
+        display: flex;
+        border:1px solid var(--gray);
+        border-radius: 3px;
+        .selectedMovieDimention
+        { 
+            background-color: var(--green);
+        }
+        .increment-ticketCount
+        {
+            border:1px solid var(--gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0px 9px;
+            cursor: pointer;
+        }
+        .decrement-ticketCount
+        {
+            border:1px solid var(--gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0px 9px;
+            cursor: pointer;
+        }
+        .ticket-count
+        {
+            padding: 0px 5px;
+        }
+    }
+    .ticket-title
+    {
+        font-size: 12px;
+        color: var(--gray);
+        letter-spacing: 0;
+        line-height: 18px;
+    }
+}
+.choose-ticketCount
+{
+    display: flex;
+} 
+.bookingdetails
+{
+    display: flex;
+    .set-fontStyle
+    {
+        font-size: 16px;
+        color: var(--gray);
+        line-height: 24px; 
+    }
+
+    .form-showTimings
+    {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+
+        .movie-shows
+        {
+            display: flex;
+            gap:10px;
+            color:var(--gray);
+            margin-left: 10px;
+            font-size: 16px;
+            margin-bottom: 5px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .selectedShow
+        {
+            border-bottom: 2px solid var(--red);
+            font-size: 16px;
+            color:var(--white);
+            line-height: 40px;
+        }
+    }
+    .movie-dateAndTicketCount
+    {
+        padding:0px 100px;
+
+        .movieBooked-data, .ticket-count, .select-seats
+        {
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+            padding-bottom: 10px;
+        }
+        .select-seats
+        {
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+            padding-bottom: 10px;
+        }
+        .submit-form
+        {
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 30px;
+            #reset-button, #submit-button
+            {
+                border: 1px solid var(--white);
+                width:80px;
+                padding:10px;
+                background-color:var(--blue) ;
+                cursor: pointer;
+                border-radius: 3px;
+            }  
+        }
+    } 
+    .booking-summary
+    {
+        margin:10px;
+        .summary-title
+        {
+            font-family: OpenSans-Semibold;
+            font-size: 16px;
+            color: var(--white);
+            line-height: 24px;
+            padding-bottom: 15px;
+        }
+        .movie-SummaryDetails
+        {
+            .movie-titleAndLanguage
+            {
+                display: flex;
+                .movie-name
+                {
+                    font-size: 16px;
+                    color: var(--gray);
+                    line-height: 24px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .movie-language
+                {
+                    font-size: 16px;
+                    color: var(--gray);
+                    line-height: 24px;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        .movie-date
+        {
+            font-size: 16px;
+            color: var(--gray);
+            line-height: 24px;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--borderColor);
+        }
+    }
+    .noOf-tickets
+    {
+        display: flex;
+        justify-content: space-between;
+        font-family: OpenSans-Bold;
+        font-size: 16px;
+        color: var(--white);
+        line-height: 24px;
+        padding:15px 0px 10px 0px;
+    }
+    .booked-seatNumbers
+    {
+        padding-bottom: 19px;
+        border-bottom: 1px solid var(--borderColor);
+        display: flex;
+        gap:10px;
+        .seat-number
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--backGroundGray);
+            border-radius: 3px;
+            
+        }
+    }
+    .tickets-cost
+    {
+        display: flex;
+        justify-content: space-between;
+        padding:15px 0px 10px 0px;
+    }
+    .tax-container
+    {
+        display: flex;
+        justify-content: space-between;
+        padding:15px 0px 10px 0px;
+    }
+    .grand-total
+    {
+        display: flex;
+        justify-content: space-between;
+        padding:15px 0px 10px 0px;
+        font-family: OpenSans-Bold;
+font-size: 16px;
+color: #DEDEDE;
+line-height: 24px;
+    }
+}
+
