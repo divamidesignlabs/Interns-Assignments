@@ -1,18 +1,18 @@
-<!-- <app-movie-card [movieDetails]="movieDetails"></app-movie-card> -->
+<!-- landing page -->
 <div class="container-moviesDetails">
     <div class="movies-filter">
 <!-- filter here -->
     </div>
     <div>
         <div class="movie-details">
+            <!-- render different shows from an array and add different styles to current selected show using ngClass -->
             <div class="movie-shows">
                 <div  *ngFor="let item of shows ;let i=index" (click)="passTabIndex(i)">
-                
                     <div class="movie-shows" [ngClass]="{presentShow : currentIndex==i }">{{item}}</div>
-
                 </div>
             </div>
             
+            <!-- render movie image and description using movie card lopping with the data we get from API -->
             <div class="show-movies">
                 <div *ngIf="currentIndex==0" class="present-showing">
                     <div *ngFor="let movie of movieDetails;let index=index">

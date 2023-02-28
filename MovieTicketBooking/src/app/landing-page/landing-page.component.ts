@@ -8,8 +8,8 @@ import { MovieDetailsService } from '../movie-details.service';
 })
 export class LandingPageComponent implements OnInit{
 
-  movieDetails:any[]=[];
-  shows:string[]=["Now Showing","Upcomming Movies"];
+  movieDetails:any[]=[];  
+  shows:string[]=["Now Showing","Upcomming Movies"];   
   currentIndex:number=0;
   constructor(private shareMovieDetails:MovieDetailsService){}
 

@@ -1,13 +1,17 @@
 .header
 {
+    position: sticky;
+    top: 0px;
+    width:100%;
     display: flex;
     justify-content: space-between;
-    // background-color: var(--backGroundGray);
+    background-color: var(--black);
     padding:10px 0px;
 
     .header-logo
     {
         padding-left: 6px;
+        cursor: pointer;
     }
     .header-searchBar
     {
@@ -22,10 +26,15 @@
             min-width: 449px;
             border: 0px;
             padding-left: 10px;
-            // outline: none;
+            background-color: var(--balck);
+           
         }
         .header-inputBar:focus {
-            outline: none;
+            // outline: none;
+            border-radius: 5px;
+                outline: none;
+                color:var(--white);
+                
         }
         .header-searchLogo
         {

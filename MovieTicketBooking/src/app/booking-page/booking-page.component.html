@@ -1,7 +1,7 @@
 
-<div>
+<div class="booking-page">
     <div class="selected-movieDetails">
-        <img class="back-arrow" (click)="showHomePage()" src='../../../../assets/images/arrow left.svg' alt="arrow left image">
+        <img class="back-arrow" (click)="getMeToTheHomePage()" src='../../../../assets/images/arrow left.svg' alt="arrow left image">
         <div class="movie-details">
             <div class="movie-titleAndLanguage">
                 <div class="movie-name">{{movieBookingDetails[movieBookingCurrentIndex].name}}</div>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="movie-tickets">
-            <div class="ticket-title">Dimention</div>
+            <div class="ticket-title">Tickets</div>
             <div class="choose-ticketCount">
                 <div (click)="incrementTicketCount()" class="increment-ticketCount" [ngClass]="{selectedMovieDimention : isIncrement }">+</div>
                 <div class="ticket-count">{{numberOfTickets}}</div>
@@ -31,21 +31,21 @@
     </div>
     <div class="bookingdetails">
         <div class="form-showTimings">
-            <div class="movie-shows"><p>pls click here:</p>
+            <div class="movie-shows">
                 <div  *ngFor="let item of shows ;let index=index" (click)="passShowIndex(index)">
                     <div class="movie-shows" [ngClass]="{selectedShow : selectedShowIndex==index }">{{item}}</div>
                 </div>
             </div>
             <div class="movie-dateAndTicketCount">
                 <form [formGroup]="ticketBookingInfo" (ngSubmit)="handleFormSubmit()" >
-                    <h2>Fill the details</h2>
-                    <div class="movieBooked-data">
+                    <h2 class="form-title">Fill the details</h2>
+                    <div class="movieBooked-date">
                         <label for="movie-date">Date</label>
                         <input type="date" id="movie-date" name="date">
                     </div>
                     <div class="ticket-count">
-                        <label for="count">Number Of Tickets</label>
-                        <input type="number" placeholder="enter no:tickets required" formControlName="noOfTickets" id="count">
+                        <label for="noOfTickets-required">Number Of Tickets</label>
+                        <input type="number" placeholder="enter number of tickets required" formControlName="noOfTickets" id="noOfTickets-required">
                     </div>
                     <div class="select-seats">
                         <label for="seats">Select seat type</label>
@@ -76,14 +76,14 @@
                 <div class="set-fontStyle">{{ticketsCount}} Tickets</div>
             </div>
             <div class="booked-seatNumbers">
-                <div class="seat-number">A13</div>
-                <div class="seat-number">A14</div>
-                <div class="seat-number">A15</div>
-                <div class="seat-number">A16</div>
+                <div class="seat-number">A 13</div>
+                <div class="seat-number">A 14</div>
+                <div class="seat-number">A 15</div>
+                <div class="seat-number">A 16</div>
             </div>
             <div class="tickets-cost">
-                <div class="tickets-cost">Elite Seats 250 * {{ticketsCount}}</div>
-                <div class="tickets-cost">₹ {{ticketsCount | ticketsCost}}</div>
+                <div class="cost">Elite Seats 250 * {{ticketsCount}}</div>
+                <div class="cost">₹ {{ticketsCount | ticketsCost}}</div>
             </div>
             <div class="tax-container">
                 <div class="set-fontStyle">Tax</div>
@@ -93,6 +93,11 @@
                 <div>Grand Total</div>
                 <div>{{ticketsCount | grandTotal}}</div>
             </div>
+            <div class="proceed-buttons">
+                <button id="addOns-button">Select add ons</button>
+                <button id="payment-button">Proceed to pay</button>
+            </div>
+            <div class="termsAndConditions">* Terms and consditions applied</div>
         </div>
     </div>
 </div>

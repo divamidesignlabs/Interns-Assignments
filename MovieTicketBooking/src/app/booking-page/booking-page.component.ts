@@ -11,17 +11,17 @@ export class BookingPageComponent {
   movieBookingDetails:any[]=[];
   movieBookingCurrentIndex:number=0;
   isMovieDimention2D:boolean=true;
+  isMovieDimention3D:boolean=false;
   numberOfTickets:number=0;
   isIncrement:boolean=true;
   isDecrement:boolean=false;
-  isMovieDimention3D:boolean=false;
   shows:string[]=["10:00 AM","2:00 PM","6:30 PM","9:00 PM"];
   selectedShowIndex:number=0;
   movieTimming:string='';
   ticketsCount:string='0';
 
   ticketBookingInfo = new FormGroup({
-    date: new FormControl(''),
+    date: new FormControl('Elite(A-E) 500'),
     noOfTickets: new FormControl('',Validators.compose([Validators.required])),
     ticketType: new FormControl(''),
   });
@@ -29,9 +29,9 @@ export class BookingPageComponent {
     this.movieBookingDetails = this.router.getCurrentNavigation()?.extras.state?.['sendMovieDetails'];
     this.movieBookingCurrentIndex = this.router.getCurrentNavigation()?.extras.state?.['sendCurrentIndex'];
   }
-  showHomePage()
+  getMeToTheHomePage()
   {
-    this.router.navigate([''])
+    this.router.navigate(['']);
   }
   selectMovieDimentionAs2D()
   {

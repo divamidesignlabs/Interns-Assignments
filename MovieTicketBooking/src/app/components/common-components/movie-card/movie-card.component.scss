@@ -2,36 +2,34 @@
 {
     width:307px;
     background-color: var(--movieDescBackGround);
+    margin-bottom: 30px;
     .movie-image
     {
         width:307px;
-        background-color: var(--movieDescBackGround);
         height: 454px;
         cursor: pointer;
     }
-
+    .movie-description
+    {
+        padding: 10px;
+    }
     .movieDescription-upperPart
     {
         display: flex;
         justify-content: space-between;
-        background-color: var(--movieDescBackGround);
-        padding-top:10px;
         .movieDescription-name
         {
             display: flex;
-            gap:10px;
-            background-color: var(--movieDescBackGround);
+            gap:5px;
+    
             .movie-name
             {
-                margin-left:20px;
                 font-size: 16px;
-                background-color: var(--movieDescBackGround);
-                font-family: OpenSans-Semibold;
                 line-height: 20px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                width: 157px;
+                max-width: 200px;
             }
             .movie-rated
             {
@@ -39,24 +37,17 @@
                 color: var(--gray);
                 display: flex;
                 justify-content: center;
-                background-color: var(--movieDescBackGround);
                 align-items: center;
             }
         }
-        .movie-likedImage
-        {
-            margin-right: 23px;
-            background-color: var(--movieDescBackGround);
-        }
+        
         
     }
     .movieDescription-lowerPart
     {
         display: flex;
-        justify-content: space-around;
-        background-color: var(--movieDescBackGround);
+        justify-content: space-between;
         padding-top:5px;
-
         .movie-language
         {
             color: var(--gray);
@@ -73,13 +64,12 @@
         {
             display: flex;
             gap:10px;
-            background-color: var(--movieDescBackGround);
+    
         }
         .movie-genre
         {
             font-size: 12px;
             color:var(--gray);
-            background-color: var(--movieDescBackGround);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -92,19 +82,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: var(--movieDescBackGround);
+            .timer-img
+            {
+                padding:0px 5px;
+            }
         }
         .movie-likedPercentage
         {
             color:var(--white);
-            background-color: var(--movieDescBackGround);
             font-family: OpenSans-Semibold;
             font-size: 12px;
             letter-spacing: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-right: 5px;
         }
     }
 }

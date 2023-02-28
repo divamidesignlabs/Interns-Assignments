@@ -1,5 +1,4 @@
 import { Component, Input,Output, EventEmitter } from '@angular/core';
-import { MovieGenreSeperatedWithSlashPipe } from 'src/app/pipes/movie-genre-seperated-with-slash.pipe';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,10 +13,11 @@ export class MovieCardComponent {
   @Output() ticketBookingOptions = new EventEmitter();
 
   constructor(private router:Router){}
+
+  // When we click on movie img navigate to booking page and we are sending required data need in the booking page
   showTicketBookingOptions()
 {
   this.ticketBookingOptions.emit()
-  // this.router.navigate(['/booking-page'], { state: { serviceId: this.movieDetails[this.currentIndex]} });
   this.router.navigate(['/booking-page'],{
     state: { sendMovieDetails : this.movieDetails, sendCurrentIndex : this.currentIndex }})
   console.log(this.movieDetails[0])
